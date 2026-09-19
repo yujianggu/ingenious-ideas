@@ -1,0 +1,50 @@
+{
+  "batch": "C21-2026-09-19-init",
+  "saved_at": "2026-09-19T16:53:41+08:00",
+  "record_count": 6,
+  "person_count": 5,
+  "capture_method": "browser_visible_content",
+  "full_page_archive": false,
+  "files": [
+    {
+      "file": "C21-I001.md",
+      "bytes": 1481,
+      "sha256": "763777c49ac511ea85111137d3ec50699e9a8caae1111ddb403d73122abd7899"
+    },
+    {
+      "file": "C21-I002.md",
+      "bytes": 1451,
+      "sha256": "3c24f56e00edf560bef6df761d756c80b2262c4238e40bff07a9ac36223efbac"
+    },
+    {
+      "file": "C21-I003.md",
+      "bytes": 1601,
+      "sha256": "c1c1100f9d6e505125bad094902c9b28cf61371cc83f17facecdfb706f61d90d"
+    },
+    {
+      "file": "C21-I004.md",
+      "bytes": 1708,
+      "sha256": "8dcb88c4d1ebea007e90bda855b8be711a38639e3981fd0a6d9230fdebe51e90"
+    },
+    {
+      "file": "C21-I005.md",
+      "bytes": 2047,
+      "sha256": "6a4037f67b793f46e609297416c654955ba5a1c001074a30bcccd1ee4df8a711"
+    },
+    {
+      "file": "C21-I006.md",
+      "bytes": 2018,
+      "sha256": "f03a4e782024bade368fc78745176ee73605429b25f962cb590d69c11ae99bd5"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2746,
+      "sha256": "7ddf333f22821f212f278768d3ddbdd77761e2082979c2aaf3589f670c3b567f"
+    },
+    {
+      "file": "records.json",
+      "bytes": 10229,
+      "sha256": "29eab68feac248101c86953d90f641ca9d44a75ef14fb8316435a5ea9aa1537f"
+    }
+  ]
+}
