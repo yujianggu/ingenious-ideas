@@ -1,0 +1,4 @@
+[submodule "base-kb"]
+	path = base-kb
+	url = https://github.com/yujianggu/kb.git
+	branch = ss
