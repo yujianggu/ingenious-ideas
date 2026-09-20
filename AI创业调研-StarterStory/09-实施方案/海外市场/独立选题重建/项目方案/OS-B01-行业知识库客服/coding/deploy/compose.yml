@@ -1,0 +1,29 @@
+name: os-b01
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    environment:
+      B01_DATA_DIR: /data
+      B01_CORS_ORIGINS: ${B01_CORS_ORIGINS:-http://localhost:6111}
+    volumes:
+      - b01-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    ports:
+      - "127.0.0.1:6111:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  b01-data:

@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "B09 · 销售研究与邮件草稿",
+    "slug": "os-b09",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osb09",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osb09"
+    },
+    "android": {
+      "package": "com.ideas.osb09"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "B09 · 销售研究与邮件草稿"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

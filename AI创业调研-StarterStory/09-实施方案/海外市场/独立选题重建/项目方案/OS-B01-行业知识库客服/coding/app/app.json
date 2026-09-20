@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "B01 · 行业知识库客服",
+    "slug": "os-b01",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osb01",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osb01"
+    },
+    "android": {
+      "package": "com.ideas.osb01"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "B01 · 行业知识库客服"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

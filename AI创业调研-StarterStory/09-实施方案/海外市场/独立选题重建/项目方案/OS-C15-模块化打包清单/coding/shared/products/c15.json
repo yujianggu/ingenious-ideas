@@ -1,0 +1,319 @@
+{
+  "code": "C15",
+  "name": "Pack Modules",
+  "summary": "Reuse packing modules and generate a separate checklist for every trip. Existing trips keep their own quantities and checkmarks.",
+  "recordLabel": "Packing workspace",
+  "create": [
+    {
+      "name": "title",
+      "label": "Packing workspace title",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "actions": [
+    {
+      "id": "add-module",
+      "label": "Create reusable module",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Module name",
+          "type": "text",
+          "required": true,
+          "help": "Examples: Toiletries, Work trip, Hiking"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "add-module-item",
+      "label": "Add item to module",
+      "fields": [
+        {
+          "name": "moduleId",
+          "label": "Module",
+          "type": "select",
+          "optionsPath": "modules",
+          "optionLabel": "title",
+          "required": true
+        },
+        {
+          "name": "label",
+          "label": "Item name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "quantity",
+          "label": "Base quantity",
+          "type": "number",
+          "required": true,
+          "default": 1,
+          "min": 1,
+          "max": 1000
+        },
+        {
+          "name": "rule",
+          "label": "Quantity rule",
+          "type": "select",
+          "options": [
+            {
+              "value": "fixed",
+              "label": "Once for the trip"
+            },
+            {
+              "value": "person",
+              "label": "Per person"
+            },
+            {
+              "value": "day",
+              "label": "Per day"
+            },
+            {
+              "value": "person-day",
+              "label": "Per person per day"
+            }
+          ],
+          "default": "fixed"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "set-module-selection",
+      "label": "Choose modules for the next trip",
+      "fields": [
+        {
+          "name": "moduleId",
+          "label": "Module",
+          "type": "select",
+          "optionsPath": "modules",
+          "optionLabel": "title",
+          "required": true
+        },
+        {
+          "name": "selected",
+          "label": "Include this module",
+          "type": "checkbox",
+          "default": true
+        }
+      ],
+      "help": "New modules start selected. Each module can be included or excluded for your next trip."
+    },
+    {
+      "id": "new-trip",
+      "label": "Create trip checklist",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Trip name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "people",
+          "label": "People",
+          "type": "number",
+          "required": true,
+          "default": 1,
+          "min": 1,
+          "max": 100
+        },
+        {
+          "name": "days",
+          "label": "Days",
+          "type": "number",
+          "required": true,
+          "default": 1,
+          "min": 1,
+          "max": 365
+        }
+      ],
+      "help": "Archives the current trip and generates a fresh checklist. For identical item names and rules, use the largest base quantity; different rules are calculated separately and added. Check each resulting quantity."
+    },
+    {
+      "id": "toggle-item",
+      "label": "Mark an item",
+      "fields": [
+        {
+          "name": "itemId",
+          "label": "Packing item",
+          "type": "select",
+          "optionsPath": "items",
+          "optionLabel": "label",
+          "required": true
+        },
+        {
+          "name": "checked",
+          "label": "Packed",
+          "type": "checkbox",
+          "default": true
+        }
+      ],
+      "help": "The checklist also supports offline checkmarks. Cloud conflicts preserve your pending edits until you refresh."
+    },
+    {
+      "id": "reset-checks",
+      "label": "Clear current checkmarks",
+      "fields": [],
+      "help": "Clears only the current trip’s checkmarks. Archived trips keep their status."
+    },
+    {
+      "id": "remove-module-item",
+      "label": "Remove item from reusable module",
+      "fields": [
+        {
+          "name": "moduleId",
+          "label": "Module",
+          "type": "select",
+          "optionsPath": "modules",
+          "optionLabel": "title",
+          "required": true
+        },
+        {
+          "name": "label",
+          "label": "Item name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "rule",
+          "label": "Quantity rule",
+          "type": "select",
+          "options": [
+            {
+              "value": "fixed",
+              "label": "Once for the trip"
+            },
+            {
+              "value": "person",
+              "label": "Per person"
+            },
+            {
+              "value": "day",
+              "label": "Per day"
+            },
+            {
+              "value": "person-day",
+              "label": "Per person per day"
+            }
+          ],
+          "default": "fixed"
+        }
+      ],
+      "help": "Does not alter any existing trip snapshot."
+    },
+    {
+      "id": "remove-module",
+      "label": "Remove reusable module",
+      "fields": [
+        {
+          "name": "moduleId",
+          "label": "Module",
+          "type": "select",
+          "optionsPath": "modules",
+          "optionLabel": "title",
+          "required": true
+        }
+      ],
+      "help": "Existing trip snapshots remain intact."
+    },
+    {
+      "id": "restore-backup",
+      "label": "Restore workspace backup",
+      "fields": [
+        {
+          "name": "content",
+          "label": "Packing JSON backup",
+          "type": "import",
+          "required": true,
+          "accept": ".json,application/json"
+        }
+      ],
+      "help": "Replaces this workspace’s modules and trips with a validated backup. Download the current JSON backup before restoring if you want to keep it."
+    }
+  ],
+  "views": [
+    {
+      "path": "modules",
+      "title": "Reusable modules",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Module"
+        },
+        {
+          "key": "selected",
+          "label": "Selected"
+        },
+        {
+          "key": "items",
+          "label": "Items and rules"
+        }
+      ]
+    },
+    {
+      "path": "currentTrip",
+      "title": "Current trip"
+    },
+    {
+      "path": "items",
+      "title": "Packing checklist",
+      "columns": [
+        {
+          "key": "label",
+          "label": "Item"
+        },
+        {
+          "key": "quantity",
+          "label": "Quantity"
+        },
+        {
+          "key": "checked",
+          "label": "Packed"
+        },
+        {
+          "key": "rules",
+          "label": "Quantity calculation"
+        }
+      ]
+    },
+    {
+      "path": "history",
+      "title": "Archived trips",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Trip"
+        },
+        {
+          "key": "people",
+          "label": "People"
+        },
+        {
+          "key": "days",
+          "label": "Days"
+        },
+        {
+          "key": "status",
+          "label": "Status"
+        },
+        {
+          "key": "items",
+          "label": "Frozen checklist"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "txt",
+      "label": "Printable checklist"
+    },
+    {
+      "format": "csv",
+      "label": "Checklist CSV"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "code": "B06",
+  "name": "Local Clean Pages",
+  "summary": "Build a clear website for your cleaning business, publish it, and follow up real customer inquiries.",
+  "recordLabel": "Cleaning website",
+  "create": [
+    {
+      "name": "title",
+      "label": "Business name",
+      "type": "text",
+      "required": true,
+      "max": 120
+    },
+    {
+      "name": "tagline",
+      "label": "Homepage headline",
+      "type": "text",
+      "max": 160,
+      "help": "Describe the benefit of your service in your own words."
+    },
+    {
+      "name": "about",
+      "label": "About your cleaning business",
+      "type": "textarea",
+      "required": true,
+      "max": 3000
+    },
+    {
+      "name": "email",
+      "label": "Public business email",
+      "type": "text",
+      "required": true,
+      "help": "This contact address appears on the published page."
+    },
+    {
+      "name": "phone",
+      "label": "Public business phone",
+      "type": "text"
+    },
+    {
+      "name": "areas",
+      "label": "Service areas",
+      "type": "textarea",
+      "required": true,
+      "help": "One city, neighborhood, or area per line. Up to 30."
+    },
+    {
+      "name": "hours",
+      "label": "Business hours",
+      "type": "text"
+    },
+    {
+      "name": "streetAddress",
+      "label": "Public business address (optional)",
+      "type": "text",
+      "help": "Leave blank if you do not want an address shown publicly."
+    }
+  ],
+  "actions": [
+    {
+      "id": "update-site",
+      "label": "Update website details",
+      "help": "Replace your draft business details below. Publish again when you want visitors to see the changes.",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Business name",
+          "type": "text",
+          "required": true,
+          "defaultPath": "site.title"
+        },
+        {
+          "name": "tagline",
+          "label": "Homepage headline",
+          "type": "text",
+          "defaultPath": "site.tagline"
+        },
+        {
+          "name": "about",
+          "label": "About your business",
+          "type": "textarea",
+          "required": true,
+          "defaultPath": "site.about"
+        },
+        {
+          "name": "email",
+          "label": "Public business email",
+          "type": "text",
+          "required": true,
+          "defaultPath": "site.email"
+        },
+        {
+          "name": "phone",
+          "label": "Public business phone",
+          "type": "text",
+          "defaultPath": "site.phone"
+        },
+        {
+          "name": "areas",
+          "label": "Service areas, one per line",
+          "type": "textarea",
+          "required": true,
+          "defaultPath": "site.areas"
+        },
+        {
+          "name": "hours",
+          "label": "Business hours",
+          "type": "text",
+          "defaultPath": "site.hours"
+        },
+        {
+          "name": "streetAddress",
+          "label": "Public business address (optional)",
+          "type": "text",
+          "defaultPath": "site.streetAddress"
+        }
+      ]
+    },
+    {
+      "id": "add-service",
+      "label": "Add a cleaning service",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Service name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "What is included?",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "name": "priceNote",
+          "label": "Pricing or quote note",
+          "type": "text",
+          "help": "Use your real pricing, or invite customers to request a quote."
+        }
+      ]
+    },
+    {
+      "id": "update-service",
+      "label": "Edit a cleaning service",
+      "fields": [
+        {
+          "name": "serviceId",
+          "label": "Service",
+          "type": "select",
+          "required": true,
+          "optionsPath": "site.services"
+        },
+        {
+          "name": "title",
+          "label": "Service name",
+          "type": "text",
+          "required": true,
+          "selectedFrom": {
+            "selector": "serviceId",
+            "path": "site.services",
+            "value": "title"
+          }
+        },
+        {
+          "name": "description",
+          "label": "What is included?",
+          "type": "textarea",
+          "required": true,
+          "selectedFrom": {
+            "selector": "serviceId",
+            "path": "site.services",
+            "value": "description"
+          }
+        },
+        {
+          "name": "priceNote",
+          "label": "Pricing or quote note",
+          "type": "text",
+          "selectedFrom": {
+            "selector": "serviceId",
+            "path": "site.services",
+            "value": "priceNote"
+          }
+        }
+      ]
+    },
+    {
+      "id": "remove-service",
+      "label": "Remove a draft service",
+      "help": "Already-published services remain visible until you publish the updated draft.",
+      "fields": [
+        {
+          "name": "serviceId",
+          "label": "Service",
+          "type": "select",
+          "required": true,
+          "optionsPath": "site.services"
+        }
+      ]
+    },
+    {
+      "id": "publish",
+      "label": "Publish current website",
+      "help": "Publishes the current draft at the public website link in this service. Add at least one service first. A custom domain requires separate hosting setup.",
+      "fields": [
+        {
+          "name": "publicConsent",
+          "label": "I confirm these business details are ready for public display",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "unpublish",
+      "label": "Take website offline",
+      "help": "Visitors will no longer see the page or submit inquiries. Your draft and existing inquiries are retained.",
+      "when": {
+        "path": "status",
+        "equals": "published"
+      },
+      "fields": []
+    },
+    {
+      "id": "follow-up",
+      "label": "Record an inquiry follow-up",
+      "help": "Record an action you actually took. This form does not send email or book a cleaning automatically.",
+      "fields": [
+        {
+          "name": "inquiryId",
+          "label": "Customer inquiry",
+          "type": "select",
+          "required": true,
+          "optionsPath": "inquiries"
+        },
+        {
+          "name": "status",
+          "label": "Follow-up status",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "new",
+              "label": "New"
+            },
+            {
+              "value": "contacted",
+              "label": "Contacted"
+            },
+            {
+              "value": "quoted",
+              "label": "Quote sent"
+            },
+            {
+              "value": "booked",
+              "label": "Booked"
+            },
+            {
+              "value": "closed",
+              "label": "Closed"
+            }
+          ]
+        },
+        {
+          "name": "note",
+          "label": "What happened?",
+          "type": "textarea",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "path": "status",
+      "title": "Website status"
+    },
+    {
+      "path": "publicPath",
+      "title": "Public website link"
+    },
+    {
+      "path": "draftNotice",
+      "title": "Draft and publication"
+    },
+    {
+      "path": "site",
+      "title": "Current website draft"
+    },
+    {
+      "path": "site.services",
+      "title": "Your cleaning services",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Service"
+        },
+        {
+          "key": "description",
+          "label": "Included"
+        },
+        {
+          "key": "priceNote",
+          "label": "Pricing"
+        }
+      ]
+    },
+    {
+      "path": "publication.publishedAt",
+      "title": "Last published"
+    },
+    {
+      "path": "inquiries",
+      "title": "Customer inquiries",
+      "columns": [
+        {
+          "key": "name",
+          "label": "Customer"
+        },
+        {
+          "key": "email",
+          "label": "Email"
+        },
+        {
+          "key": "phone",
+          "label": "Phone"
+        },
+        {
+          "key": "serviceTitle",
+          "label": "Service"
+        },
+        {
+          "key": "area",
+          "label": "Area"
+        },
+        {
+          "key": "message",
+          "label": "Request"
+        },
+        {
+          "key": "status",
+          "label": "Status"
+        },
+        {
+          "key": "receivedAt",
+          "label": "Received"
+        },
+        {
+          "key": "history",
+          "label": "Follow-up history"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "html",
+      "label": "Preview / download current draft website"
+    },
+    {
+      "format": "csv",
+      "label": "Export customer inquiries"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "os-c17-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start --port 8137",
+    "web": "expo start --web --port 8137",
+    "android": "expo run:android --port 8137",
+    "ios": "expo run:ios --port 8137",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build:web": "expo export --platform web",
+    "build:all": "expo export --platform all"
+  },
+  "dependencies": {
+    "expo": "57.0.24",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "react-dom": "19.2.3",
+    "react-native-web": "~0.21.0",
+    "expo-secure-store": "~57.0.4",
+    "expo-file-system": "~57.0.7",
+    "expo-document-picker": "~57.0.2",
+    "expo-sharing": "~57.0.21",
+    "react-native-safe-area-context": "~5.7.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "@types/react": "~19.2.4",
+    "@types/node": "^22.0.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,29 @@
+name: os-b06
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    environment:
+      B06_DATA_DIR: /data
+      B06_CORS_ORIGINS: ${B06_CORS_ORIGINS:-http://localhost:6116}
+    volumes:
+      - b06-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    ports:
+      - "127.0.0.1:6116:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  b06-data:

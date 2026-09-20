@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "C04 · 个性化实体绘本",
+    "slug": "os-c04",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osc04",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osc04"
+    },
+    "android": {
+      "package": "com.ideas.osc04"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "C04 · 个性化实体绘本"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

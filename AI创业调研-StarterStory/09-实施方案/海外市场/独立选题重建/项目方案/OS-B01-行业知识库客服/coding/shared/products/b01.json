@@ -1,0 +1,362 @@
+{
+  "code": "B01",
+  "name": "Answer Ledger",
+  "summary": "Turn authorized knowledge into cited response drafts, review each answer, and track human handoffs. English keyword retrieval; no AI or automatic sending.",
+  "recordLabel": "Knowledge desk",
+  "create": [
+    {
+      "name": "title",
+      "label": "Knowledge desk name",
+      "type": "text",
+      "required": true,
+      "help": "For example: Store customer support"
+    },
+    {
+      "name": "escalationQueue",
+      "label": "Human escalation owner or team",
+      "type": "text",
+      "required": true,
+      "default": "Support owner"
+    }
+  ],
+  "actions": [
+    {
+      "id": "add-source",
+      "label": "Add authorized knowledge",
+      "help": "Paste a source you have permission to use. Adding knowledge requires existing responses to be refreshed.",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Source title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "url",
+          "label": "Source URL",
+          "type": "text",
+          "required": true,
+          "help": "An http or https page you can check. The application does not fetch it."
+        },
+        {
+          "name": "content",
+          "label": "Source text",
+          "type": "textarea",
+          "required": true,
+          "help": "Paste the authorized policy or help article. Use short sentences or paragraphs (up to 1,200 characters per passage)."
+        },
+        {
+          "name": "authorized",
+          "label": "I am authorized to use this source for customer support",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "add-ticket",
+      "label": "Add customer question",
+      "help": "Create a ticket, then retrieve relevant excerpts.",
+      "fields": [
+        {
+          "name": "question",
+          "label": "Customer question",
+          "type": "textarea",
+          "required": true
+        },
+        {
+          "name": "customerLabel",
+          "label": "Order or ticket reference",
+          "type": "text",
+          "help": "Optional reference; avoid unnecessary personal details."
+        }
+      ]
+    },
+    {
+      "id": "draft-response",
+      "label": "Retrieve evidence and draft",
+      "help": "Matches words from the question against supplied source passages. Up to three verbatim excerpts are shown. A missing match sends the ticket to human review.",
+      "fields": [
+        {
+          "name": "ticketId",
+          "label": "Ticket",
+          "type": "select",
+          "required": true,
+          "optionsPath": "tickets"
+        }
+      ]
+    },
+    {
+      "id": "edit-response",
+      "label": "Write or revise the response",
+      "help": "Use the displayed citations to write a clear answer. Editing clears approval. Retrieve again first if knowledge has changed.",
+      "fields": [
+        {
+          "name": "ticketId",
+          "label": "Ticket",
+          "type": "select",
+          "required": true,
+          "optionsPath": "tickets"
+        },
+        {
+          "name": "draft",
+          "label": "Complete response text",
+          "type": "textarea",
+          "required": true,
+          "help": "Refer to evidence with [1], [2], or [3] where useful. Citations remain attached to this ticket.",
+          "selectedFrom": {
+            "selector": "ticketId",
+            "path": "tickets",
+            "value": "draft"
+          }
+        }
+      ]
+    },
+    {
+      "id": "review-response",
+      "label": "Approve response",
+      "help": "Read the selected ticket and each citation before confirming. Only current evidence-backed drafts can be approved.",
+      "fields": [
+        {
+          "name": "ticketId",
+          "label": "Ticket",
+          "type": "select",
+          "required": true,
+          "optionsPath": "tickets"
+        },
+        {
+          "name": "confirmed",
+          "label": "I checked every claim against the cited sources",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "close-ticket",
+      "label": "Confirm ticket handled",
+      "help": "Record that you handled this approved response through your usual support channel. This does not send a message.",
+      "fields": [
+        {
+          "name": "ticketId",
+          "label": "Ticket",
+          "type": "select",
+          "required": true,
+          "optionsPath": "tickets"
+        },
+        {
+          "name": "note",
+          "label": "Handling note",
+          "type": "textarea",
+          "required": true,
+          "help": "For example: Reply sent in help desk ticket #123.",
+          "selectedFrom": {
+            "selector": "ticketId",
+            "path": "tickets",
+            "value": "resolutionNote"
+          }
+        },
+        {
+          "name": "confirmed",
+          "label": "I confirm this ticket was handled outside this application",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "record-escalation",
+      "label": "Record human handoff",
+      "help": "For a ticket marked needs-human, record the owner and next step. Add supporting knowledge before trying another draft.",
+      "fields": [
+        {
+          "name": "ticketId",
+          "label": "Ticket",
+          "type": "select",
+          "required": true,
+          "optionsPath": "tickets"
+        },
+        {
+          "name": "note",
+          "label": "Owner and follow-up note",
+          "type": "textarea",
+          "required": true,
+          "selectedFrom": {
+            "selector": "ticketId",
+            "path": "tickets",
+            "value": "escalationNote"
+          }
+        }
+      ]
+    },
+    {
+      "id": "update-source",
+      "label": "Replace a knowledge source",
+      "help": "Paste the complete replacement. Earlier source versions are retained, and existing responses need refreshed evidence and approval.",
+      "fields": [
+        {
+          "name": "sourceId",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "optionsPath": "sources"
+        },
+        {
+          "name": "title",
+          "label": "Source title",
+          "type": "text",
+          "required": true,
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "title"
+          }
+        },
+        {
+          "name": "url",
+          "label": "Source URL",
+          "type": "text",
+          "required": true,
+          "help": "An http or https page you can check. The application does not fetch it.",
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "url"
+          }
+        },
+        {
+          "name": "content",
+          "label": "Source text",
+          "type": "textarea",
+          "required": true,
+          "help": "Paste the authorized policy or help article. Use short sentences or paragraphs (up to 1,200 characters per passage).",
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "content"
+          }
+        },
+        {
+          "name": "authorized",
+          "label": "I am authorized to use this source for customer support",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "retire-source",
+      "label": "Retire a knowledge source",
+      "help": "Removes the source from retrieval and invalidates existing response approvals. Replace the source to reactivate it.",
+      "fields": [
+        {
+          "name": "sourceId",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "optionsPath": "sources"
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "path": "method",
+      "title": "How drafting works"
+    },
+    {
+      "path": "tickets",
+      "title": "Tickets and response evidence",
+      "columns": [
+        {
+          "key": "question",
+          "label": "Question"
+        },
+        {
+          "key": "customerLabel",
+          "label": "Reference"
+        },
+        {
+          "key": "status",
+          "label": "Status"
+        },
+        {
+          "key": "draft",
+          "label": "Response draft"
+        },
+        {
+          "key": "citations",
+          "label": "Source citations"
+        },
+        {
+          "key": "escalationReason",
+          "label": "Human review reason"
+        },
+        {
+          "key": "escalationNote",
+          "label": "Handoff note"
+        },
+        {
+          "key": "approvedAt",
+          "label": "Approved"
+        },
+        {
+          "key": "resolutionNote",
+          "label": "Handling note"
+        },
+        {
+          "key": "reviews",
+          "label": "Prior approvals"
+        },
+        {
+          "key": "closureHistory",
+          "label": "Handling receipts"
+        }
+      ]
+    },
+    {
+      "path": "sources",
+      "title": "Versioned knowledge sources",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Source"
+        },
+        {
+          "key": "url",
+          "label": "URL"
+        },
+        {
+          "key": "version",
+          "label": "Version"
+        },
+        {
+          "key": "active",
+          "label": "Active"
+        },
+        {
+          "key": "content",
+          "label": "Text"
+        },
+        {
+          "key": "authorizedAt",
+          "label": "Authorization confirmed"
+        },
+        {
+          "key": "history",
+          "label": "Earlier versions"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "txt",
+      "label": "Approved responses (.txt)"
+    },
+    {
+      "format": "csv",
+      "label": "Approved responses (.csv)"
+    }
+  ]
+}

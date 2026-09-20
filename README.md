@@ -27,3 +27,7 @@
 - [原20项CEO复审](AI创业调研-StarterStory/06-CEO复审/2026-09-19-CEO复审.md)：保留原范围内的审查意见。
 
 本地资料关联仓库：[yujianggu/ingenious-ideas](https://github.com/yujianggu/ingenious-ideas)。目录名保留既有StarterStory路径，内容已扩展为多来源研究。文件保存不表示本轮修改已经提交或推送。
+
+## 海外项目代码
+
+[海外项目代码索引](AI创业调研-StarterStory/09-实施方案/海外市场/独立选题重建/代码索引.md)：8 个 idea 各自维护 `coding/backend`、`coding/frontend`、`coding/app`，分别启动、测试和部署。

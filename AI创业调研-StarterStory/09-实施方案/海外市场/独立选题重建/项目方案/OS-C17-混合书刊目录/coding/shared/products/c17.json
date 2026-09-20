@@ -1,0 +1,409 @@
+{
+  "code": "C17",
+  "name": "Shelf Catalog",
+  "summary": "Catalog books, comics and magazines together. Sort volumes and issues numerically, find items by shelf, and see gaps in the issue ranges you expect.",
+  "recordLabel": "Collection",
+  "create": [
+    {
+      "name": "title",
+      "label": "Collection name",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "actions": [
+    {
+      "id": "add-entry",
+      "label": "Add publication",
+      "fields": [
+        {
+          "name": "type",
+          "label": "Publication type",
+          "type": "select",
+          "options": [
+            {
+              "value": "book",
+              "label": "Book"
+            },
+            {
+              "value": "comic",
+              "label": "Comic"
+            },
+            {
+              "value": "magazine",
+              "label": "Magazine"
+            }
+          ],
+          "default": "book"
+        },
+        {
+          "name": "title",
+          "label": "Title or series name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "volume",
+          "label": "Volume number (optional)",
+          "type": "number",
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "issue",
+          "label": "Issue number (optional)",
+          "type": "number",
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "isbn",
+          "label": "ISBN (optional)",
+          "type": "text",
+          "help": "Valid ISBN-10 or ISBN-13. Hyphens are accepted; ISBN-10 is stored as its ISBN-13 equivalent."
+        },
+        {
+          "name": "location",
+          "label": "Shelf or box location",
+          "type": "text"
+        },
+        {
+          "name": "notes",
+          "label": "Notes",
+          "type": "textarea"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "query",
+      "label": "Search the collection",
+      "fields": [
+        {
+          "name": "search",
+          "label": "Title, ISBN or notes contains",
+          "type": "text"
+        },
+        {
+          "name": "type",
+          "label": "Publication type",
+          "type": "select",
+          "options": [
+            {
+              "value": "",
+              "label": "All types"
+            },
+            {
+              "value": "book",
+              "label": "Books"
+            },
+            {
+              "value": "comic",
+              "label": "Comics"
+            },
+            {
+              "value": "magazine",
+              "label": "Magazines"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "name": "location",
+          "label": "Exact shelf or box location",
+          "type": "text"
+        }
+      ],
+      "help": "Leave filters blank to show all entries. Letter case and repeated spaces are ignored."
+    },
+    {
+      "id": "find-gaps",
+      "label": "Find missing issues",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Exact series title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "type",
+          "label": "Publication type",
+          "type": "select",
+          "options": [
+            {
+              "value": "comic",
+              "label": "Comic"
+            },
+            {
+              "value": "magazine",
+              "label": "Magazine"
+            }
+          ],
+          "default": "comic"
+        },
+        {
+          "name": "volume",
+          "label": "Volume number (leave blank for unnumbered)",
+          "type": "number",
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "fromIssue",
+          "label": "First expected issue",
+          "type": "number",
+          "required": true,
+          "default": 1,
+          "min": 1,
+          "max": 100000
+        },
+        {
+          "name": "toIssue",
+          "label": "Last expected issue",
+          "type": "number",
+          "required": true,
+          "min": 1,
+          "max": 100000
+        }
+      ],
+      "help": "You define the expected range (up to 1001 issues). This does not check the publisher’s release history."
+    },
+    {
+      "id": "move-entry",
+      "label": "Change shelf or box",
+      "fields": [
+        {
+          "name": "entryId",
+          "label": "Publication",
+          "type": "select",
+          "optionsPath": "entries",
+          "optionLabel": "displayTitle",
+          "required": true
+        },
+        {
+          "name": "location",
+          "label": "New location",
+          "type": "text"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "update-notes",
+      "label": "Update publication notes",
+      "fields": [
+        {
+          "name": "entryId",
+          "label": "Publication",
+          "type": "select",
+          "optionsPath": "entries",
+          "optionLabel": "displayTitle",
+          "required": true
+        },
+        {
+          "name": "notes",
+          "label": "Notes",
+          "type": "textarea"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "preview-import",
+      "label": "Preview CSV import",
+      "fields": [
+        {
+          "name": "content",
+          "label": "CSV file or pasted rows",
+          "type": "import",
+          "required": true,
+          "accept": ".csv,text/csv",
+          "help": "Headers: type,title,volume,issue,isbn,location,notes. type and title are required. Invalid and duplicate rows appear with reasons."
+        }
+      ],
+      "help": "Review accepted rows below before confirming."
+    },
+    {
+      "id": "commit-import",
+      "label": "Add reviewed publications",
+      "fields": [],
+      "help": "Adds accepted rows from the current preview."
+    },
+    {
+      "id": "remove-entry",
+      "label": "Remove publication",
+      "fields": [
+        {
+          "name": "entryId",
+          "label": "Publication",
+          "type": "select",
+          "optionsPath": "entries",
+          "optionLabel": "displayTitle",
+          "required": true
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "restore-backup",
+      "label": "Restore collection backup",
+      "fields": [
+        {
+          "name": "content",
+          "label": "Collection JSON backup",
+          "type": "import",
+          "required": true,
+          "accept": ".json,application/json"
+        }
+      ],
+      "help": "Replaces this collection with a validated backup. Download the current JSON backup first if you want to keep it."
+    }
+  ],
+  "views": [
+    {
+      "path": "entries",
+      "title": "Collection",
+      "columns": [
+        {
+          "key": "type",
+          "label": "Type"
+        },
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "volume",
+          "label": "Volume"
+        },
+        {
+          "key": "issue",
+          "label": "Issue"
+        },
+        {
+          "key": "isbn",
+          "label": "ISBN"
+        },
+        {
+          "key": "location",
+          "label": "Location"
+        },
+        {
+          "key": "notes",
+          "label": "Notes"
+        }
+      ]
+    },
+    {
+      "path": "queryResults",
+      "title": "Search results",
+      "columns": [
+        {
+          "key": "type",
+          "label": "Type"
+        },
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "volume",
+          "label": "Volume"
+        },
+        {
+          "key": "issue",
+          "label": "Issue"
+        },
+        {
+          "key": "location",
+          "label": "Location"
+        }
+      ]
+    },
+    {
+      "path": "gapQuery",
+      "title": "Expected issue range"
+    },
+    {
+      "path": "gapResults",
+      "title": "Missing issues",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Series"
+        },
+        {
+          "key": "volume",
+          "label": "Volume"
+        },
+        {
+          "key": "issue",
+          "label": "Missing issue"
+        },
+        {
+          "key": "status",
+          "label": "Meaning"
+        }
+      ]
+    },
+    {
+      "path": "importPreview.entries",
+      "title": "Import preview: accepted",
+      "columns": [
+        {
+          "key": "type",
+          "label": "Type"
+        },
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "volume",
+          "label": "Volume"
+        },
+        {
+          "key": "issue",
+          "label": "Issue"
+        },
+        {
+          "key": "isbn",
+          "label": "ISBN"
+        },
+        {
+          "key": "location",
+          "label": "Location"
+        }
+      ]
+    },
+    {
+      "path": "importPreview.rejected",
+      "title": "Import preview: rejected",
+      "columns": [
+        {
+          "key": "row",
+          "label": "Row"
+        },
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "reason",
+          "label": "Reason"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "csv",
+      "label": "Collection CSV"
+    },
+    {
+      "format": "txt",
+      "label": "Readable collection"
+    }
+  ]
+}
