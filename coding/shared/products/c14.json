@@ -1,0 +1,314 @@
+{
+  "code": "C14",
+  "name": "Travel Dossier",
+  "summary": "Keep your itinerary and original travel documents together. Import dated events, review them, and save the dossier for offline access.",
+  "recordLabel": "Travel dossier",
+  "create": [
+    {
+      "name": "title",
+      "label": "Trip title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "destination",
+      "label": "Destination",
+      "type": "text"
+    },
+    {
+      "name": "timezone",
+      "label": "Default IANA timezone",
+      "type": "text",
+      "required": true,
+      "default": "UTC",
+      "help": "Examples: Asia/Tokyo, Europe/London, America/New_York"
+    },
+    {
+      "name": "notes",
+      "label": "Trip notes",
+      "type": "textarea"
+    }
+  ],
+  "actions": [
+    {
+      "id": "add-entry",
+      "label": "Add itinerary entry",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Entry title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "kind",
+          "label": "Entry type",
+          "type": "select",
+          "options": [
+            {
+              "value": "flight",
+              "label": "Flight"
+            },
+            {
+              "value": "hotel",
+              "label": "Hotel"
+            },
+            {
+              "value": "train",
+              "label": "Train"
+            },
+            {
+              "value": "car",
+              "label": "Car"
+            },
+            {
+              "value": "activity",
+              "label": "Activity"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ],
+          "default": "other"
+        },
+        {
+          "name": "start",
+          "label": "Start with UTC offset",
+          "type": "text",
+          "required": true,
+          "help": "Example: 2026-10-01T09:00:00+09:00"
+        },
+        {
+          "name": "end",
+          "label": "End with UTC offset",
+          "type": "text",
+          "required": true,
+          "help": "Example: 2026-10-01T12:00:00+09:00"
+        },
+        {
+          "name": "timezone",
+          "label": "IANA timezone",
+          "type": "text",
+          "required": true,
+          "default": "UTC",
+          "help": "The offset must match this zone. Example: Asia/Tokyo"
+        },
+        {
+          "name": "location",
+          "label": "Location",
+          "type": "text"
+        },
+        {
+          "name": "reference",
+          "label": "Booking reference",
+          "type": "text"
+        },
+        {
+          "name": "notes",
+          "label": "Notes",
+          "type": "textarea"
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "preview-import",
+      "label": "Preview calendar or CSV import",
+      "fields": [
+        {
+          "name": "format",
+          "label": "File format",
+          "type": "select",
+          "options": [
+            {
+              "value": "ics",
+              "label": "Calendar (.ics)"
+            },
+            {
+              "value": "csv",
+              "label": "Structured itinerary CSV"
+            }
+          ],
+          "default": "ics"
+        },
+        {
+          "name": "content",
+          "label": "Import file or paste text",
+          "type": "import",
+          "required": true,
+          "accept": ".ics,.csv,text/calendar,text/csv",
+          "help": "CSV headers: title,kind,start,end,timezone,location,reference,notes. Calendar needs SUMMARY, DTSTART and DTEND with UTC or IANA TZID. Floating, all-day and recurring events are rejected."
+        }
+      ],
+      "help": "Review accepted rows and rejection reasons below before confirming."
+    },
+    {
+      "id": "commit-import",
+      "label": "Add reviewed entries",
+      "fields": [],
+      "help": "Adds accepted preview rows. Rejected rows remain visible so you can correct the source and preview again."
+    },
+    {
+      "id": "add-attachment",
+      "label": "Attach original document",
+      "fields": [
+        {
+          "name": "file",
+          "label": "Original file",
+          "type": "file",
+          "required": true,
+          "accept": ".pdf,.png,.jpg,.jpeg,.txt,.ics",
+          "help": "PDF, PNG, JPEG, UTF-8 TXT or ICS; maximum 500 KiB each and 20 files per dossier."
+        }
+      ],
+      "help": "Stores the exact original bytes. Attachments are also included in the dossier ZIP."
+    },
+    {
+      "id": "remove-entry",
+      "label": "Remove itinerary entry",
+      "fields": [
+        {
+          "name": "entryId",
+          "label": "Entry",
+          "type": "select",
+          "optionsPath": "entries",
+          "optionLabel": "title",
+          "required": true
+        }
+      ],
+      "help": ""
+    },
+    {
+      "id": "remove-attachment",
+      "label": "Remove original document",
+      "fields": [
+        {
+          "name": "attachmentId",
+          "label": "Document",
+          "type": "select",
+          "optionsPath": "attachments",
+          "optionLabel": "name",
+          "required": true
+        }
+      ],
+      "help": ""
+    }
+  ],
+  "views": [
+    {
+      "path": "entries",
+      "title": "Itinerary",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "kind",
+          "label": "Type"
+        },
+        {
+          "key": "start",
+          "label": "Start"
+        },
+        {
+          "key": "end",
+          "label": "End"
+        },
+        {
+          "key": "timezone",
+          "label": "Timezone"
+        },
+        {
+          "key": "location",
+          "label": "Location"
+        },
+        {
+          "key": "reference",
+          "label": "Reference"
+        },
+        {
+          "key": "notes",
+          "label": "Notes"
+        }
+      ]
+    },
+    {
+      "path": "importPreview.entries",
+      "title": "Import preview: accepted",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "start",
+          "label": "Start"
+        },
+        {
+          "key": "end",
+          "label": "End"
+        },
+        {
+          "key": "timezone",
+          "label": "Timezone"
+        },
+        {
+          "key": "location",
+          "label": "Location"
+        }
+      ]
+    },
+    {
+      "path": "importPreview.rejected",
+      "title": "Import preview: rejected",
+      "columns": [
+        {
+          "key": "row",
+          "label": "Source row"
+        },
+        {
+          "key": "reason",
+          "label": "Reason"
+        }
+      ]
+    },
+    {
+      "path": "attachments",
+      "title": "Original documents",
+      "columns": [
+        {
+          "key": "name",
+          "label": "Name"
+        },
+        {
+          "key": "contentType",
+          "label": "Type"
+        },
+        {
+          "key": "size",
+          "label": "Bytes"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "txt",
+      "label": "Readable itinerary"
+    },
+    {
+      "format": "csv",
+      "label": "Itinerary CSV"
+    },
+    {
+      "format": "ics",
+      "label": "Calendar"
+    },
+    {
+      "format": "zip",
+      "label": "Dossier with original documents"
+    }
+  ]
+}

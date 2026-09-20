@@ -1,0 +1,38 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'chrome'});let pages=[];
+ try{
+ const ed=await browser.newPage({viewport:{width:1440,height:1000}}),cl=await browser.newPage({viewport:{width:1280,height:900}});const errors=[];
+ for(const p of[ed,cl]){p.on('pageerror',e=>errors.push(e.message));p.on('dialog',d=>d.accept());}
+ pages=[ed,cl];const stamp=Date.now().toString(36),base=process.env.WEB_URL||'http://127.0.0.1:5173';
+ const title=`Design review ${stamp}`;
+ async function submit(p,button,part){const [r]=await Promise.all([p.waitForResponse(r=>r.url().includes('/api/')&&r.url().includes(part)&&['POST','PUT'].includes(r.request().method())),button.click()]);assert.equal(r.status(),200,await r.text());console.log('OK',part);await p.waitForTimeout(100);return r.json();}
+ const b=(p,name)=>p.getByRole('button',{name,exact:true});
+ await ed.goto(base);await b(ed,'New here? Create a studio').click();await ed.getByLabel('Your name').fill('E2E Editor');await ed.getByLabel('Studio name').fill('Northline Studio');await ed.getByLabel('Email address').fill(`web-editor-${stamp}@example.com`);await ed.getByLabel('Password (at least 10 characters)').fill('Browser-test-password!');await submit(ed,b(ed,'Create studio'),'/auth/register');
+ await b(ed,'Invite a client').click();await ed.getByLabel('Client email').fill(`web-client-${stamp}@example.com`);await submit(ed,b(ed,'Create invitation'),'/invites');const invite=await ed.getByLabel('Invitation link').inputValue();await b(ed,'Close').click();
+ await cl.goto(invite);await cl.getByLabel('Your name').fill('E2E Client');await cl.getByLabel('Password (at least 10 characters)').fill('Browser-test-password!');await submit(cl,b(cl,'Accept invitation'),'/auth/accept-invite');
+ await b(cl,'+ New episode').click();await cl.getByLabel('Episode title',{exact:true}).fill(title);await cl.getByLabel('Brand / show').fill('Northline');await cl.getByLabel('Source duration (seconds, 90–3600)').fill('180');await cl.getByLabel('Source URL or delivery reference').fill('Private authorized source supplied by client');await cl.getByLabel('Prohibited claims (write None if none)').fill('No universal claims');const ep=await submit(cl,b(cl,'Create draft'),'/episodes');
+ await cl.getByRole('checkbox',{name:/I have permission/}).check();await submit(cl,b(cl,'Save brief'),`/episodes/${ep.id}/brief`);await submit(cl,b(cl,'Submit brief'),`/actions/submit`);
+ await ed.reload();await ed.getByRole('button').filter({has:ed.getByText(title,{exact:true})}).click();for(const name of[/I reviewed the source/,/The three-clip scope/,/A qualified editor/,/The payment arrangement/])await ed.getByRole('checkbox',{name}).check();await submit(ed,b(ed,'Confirm ready & start'),'/actions/ready');
+ await b(ed,'Clips & review').click();
+ async function fillClips(version){for(let i=1;i<=3;i++){const card=ed.locator('section.clip-card').nth(i-1);await card.getByLabel(`Clip ${i} title`,{exact:true}).fill(`Story ${i}`);await card.getByLabel('Start (seconds)',{exact:true}).fill(String((i-1)*40));await card.getByLabel('End (seconds, 30–90 second clip)',{exact:true}).fill(String((i-1)*40+30));await card.getByLabel('Exact quote / subtitle copy').fill('In our small pilot, review was faster. Other teams have not been tested.');await card.getByLabel('Context & editorial rationale').fill('A single pilot, not a universal result.');await card.getByLabel('Post copy',{exact:true}).fill('What one small pilot taught us.');await card.getByRole('checkbox').check();await submit(ed,b(card,`Save clip ${i}`),`/clips/clip-${i}`);}}
+ await fillClips(1);await ed.getByLabel('Timestamped chapter list').fill('00:00 Introduction\n00:40 Pilot\n01:20 Limits');await submit(ed,b(ed,'Save chapters'),'/chapters');await submit(ed,b(ed,'Send version 1 for review'),'/actions/send');
+ await cl.reload();await cl.getByRole('button').filter({has:cl.getByText(title,{exact:true})}).click();await b(cl,'Clips & review').click();
+ for(const i of[1,3]){const card=cl.locator('section.clip-card').nth(i-1);await card.getByRole('checkbox').check();await submit(cl,b(card,`Approve clip ${i}`),'/actions/approve');}
+ await cl.getByLabel('Changes for clip 2').fill('Please retain the sample limitation.');await submit(cl,b(cl,'Request changes for clip 2'),'/actions/changes');
+ await ed.reload();await ed.getByRole('button').filter({has:ed.getByText(title,{exact:true})}).click();await ed.getByText('Revision & source changes',{exact:true}).click();await ed.getByLabel('Revision reason',{exact:true}).fill('Retain sample qualification');await submit(ed,b(ed,'Start new revision'),'/actions/revise');await b(ed,'Clips & review').click();await fillClips(2);await submit(ed,b(ed,'Send version 2 for review'),'/actions/send');
+ await cl.reload();await cl.getByRole('button').filter({has:cl.getByText(title,{exact:true})}).click();await b(cl,'Clips & review').click();
+ for(let i=1;i<=3;i++){const card=cl.locator('section.clip-card').nth(i-1);await card.getByRole('checkbox').check();await submit(cl,b(card,`Approve clip ${i}`),'/actions/approve');}
+ await cl.screenshot({path:'/tmp/episode-desk-web-review.png',fullPage:true});
+ await ed.reload();await ed.getByRole('button').filter({has:ed.getByText(title,{exact:true})}).click();await b(ed,'Files & delivery').click();
+ async function upload(kind,i,name,buffer,mimeType){const input=ed.getByLabel(`Upload ${kind}${i?` for clip-${i}`:''}`,{exact:true});await input.setInputFiles({name,buffer,mimeType});const form=ed.locator('form').filter({has:input});await submit(ed,form.locator('button').filter({hasText:`Upload ${kind}`}),'/assets');const asset=ed.locator('.asset').filter({has:ed.getByText(name,{exact:true})});await asset.getByRole('checkbox').check();await submit(ed,b(asset,`Mark ${kind} QC checked`),'/check');}
+ const video=await fs.readFile(process.env.TEST_VIDEO||'/tmp/episode-desk-test.mp4');
+ for(let i=1;i<=3;i++){await upload('video',i,`clip-${i}.mp4`,video,'video/mp4');await upload('subtitle',i,`clip-${i}.srt`,Buffer.from('1\n00:00:00,000 --> 00:00:29,000\nIn our small pilot, review was faster.\n'),'text/plain');}
+ await upload('project',null,'editable.txt',Buffer.from('Source intervals: 0-30,40-70,80-110. Reviewed transcript and post copy.'),'text/plain');await submit(ed,b(ed,'Deliver package'),'/actions/deliver');
+ await cl.reload();await cl.getByRole('button').filter({has:cl.getByText(title,{exact:true})}).click();await b(cl,'Files & delivery').click();const downloaded=cl.waitForEvent('download');await cl.getByRole('button',{name:'Download video',exact:true}).first().click();assert.ok((await downloaded).suggestedFilename().endsWith('.mp4'));await cl.getByRole('checkbox',{name:/I downloaded and checked/}).check();await submit(cl,b(cl,'Accept delivery'),'/actions/accept');await cl.getByText('Delivery accepted. The receipt is recorded in the activity history.',{exact:true}).waitFor();
+ await cl.setViewportSize({width:390,height:844});await cl.screenshot({path:'/tmp/episode-desk-web-mobile.png',fullPage:true});assert.ok(await cl.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));assert.deepEqual(errors,[]);
+ console.log('PASS: real browser editor/client invitation, brief, review+revision, MP4/SRT/project upload+QC, download, delivery+acceptance, mobile layout.');
+ }catch(e){for(let i=0;i<pages.length;i++){await pages[i].screenshot({path:'/tmp/episode-web-fail-'+i+'.png',fullPage:true});await fs.writeFile('/tmp/episode-web-fail-'+i+'.html',await pages[i].content());}throw e;}finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.expo/
+.env
+android/
+ios/
+*.tsbuildinfo

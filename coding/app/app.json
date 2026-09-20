@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Overseas Studio",
+    "slug": "episode-desk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "episodedesk",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.episodedesk.app"
+    },
+    "android": {
+      "package": "com.episodedesk.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "Overseas Studio"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

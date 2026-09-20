@@ -1,0 +1,476 @@
+{
+  "code": "C04",
+  "name": "Story Keepsake",
+  "summary": "Personalize an eight-page English story, approve the PDF, and track a real physical-book order.",
+  "recordLabel": "Personal storybook",
+  "create": [
+    {
+      "name": "title",
+      "label": "Book title",
+      "type": "text",
+      "required": true,
+      "max": 80
+    },
+    {
+      "name": "childName",
+      "label": "Child's first name",
+      "type": "text",
+      "required": true,
+      "max": 30,
+      "help": "This edition supports English and Western European letters. A first name is enough."
+    },
+    {
+      "name": "companion",
+      "label": "Story companion",
+      "type": "select",
+      "required": true,
+      "options": [
+        {
+          "value": "fox",
+          "label": "Fox"
+        },
+        {
+          "value": "rabbit",
+          "label": "Rabbit"
+        },
+        {
+          "value": "owl",
+          "label": "Owl"
+        }
+      ]
+    },
+    {
+      "name": "setting",
+      "label": "Story setting",
+      "type": "select",
+      "required": true,
+      "options": [
+        {
+          "value": "garden",
+          "label": "Garden"
+        },
+        {
+          "value": "forest",
+          "label": "Forest"
+        },
+        {
+          "value": "seaside",
+          "label": "Seaside"
+        }
+      ]
+    },
+    {
+      "name": "dedication",
+      "label": "A short dedication",
+      "type": "textarea",
+      "max": 200
+    }
+  ],
+  "actions": [
+    {
+      "id": "personalize",
+      "label": "Change the personalization",
+      "help": "Regenerates all eight pages from the fixed story template. Existing page edits and proof approval are replaced. Printed books cannot be edited.",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Book title",
+          "type": "text",
+          "required": true,
+          "defaultPath": "title"
+        },
+        {
+          "name": "childName",
+          "label": "Child's first name",
+          "type": "text",
+          "required": true,
+          "defaultPath": "personalization.childName"
+        },
+        {
+          "name": "companion",
+          "label": "Story companion",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "fox",
+              "label": "Fox"
+            },
+            {
+              "value": "rabbit",
+              "label": "Rabbit"
+            },
+            {
+              "value": "owl",
+              "label": "Owl"
+            }
+          ],
+          "defaultPath": "personalization.companion"
+        },
+        {
+          "name": "setting",
+          "label": "Story setting",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "garden",
+              "label": "Garden"
+            },
+            {
+              "value": "forest",
+              "label": "Forest"
+            },
+            {
+              "value": "seaside",
+              "label": "Seaside"
+            }
+          ],
+          "defaultPath": "personalization.setting"
+        },
+        {
+          "name": "dedication",
+          "label": "Dedication",
+          "type": "textarea",
+          "defaultPath": "personalization.dedication"
+        },
+        {
+          "name": "replacePages",
+          "label": "Replace all page edits with this personalization",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "edit-page",
+      "label": "Edit a story page",
+      "help": "Choose a page to load its current title and text. Every edit creates a new proof version and requires another adult approval. Text must fit the PDF page.",
+      "fields": [
+        {
+          "name": "pageId",
+          "label": "Page",
+          "type": "select",
+          "required": true,
+          "optionsPath": "pages"
+        },
+        {
+          "name": "title",
+          "label": "Page title",
+          "type": "text",
+          "required": true,
+          "max": 80,
+          "selectedFrom": {
+            "selector": "pageId",
+            "path": "pages",
+            "value": "title"
+          }
+        },
+        {
+          "name": "text",
+          "label": "Page text",
+          "type": "textarea",
+          "required": true,
+          "max": 1000,
+          "selectedFrom": {
+            "selector": "pageId",
+            "path": "pages",
+            "value": "text"
+          }
+        }
+      ]
+    },
+    {
+      "id": "approve-proof",
+      "label": "Approve the current proof",
+      "help": "Download and read every page of the current PDF first, including the spelling, dedication, and layout. Approval applies only to the version shown below.",
+      "fields": [
+        {
+          "name": "proofVersion",
+          "label": "Current proof version reviewed",
+          "type": "number",
+          "required": true,
+          "min": 1,
+          "defaultPath": "proofVersion"
+        },
+        {
+          "name": "approverName",
+          "label": "Adult approver's name",
+          "type": "text",
+          "required": true,
+          "defaultPath": "approval.approverName"
+        },
+        {
+          "name": "adult",
+          "label": "I am an adult responsible for this book",
+          "type": "checkbox",
+          "required": true
+        },
+        {
+          "name": "reviewedAllPages",
+          "label": "I reviewed every page of this PDF proof and approve it",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "place-order",
+      "label": "Confirm print order details",
+      "help": "Saves an order handoff for the approved proof. No payment is collected and nothing is sent to a printer automatically. After any page edit, approve the new proof and reconfirm this order.",
+      "fields": [
+        {
+          "name": "customerName",
+          "label": "Adult customer's name",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.customerName"
+        },
+        {
+          "name": "customerEmail",
+          "label": "Customer email",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.customerEmail"
+        },
+        {
+          "name": "recipientName",
+          "label": "Shipping recipient",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.recipientName"
+        },
+        {
+          "name": "addressLine1",
+          "label": "Street address",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.addressLine1"
+        },
+        {
+          "name": "addressLine2",
+          "label": "Apartment / unit (optional)",
+          "type": "text",
+          "defaultPath": "order.addressLine2"
+        },
+        {
+          "name": "city",
+          "label": "City",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.city"
+        },
+        {
+          "name": "region",
+          "label": "State / region",
+          "type": "text",
+          "defaultPath": "order.region"
+        },
+        {
+          "name": "postalCode",
+          "label": "Postal code",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.postalCode"
+        },
+        {
+          "name": "country",
+          "label": "Country",
+          "type": "text",
+          "required": true,
+          "defaultPath": "order.country"
+        },
+        {
+          "name": "quantity",
+          "label": "Number of books",
+          "type": "number",
+          "required": true,
+          "default": 1,
+          "min": 1,
+          "max": 10,
+          "defaultPath": "order.quantity"
+        },
+        {
+          "name": "adult",
+          "label": "I am an adult and these order details are correct",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "record-payment",
+      "label": "Record an external payment receipt",
+      "help": "Use only after payment was received through your chosen payment service. This record does not process a charge or verify the receipt with a bank.",
+      "fields": [
+        {
+          "name": "amount",
+          "label": "Amount received",
+          "type": "number",
+          "required": true,
+          "min": 0.01,
+          "max": 100000
+        },
+        {
+          "name": "currency",
+          "label": "Currency code",
+          "type": "text",
+          "required": true,
+          "default": "USD",
+          "help": "For example USD, GBP, or EUR."
+        },
+        {
+          "name": "receiptReference",
+          "label": "Real receipt / transaction reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "received",
+          "label": "This payment was actually received outside this application",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "record-print",
+      "label": "Record completed printing",
+      "help": "Only record this after your printer confirms completion of this approved edition. The reference is manually entered and is not independently verified by this application.",
+      "fields": [
+        {
+          "name": "provider",
+          "label": "Print provider",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "providerReference",
+          "label": "Real print job / receipt reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "completed",
+          "label": "The provider has actually completed printing this edition",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "record-shipment",
+      "label": "Record a real shipment",
+      "help": "Requires recorded printing and a tracking number. Carrier status is recorded manually; tracking is not polled automatically.",
+      "fields": [
+        {
+          "name": "carrier",
+          "label": "Shipping carrier",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "trackingNumber",
+          "label": "Tracking number",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "handedToCarrier",
+          "label": "The physical books have been handed to this carrier",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "cancel-order",
+      "label": "Cancel an unprinted order",
+      "help": "Records cancellation only. Contact your provider separately and arrange any required refund outside this application.",
+      "fields": [
+        {
+          "name": "reason",
+          "label": "Cancellation reason",
+          "type": "textarea",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "path": "source",
+      "title": "Story source"
+    },
+    {
+      "path": "personalization",
+      "title": "Personalization"
+    },
+    {
+      "path": "proofVersion",
+      "title": "Current proof version"
+    },
+    {
+      "path": "pages",
+      "title": "Read every page",
+      "columns": [
+        {
+          "key": "number",
+          "label": "Page"
+        },
+        {
+          "key": "title",
+          "label": "Title"
+        },
+        {
+          "key": "text",
+          "label": "Story"
+        }
+      ]
+    },
+    {
+      "path": "approval.approverName",
+      "title": "Adult proof approval"
+    },
+    {
+      "path": "fulfillmentNotice",
+      "title": "Physical book fulfillment"
+    },
+    {
+      "path": "orderSummary",
+      "title": "Current order and fulfillment record"
+    },
+    {
+      "path": "orderHistory",
+      "title": "Earlier cancelled orders",
+      "columns": [
+        {
+          "key": "createdAt",
+          "label": "Created"
+        },
+        {
+          "key": "status",
+          "label": "Status"
+        },
+        {
+          "key": "cancellationReason",
+          "label": "Reason"
+        },
+        {
+          "key": "paymentStatus",
+          "label": "Payment receipt"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "pdf",
+      "label": "Download current eight-page PDF proof"
+    },
+    {
+      "format": "txt",
+      "label": "Download order handoff"
+    }
+  ]
+}
