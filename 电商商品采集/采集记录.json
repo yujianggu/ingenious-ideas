@@ -1,0 +1,456 @@
+{
+  "collected_at": "2026-09-19T17:04:10.716586+08:00",
+  "existing_project": "/Users/yuwujian/Documents/ChatGPT/AI 验证",
+  "product_count": 20,
+  "sources": [
+    {
+      "platform": "唯品会",
+      "platform_code": "vip",
+      "entry_url": "https://www.vip.com",
+      "status": "collected_first_batch",
+      "product_count": 20,
+      "source_list_url": "https://list.vip.com/103711830.html"
+    },
+    {
+      "platform": "淘宝",
+      "platform_code": "taobao",
+      "entry_url": "https://www.taobao.com",
+      "status": "blocked_by_browser_site_safety_policy"
+    }
+  ],
+  "product_fields": [
+    "source_platform",
+    "source_product_id",
+    "source_url",
+    "name",
+    "brand",
+    "category",
+    "displayed_price",
+    "currency",
+    "price_conditions",
+    "image_urls",
+    "collected_at"
+  ],
+  "products": [
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921864049252536901",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921864049252536901.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】秋季复古纯棉弯刀裤遮肉显瘦牛仔裤女",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "146",
+      "reference_price": "399",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0425/5/374fcd24-d0bd-4d72-b9fd-9f7dc92a0f89_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921868201912496709",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921868201912496709.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "天丝莱赛尔秋季牛仔裤宽松松紧腰长裤复古风时尚弯刀天丝牛仔裤女",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "81",
+      "reference_price": "239",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0611/130/689517ce-12e0-483b-9a9f-dbd2950b2136_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921065445192230725",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921065445192230725.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "连帽卫衣男秋季舒适通勤宽松显瘦印花情侣装上衣休闲百搭基础内搭",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "46.5",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2025/1105/199/7bb842fd-3530-4af1-8aa5-1cfa28c0ff17_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921217605662539461",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921217605662539461.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "卫衣男春季时尚印花上衣情侣款宽松抽绳连帽套头简约百搭通勤上衣",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "65",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0104/47/9282a0f0-6fd0-465e-b368-c6cc974c8236_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921227479708089797",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921227479708089797.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "森柔|牛仔长袖衬衫秋季渐变设计感水洗休闲外套宽松翻领上衣男",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "89",
+      "reference_price": "299",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0327/126/26fedcb2-ca27-4fef-8444-34d4024e26bb_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921187121785446533",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921187121785446533.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "连帽卫衣男春季百搭宽松舒适休闲装印花弹力重磅帽衫刺绣外穿上衣",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "50",
+      "reference_price": "299",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2025/1218/35/ce8e9efb-b2f4-44a7-b253-7e2e598287f7_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921379764229508421",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921379764229508421.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【森柔】秋季直筒牛仔裤美式复古宽松直筒裤潮流舒适通勤直筒裤",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "97",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0611/175/85d0dfa9-2812-4da4-8630-1a7f4c4936ad_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921623488261968133",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921623488261968133.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "卫衣女秋冬加绒抽绳oversize连帽印花图案盐系慵懒风上衣",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "80",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0903/172/f80b61be-008f-4036-b23e-b9407194573a_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921823752694868677",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921823752694868677.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】宽松连帽卫衣男早秋港风花卉上衣外套潮",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "115",
+      "reference_price": "399",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2026/02/10/53/623ce33a-870a-4fbf-9328-27176969d0ed_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921388703111740165",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921388703111740165.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "春季卫衣字母印花宽松抽绳连帽上衣休闲个性简约松弛针织套头衫男",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "73",
+      "reference_price": "299",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0820/174/f1fa9302-f2a8-438f-ba95-0569720467bb_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921420673746529349",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921420673746529349.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【纯棉】泡泡袖衬衫夏季修身衬衣法式温柔绣花上衣小个子短袖衬衣",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "38",
+      "reference_price": "199",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00104218/10004116/1963110596-3188907532856086529-3188907532856090625-1_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6920752385476901381",
+      "source_url": "https://detail.vip.com/detail-1710613157-6920752385476901381.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【纯棉】休闲复古衬衫领工装裙夏短款收腰显瘦A字连衣裙质感通勤",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "46.5",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2025/0416/134/277cd804-f6a3-44e7-b73f-bf5c25b3580d_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921623488156815621",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921623488156815621.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "冬字母绣花oversize加绒连帽设计感打底衫潮酷针织卫衣女",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "97",
+      "reference_price": "299",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00104218/10004116/1394634375-7367122137414230016-7367122137414234126-1_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921217605784321733",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921217605784321733.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "森柔牛仔|高腰阔腿长裤宽松做旧显腿长通勤百搭秋季阔腿牛仔裤女",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "94",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0202/94/a1609f28-d780-40eb-ac30-08ea7c951fc9_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921813352198736581",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921813352198736581.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】牛津纺条纹长袖衬衫男翻领休闲外套秋款",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "118",
+      "reference_price": "399",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2026/02/03/94/c31fd135-cea4-4de2-bc4c-5d3a5d85488a_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6922113609615188549",
+      "source_url": "https://detail.vip.com/detail-1710613157-6922113609615188549.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】时尚休闲麂皮绒卫衣男秋季重磅中性上衣",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "62.15",
+      "reference_price": "229",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2026/08/29/62/420d454c-92e8-4216-933f-96d59635456b_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921714765594087301",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921714765594087301.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "连帽卫衣男春季联名系列休闲百搭上衣潮流宽松印花舒适帽衫",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "61",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0227/178/0d176487-47bd-4102-8af5-e3fe21287540_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921872741542725125",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921872741542725125.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】秋季含莱赛尔复古高腰直筒裤百搭牛仔裤女",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "137",
+      "reference_price": "599",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2026/03/25/126/80fe44ce-ef20-4a3b-8a33-098cccd728a2_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921603265876096389",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921603265876096389.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "秋季复古拼接格纹连帽上衣字母印花宽松套头服休闲通勤舒适卫衣男",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "104",
+      "reference_price": "259",
+      "currency": "CNY",
+      "price_conditions": "新人价；页面标注新人9.5折，实际资格与结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0820/59/49e5af11-a7e0-43e2-8cca-7d7e852ff784_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    },
+    {
+      "source_platform": "唯品会",
+      "platform_code": "vip",
+      "source_product_id": "6921846754242206405",
+      "source_url": "https://detail.vip.com/detail-1710613157-6921846754242206405.html",
+      "source_list_url": "https://list.vip.com/103711830.html",
+      "name": "【JASON WU联名】含莱赛尔秋季韩版工装拼接阔腿裤牛仔裤",
+      "brand": "森马 SEMIR",
+      "brand_evidence": "森马SEMIR专场",
+      "category": "服装",
+      "displayed_price": "126",
+      "reference_price": "999",
+      "currency": "CNY",
+      "price_conditions": "特卖价；列表展示价，结算价未核验",
+      "image_urls": [
+        "https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/104218/2026/0420/99/ea959da2-f00a-47f6-8257-612c58c83d36_470x470_90.jpg"
+      ],
+      "collected_at": "2026-09-19T17:04:10.716586+08:00",
+      "collection_method": "Chrome已登录页面DOM，只读首个列表页",
+      "detail_verified": false
+    }
+  ]
+}
