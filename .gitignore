@@ -36,9 +36,9 @@ node_modules/
 # base-kb 是 Git 子模块，其内部忽略规则由子模块自行管理。
 
 # Episode Desk generated artifacts
-coding/**/dist/
-coding/**/.expo/
-coding/**/coverage/
-coding/backend/data/
-coding/**/test-results/
-coding/**/playwright-report/
+**/coding/**/dist/
+**/coding/**/.expo/
+**/coding/**/coverage/
+**/coding/backend/data/
+**/coding/**/test-results/
+**/coding/**/playwright-report/

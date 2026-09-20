@@ -32,4 +32,4 @@
 
 ## 编码交付
 
-源码位于仓库根[coding](../../../../../../coding/README.md)，分别包含backend、frontend和app。实现与测试见[需求覆盖](../../../../../../coding/docs/requirements-coverage.md)和[验收记录](../../../../../../coding/docs/verification.md)。阶段表记录原商业推进关口；本次代码开发由用户单独授权，不据此追认付费验证或正式上市。
+源码位于本 idea 的 [coding](coding/README.md)，分别包含backend、frontend和app。实现与测试见[需求覆盖](coding/docs/requirements-coverage.md)和[验收记录](coding/docs/verification.md)。阶段表记录原商业推进关口；本次代码开发由用户单独授权，不据此追认付费验证或正式上市。

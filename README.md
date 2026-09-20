@@ -30,4 +30,4 @@
 
 ## 海外项目代码
 
-[Overseas Studio：8 个独立海外项目](coding/README.md)：backend、frontend、app 三端代码；B04 播客工作台及 B01/B06/B09/C04/C14/C15/C17 的业务模块、运行说明与验收记录。
+[海外项目代码索引](AI创业调研-StarterStory/09-实施方案/海外市场/独立选题重建/代码索引.md)：8 个 idea 各自维护 `coding/backend`、`coding/frontend`、`coding/app`，分别启动、测试和部署。

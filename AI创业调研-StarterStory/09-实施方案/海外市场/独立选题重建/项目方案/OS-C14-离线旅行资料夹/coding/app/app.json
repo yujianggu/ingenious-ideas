@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "C14 · 离线旅行资料夹",
+    "slug": "os-c14",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osc14",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osc14"
+    },
+    "android": {
+      "package": "com.ideas.osc14"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "C14 · 离线旅行资料夹"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

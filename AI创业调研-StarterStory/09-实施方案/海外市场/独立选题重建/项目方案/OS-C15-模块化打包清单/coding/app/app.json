@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "C15 · 模块化打包清单",
+    "slug": "os-c15",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osc15",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osc15"
+    },
+    "android": {
+      "package": "com.ideas.osc15"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "C15 · 模块化打包清单"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}
