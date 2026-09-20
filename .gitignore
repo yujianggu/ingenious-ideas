@@ -1,0 +1,36 @@
+# 操作系统生成的元数据
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# 本地编辑器配置与临时文件
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.tmp
+
+# Python 缓存、虚拟环境与工具缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 本地依赖与运行日志
+node_modules/
+*.log
+
+# 本地环境配置；保留可共享的示例
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# 项目文档、HTML 原型、图片、JSON 证据和历史归档均保留。
+# base-kb 是 Git 子模块，其内部忽略规则由子模块自行管理。
