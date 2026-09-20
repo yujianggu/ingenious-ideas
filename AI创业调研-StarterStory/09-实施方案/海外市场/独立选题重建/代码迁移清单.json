@@ -1,0 +1,66 @@
+[
+  {
+    "code": "B01",
+    "name": "行业知识库客服",
+    "path": "项目方案/OS-B01-行业知识库客服",
+    "apiPort": 8011,
+    "webPort": 5111,
+    "appPort": 8111
+  },
+  {
+    "code": "B04",
+    "name": "英语播客成品包",
+    "path": "项目方案/OS-B04-英语播客成品包",
+    "apiPort": 8000,
+    "webPort": 5173,
+    "appPort": 8081
+  },
+  {
+    "code": "B06",
+    "name": "本地商家建站服务",
+    "path": "项目方案/OS-B06-本地商家建站服务",
+    "apiPort": 8016,
+    "webPort": 5116,
+    "appPort": 8116
+  },
+  {
+    "code": "B09",
+    "name": "销售研究与邮件草稿",
+    "path": "项目方案/OS-B09-销售研究与邮件草稿",
+    "apiPort": 8019,
+    "webPort": 5119,
+    "appPort": 8119
+  },
+  {
+    "code": "C04",
+    "name": "个性化实体绘本",
+    "path": "项目方案/OS-C04-个性化实体绘本",
+    "apiPort": 8024,
+    "webPort": 5124,
+    "appPort": 8124
+  },
+  {
+    "code": "C14",
+    "name": "离线旅行资料夹",
+    "path": "项目方案/OS-C14-离线旅行资料夹",
+    "apiPort": 8034,
+    "webPort": 5134,
+    "appPort": 8134
+  },
+  {
+    "code": "C15",
+    "name": "模块化打包清单",
+    "path": "项目方案/OS-C15-模块化打包清单",
+    "apiPort": 8035,
+    "webPort": 5135,
+    "appPort": 8135
+  },
+  {
+    "code": "C17",
+    "name": "混合书刊目录",
+    "path": "项目方案/OS-C17-混合书刊目录",
+    "apiPort": 8037,
+    "webPort": 5137,
+    "appPort": 8137
+  }
+]

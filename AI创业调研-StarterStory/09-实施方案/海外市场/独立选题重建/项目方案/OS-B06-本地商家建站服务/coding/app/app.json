@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "B06 · 本地商家建站服务",
+    "slug": "os-b06",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osb06",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osb06"
+    },
+    "android": {
+      "package": "com.ideas.osb06"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "B06 · 本地商家建站服务"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "C17 · 混合书刊目录",
+    "slug": "os-c17",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "osc17",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ideas.osc17"
+    },
+    "android": {
+      "package": "com.ideas.osc17"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "C17 · 混合书刊目录"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-document-picker"
+    ]
+  }
+}

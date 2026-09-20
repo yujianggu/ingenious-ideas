@@ -1,0 +1,41 @@
+# B01 — Answer Ledger
+
+Answer Ledger is an English-language knowledge desk for preparing support replies with traceable evidence. It retrieves verbatim excerpts using deterministic word overlap. It does not use AI, fetch source URLs, send replies, or contact a human automatically.
+
+## Workflow
+
+1. Create a desk with its name and human escalation owner/team.
+2. Add a source title, URL, and full authorized source text. Explicitly confirm your right to use it. Each source begins at version 1.
+3. Add the customer question and optional order/ticket reference. Avoid unnecessary personal information.
+4. Retrieve evidence. The system removes common English question words, lowercases tokens, applies a small plural normalization, and ranks source passages by shared words. A passage needs two shared significant words (one when the question has only one). It returns up to three verbatim excerpts, ordered deterministically by overlap and source/passage order. It is a lexical aid, not a confidence score or an answer-correctness judgment. Passages longer than 1,200 characters are skipped; split long source paragraphs into shorter passages.
+5. When nothing qualifies, the ticket becomes `needs-human`. No response or citations are fabricated. Record a human handoff note; obtain and add supporting knowledge before trying again.
+6. For a supported draft, inspect the exact excerpts, source URLs, and source versions. Optionally replace the response with a clear answer. Check every claim and explicitly approve it.
+7. Export currently approved replies as text or CSV. After handling the ticket in your support system, close it with an explicit confirmation and handling note.
+
+Every source add, replacement, or retirement advances the knowledge version and changes existing drafted/reviewed tickets to `needs-refresh`. That deliberately conservative rule also catches newly added policies that could contradict old answers. Retrieve and review again. Replacing or retiring a source retains the prior content/version. Each approval retains a copy of its response and citations for review history. Every closure retains an immutable `closureHistory` snapshot of the handling reference, closure/approval dates, knowledge version, response, and citations. Re-drafting, editing, and knowledge changes preserve these receipts even while clearing the current closure state. Reopening a previously closed ticket through re-drafting or editing requires fresh approval and closure.
+
+## API and data
+
+Uses the shared private `/api/products/B01/records` API. Root-level authentication, owner isolation, and optimistic revision checks are provided by the shared product router. Every action body includes the current `revision` at the API boundary. Domain functions return copies and do not accept owner/code/revision replacement.
+
+Create fields: `title`, optional `escalationQueue` (defaults to Support owner).
+
+| Action | Business fields |
+| --- | --- |
+| `add-source` | `title`, `url`, `content`, `authorized: true` |
+| `update-source` | `sourceId` plus the same full source fields |
+| `retire-source` | `sourceId` |
+| `add-ticket` | `question`, optional `customerLabel` |
+| `draft-response` | `ticketId` |
+| `edit-response` | `ticketId`, `draft` |
+| `review-response` | `ticketId`, `confirmed: true` |
+| `record-escalation` | `ticketId`, `note` |
+| `close-ticket` | `ticketId`, `confirmed: true`, `note` |
+
+Record fields include `knowledgeVersion`, `sources[]`, and `tickets[]`. Sources retain `id`, `title`, `url`, `content`, `active`, `authorizedAt`, `version`, and `history[]`. Source URLs require valid HTTP(S) ports and reject credentials, whitespace, and control characters. Tickets retain the question, status, draft, `citations[]`, knowledge version, review/closure dates, escalation/handling notes, prior approval snapshots, and `closureHistory[]`. Citations include source ID/title/URL/version and the exact quote. Ticket states are `open`, `draft`, `needs-human`, `approved`, `closed`, and `needs-refresh`.
+
+`txt` and `csv` exports contain only currently approved or closed replies, with evidence references. They return 422 if none are exportable. CSV cells that could be spreadsheet formulas are escaped. The shared JSON backup contains all workflow data, including drafts and histories; it is not an approval-gated delivery export. Limits: 100 sources, 1,000 tickets per desk, 50,000 characters per source, 4,000 per question, and 12,000 per edited response.
+
+## Verification and remaining integrations
+
+`cd backend && .venv/bin/python -m pytest tests/test_domain.py -q` covers authorization, abstention, exact citation evidence, copy-on-write behavior, review/closure gates, version invalidation, source retirement, closure-receipt preservation, strict URL validation, and exports. Automated retrieval can miss synonyms and can retrieve relevant-looking text that does not answer a question; human checking remains necessary. Production source connectors, semantic retrieval, real help-desk synchronization, and automated escalation delivery are not implemented.

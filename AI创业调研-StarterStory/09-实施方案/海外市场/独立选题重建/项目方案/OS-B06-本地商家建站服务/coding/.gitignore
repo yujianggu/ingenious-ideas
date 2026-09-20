@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+dist/
+.expo/
+coverage/
+backend/data/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example

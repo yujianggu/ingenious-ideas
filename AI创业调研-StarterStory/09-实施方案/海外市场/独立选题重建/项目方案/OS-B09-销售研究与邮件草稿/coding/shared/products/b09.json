@@ -1,0 +1,534 @@
+{
+  "code": "B09",
+  "name": "Company Brief",
+  "summary": "Collect sourced company facts, verify the evidence, assess customer fit, and review a grounded email draft. Manual research and fixed templates; no contact harvesting or sending.",
+  "recordLabel": "Company brief",
+  "create": [
+    {
+      "name": "title",
+      "label": "Brief name",
+      "type": "text",
+      "required": true,
+      "help": "For example: Acme — autumn outreach research"
+    },
+    {
+      "name": "companyName",
+      "label": "Company name",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "website",
+      "label": "Company website",
+      "type": "text",
+      "required": true,
+      "help": "An http or https company URL."
+    },
+    {
+      "name": "icp",
+      "label": "Ideal customer profile phrases",
+      "type": "textarea",
+      "required": true,
+      "help": "Comma-separated phrases, such as logistics, warehouse. The assessment reports literal matches in verified facts; you decide the fit."
+    },
+    {
+      "name": "offer",
+      "label": "Your offer",
+      "type": "textarea",
+      "required": true,
+      "help": "Describe what you can actually provide. This is your own statement and is included in the email template."
+    }
+  ],
+  "actions": [
+    {
+      "id": "add-source",
+      "label": "Add company source",
+      "help": "Capture company-level information and its public URL. A source is evidence you supply; it is not independently verified by the application.",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Source title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "url",
+          "label": "Source URL",
+          "type": "text",
+          "required": true,
+          "help": "A public company-level page you have checked. No scraping is performed."
+        },
+        {
+          "name": "content",
+          "label": "Published company text",
+          "type": "textarea",
+          "required": true,
+          "help": "Paste the relevant text from the source. Keep personal contact details out of this research."
+        }
+      ]
+    },
+    {
+      "id": "add-fact",
+      "label": "Add sourced company fact",
+      "help": "Choose a source and copy its supporting quote. New facts remain unverified until you check them.",
+      "fields": [
+        {
+          "name": "sourceId",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "optionsPath": "sources"
+        },
+        {
+          "name": "category",
+          "label": "Fact category",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "overview",
+              "label": "Company overview"
+            },
+            {
+              "value": "industry",
+              "label": "Industry"
+            },
+            {
+              "value": "location",
+              "label": "Location"
+            },
+            {
+              "value": "size",
+              "label": "Company size"
+            },
+            {
+              "value": "operations",
+              "label": "Operations"
+            },
+            {
+              "value": "initiative",
+              "label": "Initiative"
+            },
+            {
+              "value": "product",
+              "label": "Product or service"
+            }
+          ]
+        },
+        {
+          "name": "statement",
+          "label": "Company fact",
+          "type": "textarea",
+          "required": true,
+          "help": "A concrete, checkable statement supported by the source."
+        },
+        {
+          "name": "quote",
+          "label": "Exact supporting quote",
+          "type": "textarea",
+          "required": true,
+          "help": "Copy the relevant words from the source text. Whitespace differences are allowed; invented quotes are rejected."
+        }
+      ]
+    },
+    {
+      "id": "verify-fact",
+      "label": "Verify a company fact",
+      "help": "Read the fact, quote, and original source. Only facts you explicitly verify enter the research and email draft.",
+      "fields": [
+        {
+          "name": "factId",
+          "label": "Company fact",
+          "type": "select",
+          "required": true,
+          "optionsPath": "facts"
+        },
+        {
+          "name": "confirmed",
+          "label": "I checked this company-level statement against its quoted source",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "review-research",
+      "label": "Review research and fit",
+      "help": "Check verified facts and the phrase overlap assessment. The fit decision and notes are your judgment. Unverified facts are excluded.",
+      "fields": [
+        {
+          "name": "fit",
+          "label": "Your fit decision",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "good",
+              "label": "Good fit"
+            },
+            {
+              "value": "maybe",
+              "label": "Needs more research"
+            },
+            {
+              "value": "poor",
+              "label": "Poor fit"
+            }
+          ],
+          "defaultPath": "research.fit"
+        },
+        {
+          "name": "notes",
+          "label": "Why this company fits or does not fit",
+          "type": "textarea",
+          "required": true,
+          "defaultPath": "research.notes"
+        },
+        {
+          "name": "confirmed",
+          "label": "I reviewed the verified facts, their sources, and the ICP assessment",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "draft-email",
+      "label": "Create email draft",
+      "help": "Builds a fixed template from up to three verified facts and your offer. Review the current research first. No email is sent.",
+      "fields": [],
+      "when": {
+        "path": "research.status",
+        "equals": "approved"
+      }
+    },
+    {
+      "id": "edit-email",
+      "label": "Revise email draft",
+      "help": "Replace the full subject and body. Keep company claims supported by the attached evidence. Editing clears email approval.",
+      "fields": [
+        {
+          "name": "subject",
+          "label": "Subject",
+          "type": "text",
+          "required": true,
+          "defaultPath": "email.subject"
+        },
+        {
+          "name": "body",
+          "label": "Complete email body",
+          "type": "textarea",
+          "required": true,
+          "defaultPath": "email.body"
+        }
+      ]
+    },
+    {
+      "id": "review-email",
+      "label": "Approve email draft",
+      "help": "Check the full draft and its cited evidence. Approval enables the text export; it does not send an email.",
+      "fields": [
+        {
+          "name": "confirmed",
+          "label": "Every company claim is supported and our offer is accurate",
+          "type": "checkbox",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "update-fact",
+      "label": "Replace a company fact",
+      "help": "Revising a fact clears its verification and makes research and email reviews stale.",
+      "fields": [
+        {
+          "name": "factId",
+          "label": "Company fact",
+          "type": "select",
+          "required": true,
+          "optionsPath": "facts"
+        },
+        {
+          "name": "sourceId",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "optionsPath": "sources",
+          "selectedFrom": {
+            "selector": "factId",
+            "path": "facts",
+            "value": "sourceId"
+          }
+        },
+        {
+          "name": "category",
+          "label": "Fact category",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "overview",
+              "label": "Company overview"
+            },
+            {
+              "value": "industry",
+              "label": "Industry"
+            },
+            {
+              "value": "location",
+              "label": "Location"
+            },
+            {
+              "value": "size",
+              "label": "Company size"
+            },
+            {
+              "value": "operations",
+              "label": "Operations"
+            },
+            {
+              "value": "initiative",
+              "label": "Initiative"
+            },
+            {
+              "value": "product",
+              "label": "Product or service"
+            }
+          ],
+          "selectedFrom": {
+            "selector": "factId",
+            "path": "facts",
+            "value": "category"
+          }
+        },
+        {
+          "name": "statement",
+          "label": "Company fact",
+          "type": "textarea",
+          "required": true,
+          "help": "A concrete, checkable statement supported by the source.",
+          "selectedFrom": {
+            "selector": "factId",
+            "path": "facts",
+            "value": "statement"
+          }
+        },
+        {
+          "name": "quote",
+          "label": "Exact supporting quote",
+          "type": "textarea",
+          "required": true,
+          "help": "Copy the relevant words from the source text. Whitespace differences are allowed; invented quotes are rejected.",
+          "selectedFrom": {
+            "selector": "factId",
+            "path": "facts",
+            "value": "quote"
+          }
+        }
+      ]
+    },
+    {
+      "id": "update-source",
+      "label": "Replace a company source",
+      "help": "Paste the complete replacement. Linked facts become stale and must be updated and verified. Earlier source versions remain available.",
+      "fields": [
+        {
+          "name": "sourceId",
+          "label": "Source",
+          "type": "select",
+          "required": true,
+          "optionsPath": "sources"
+        },
+        {
+          "name": "title",
+          "label": "Source title",
+          "type": "text",
+          "required": true,
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "title"
+          }
+        },
+        {
+          "name": "url",
+          "label": "Source URL",
+          "type": "text",
+          "required": true,
+          "help": "A public company-level page you have checked. No scraping is performed.",
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "url"
+          }
+        },
+        {
+          "name": "content",
+          "label": "Published company text",
+          "type": "textarea",
+          "required": true,
+          "help": "Paste the relevant text from the source. Keep personal contact details out of this research.",
+          "selectedFrom": {
+            "selector": "sourceId",
+            "path": "sources",
+            "value": "content"
+          }
+        }
+      ]
+    },
+    {
+      "id": "update-profile",
+      "label": "Update company and offer",
+      "help": "Replace the profile fields. A different company name or website requires every fact to be verified again. Any profile change requires a fresh research review and email draft.",
+      "fields": [
+        {
+          "name": "companyName",
+          "label": "Company name",
+          "type": "text",
+          "required": true,
+          "defaultPath": "companyName"
+        },
+        {
+          "name": "website",
+          "label": "Company website",
+          "type": "text",
+          "required": true,
+          "help": "An http or https company URL.",
+          "defaultPath": "website"
+        },
+        {
+          "name": "icp",
+          "label": "Ideal customer profile phrases",
+          "type": "textarea",
+          "required": true,
+          "help": "Comma-separated phrases, such as logistics, warehouse. The assessment reports literal matches in verified facts; you decide the fit.",
+          "defaultPath": "icp"
+        },
+        {
+          "name": "offer",
+          "label": "Your offer",
+          "type": "textarea",
+          "required": true,
+          "help": "Describe what you can actually provide. This is your own statement and is included in the email template.",
+          "defaultPath": "offer"
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "path": "method",
+      "title": "How this brief works"
+    },
+    {
+      "path": "companyName",
+      "title": "Company"
+    },
+    {
+      "path": "website",
+      "title": "Company website"
+    },
+    {
+      "path": "icp",
+      "title": "Ideal customer profile"
+    },
+    {
+      "path": "offer",
+      "title": "Your offer"
+    },
+    {
+      "path": "facts",
+      "title": "Company facts and evidence",
+      "columns": [
+        {
+          "key": "statement",
+          "label": "Company fact"
+        },
+        {
+          "key": "category",
+          "label": "Category"
+        },
+        {
+          "key": "status",
+          "label": "Verification"
+        },
+        {
+          "key": "quote",
+          "label": "Supporting quote"
+        },
+        {
+          "key": "sourceTitle",
+          "label": "Source"
+        },
+        {
+          "key": "sourceUrl",
+          "label": "Source URL"
+        },
+        {
+          "key": "sourceVersion",
+          "label": "Source version"
+        },
+        {
+          "key": "verifiedAt",
+          "label": "Verified"
+        },
+        {
+          "key": "history",
+          "label": "Earlier fact versions"
+        }
+      ]
+    },
+    {
+      "path": "assessment",
+      "title": "Literal phrase assessment"
+    },
+    {
+      "path": "research",
+      "title": "Research review"
+    },
+    {
+      "path": "email",
+      "title": "Email draft and citations"
+    },
+    {
+      "path": "sources",
+      "title": "Versioned source library",
+      "columns": [
+        {
+          "key": "title",
+          "label": "Source"
+        },
+        {
+          "key": "url",
+          "label": "URL"
+        },
+        {
+          "key": "version",
+          "label": "Version"
+        },
+        {
+          "key": "content",
+          "label": "Published text"
+        },
+        {
+          "key": "recordedAt",
+          "label": "Recorded"
+        },
+        {
+          "key": "history",
+          "label": "Earlier versions"
+        }
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "format": "csv",
+      "label": "Reviewed company facts (.csv)"
+    },
+    {
+      "format": "txt",
+      "label": "Reviewed research and email (.txt)"
+    }
+  ]
+}

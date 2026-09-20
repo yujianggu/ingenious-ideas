@@ -1,0 +1,13 @@
+{
+  "name": "episode-desk-integration",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:api": "node api-e2e.mjs",
+    "test:web": "node web-e2e.cjs",
+    "test:app": "node app-e2e.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
