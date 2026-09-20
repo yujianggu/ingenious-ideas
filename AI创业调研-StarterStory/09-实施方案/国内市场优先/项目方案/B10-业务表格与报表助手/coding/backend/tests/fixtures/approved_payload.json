@@ -1,0 +1,119 @@
+{
+  "client": "a",
+  "task": "t1",
+  "revision": 1,
+  "state": "reviewed",
+  "input_snapshot": {
+    "orders": [
+      {
+        "shop": "a",
+        "order": "1",
+        "paid": 100000,
+        "source_file": "/private/customer/orders.xlsx",
+        "sheet": "Orders",
+        "row_index": 2
+      }
+    ],
+    "refunds": [
+      {
+        "id": "r1",
+        "shop": "a",
+        "order": "1",
+        "amount": 10000,
+        "source_file": "/private/customer/refunds.xlsx",
+        "sheet": "Refunds",
+        "row_index": 3
+      }
+    ],
+    "ads": 5000
+  },
+  "report_snapshot": {
+    "paid_less_refund": 90000,
+    "ads": 5000,
+    "exceptions": [],
+    "exception_details": [],
+    "refund_audit": [
+      {
+        "shop": "a",
+        "order": "1",
+        "paid": 100000,
+        "refund": 10000,
+        "refund_ids": ["r1"]
+      }
+    ],
+    "metrics": {
+      "paid_less_refund": {
+        "value": 90000,
+        "reason": null,
+        "rule_version": "b10-reporting-v1",
+        "currency": "CNY",
+        "places": 2,
+        "period": "2026-09",
+        "sources": [
+          {
+            "category": "orders",
+            "source_file": "/private/customer/orders.xlsx",
+            "sheet": "Orders",
+            "row_index": 2,
+            "source_file_id": "orders-source-1",
+            "batch_id": "orders-batch-1"
+          },
+          {
+            "category": "refunds",
+            "source_file": "/private/customer/refunds.xlsx",
+            "sheet": "Refunds",
+            "row_index": 3,
+            "source_file_id": "refunds-source-1",
+            "batch_id": "refunds-batch-1"
+          }
+        ]
+      },
+      "ads": {
+        "value": 5000,
+        "reason": null,
+        "rule_version": "b10-reporting-v1",
+        "currency": "CNY",
+        "places": 2,
+        "period": "2026-09",
+        "sources": [
+          {
+            "category": "ads",
+            "source_file": "/private/customer/ads.xlsx",
+            "sheet": "Ads",
+            "row_index": 4,
+            "source_file_id": "ads-source-1",
+            "batch_id": "ads-batch-1"
+          }
+        ]
+      }
+    },
+    "rule_version": "b10-reporting-v1",
+    "currency": "CNY",
+    "places": 2,
+    "period": "2026-09",
+    "orders": [],
+    "refunds": []
+  },
+  "metric_rules": {
+    "version": "b10-reporting-v1",
+    "money_unit": "minor",
+    "display_places": 2
+  },
+  "resolutions": [],
+  "delivery_instance_id": null,
+  "confirmation_proof": null,
+  "confirmation_proofs": [],
+  "events": [
+    {
+      "action": "review",
+      "from_state": "submitted",
+      "to_state": "reviewed",
+      "actor": {
+        "name": "reviewer",
+        "channel": "internal",
+        "evidence": "fictional-review-evidence"
+      },
+      "reason": "checked"
+    }
+  ]
+}

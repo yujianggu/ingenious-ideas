@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:17.11
+    environment:
+      POSTGRES_DB: b16_proofing_dev
+      POSTGRES_USER: b16_test
+      POSTGRES_PASSWORD: b16_test_local_only
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U b16_test -d b16_proofing_dev"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    working_dir: /app
+    environment:
+      B16_DB_NAME: b16_proofing_dev
+      B16_DB_USER: b16_test
+      B16_DB_PASSWORD: b16_test_local_only
+      B16_DB_HOST: postgres
+      B16_DB_PORT: 5432
+    depends_on:
+      postgres:
+        condition: service_healthy
