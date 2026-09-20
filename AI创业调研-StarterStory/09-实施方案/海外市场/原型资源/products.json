@@ -1,0 +1,608 @@
+{
+  "B16": {
+    "name": "Proof Ledger",
+    "tag": "Send the right version to print.",
+    "noun": "proof",
+    "roles": [
+      "Studio",
+      "Customer"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Order name",
+        "value": "Autumn flyer",
+        "type": "text"
+      },
+      {
+        "key": "customer",
+        "label": "Customer",
+        "value": "Alex Morgan",
+        "type": "text"
+      },
+      {
+        "key": "content",
+        "label": "Proof text",
+        "value": "Autumn Market\nSeptember 26, 2026 · 10:00 AM\nRiverside Hall",
+        "type": "textarea"
+      }
+    ],
+    "features": [
+      [
+        "版本与请求",
+        "店员保存订单、指定客户及校样，发送时冻结文件与版本；编辑已发送稿必须新建版本。",
+        "草稿 → 待确认",
+        "缺订单、客户或稿件阻止发送；旧版请求失效。"
+      ],
+      [
+        "客户核对",
+        "客户打开指定版本，阅读内容后确认或填写修改位置退回。",
+        "待确认 → 已确认／退回",
+        "未阅读不能确认；无修改意见不能退回；旧请求提交被拒绝。"
+      ],
+      [
+        "印前复核",
+        "店员比对当前版与有效回执，再登记复核人和时间。",
+        "已确认 → 印前已复核",
+        "旧回执不适用新版，复核不自动触发印刷。"
+      ],
+      [
+        "版本与导出",
+        "历史稿件、处理意见、确认及复核事件按版本保留并导出。",
+        "任意已保存状态 → 原状态",
+        "导出不改变业务状态；不能将确认记录当法律签章。"
+      ]
+    ],
+    "code": "B16",
+    "scope": "订单、文件版本、指定确认人、确认／退回、回执、额度和导出；不设计稿件、不保证色彩、不自动印刷",
+    "capacity": "最多2店、合计10个低风险订单；每店50单／月、2GB"
+  },
+  "B10": {
+    "name": "Weekly Figures",
+    "tag": "A report you can trace back to its source.",
+    "noun": "report period",
+    "roles": [
+      "Client",
+      "Analyst"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Reporting period",
+        "value": "2026-09-14 / 2026-09-20",
+        "type": "text"
+      },
+      {
+        "key": "sales",
+        "label": "Receipts (USD)",
+        "value": "12800",
+        "type": "number"
+      },
+      {
+        "key": "refund",
+        "label": "Refunds in period (USD)",
+        "value": "680",
+        "type": "number"
+      },
+      {
+        "key": "ads",
+        "label": "Advertising spend (USD)",
+        "value": "950",
+        "type": "number"
+      },
+      {
+        "key": "source",
+        "label": "Source batch reference",
+        "value": "orders-week38 / refunds-week38 / ads-week38",
+        "type": "text"
+      }
+    ],
+    "features": [
+      [
+        "输入及口径",
+        "客户按约定期间提供订单、退款、广告文件，确认币种、发生口径和冻结批次。",
+        "草稿 → 已提交",
+        "缺字段、混币、列名变化和无法解释跨期必须阻断正式生成。"
+      ],
+      [
+        "确定性计算与复核",
+        "交付人员检查来源批次，按版本化规则对账，填写差异解释后出报告。",
+        "已提交／修订 → 待验收",
+        "金额按最小货币单位计算；缺成本不输出净利润；差异未解释不交付。"
+      ],
+      [
+        "验收及修订",
+        "客户查看摘要与来源，确认本期成果或写明问题退回；修订保留旧报告。",
+        "待验收 → 已验收／修订",
+        "重复交付或重复确认不增加结果；输入变更生成新交付版本。"
+      ],
+      [
+        "最终工作簿",
+        "交付摘要、店铺对照、异常、明细、口径字典、运行说明及版本索引。",
+        "已交付 → 可下载",
+        "正式Excel必须与冻结输入复算一致；原型JSON只覆盖示例计算。"
+      ]
+    ],
+    "code": "B10",
+    "scope": "固定三表、单一报告币种、确定性计算、异常清单、来源追溯和口径字典；不做税务判断、多币种自动汇总或任意表格分析",
+    "capacity": "首期最多2家；一套订单／退款／广告输入、每月4次报告；接入与月包分开"
+  },
+  "B05": {
+    "name": "Training Desk",
+    "tag": "Turn source material into reviewed questions.",
+    "noun": "training brief",
+    "roles": [
+      "Trainer",
+      "Reviewer"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Training topic",
+        "value": "New team: beverage basics",
+        "type": "text"
+      },
+      {
+        "key": "material",
+        "label": "Source material",
+        "value": "Page 1: Oat latte uses oat milk.\nPage 2: The regular cup holds 350 ml.",
+        "type": "textarea"
+      },
+      {
+        "key": "question",
+        "label": "Sample question",
+        "value": "Which milk is used in the oat latte?",
+        "type": "text"
+      },
+      {
+        "key": "answer",
+        "label": "Verified answer",
+        "value": "Oat milk",
+        "type": "text"
+      },
+      {
+        "key": "source",
+        "label": "Source reference",
+        "value": "Page 1",
+        "type": "text"
+      }
+    ],
+    "features": [
+      [
+        "培训委托",
+        "客户提供授权材料、岗位、难度、题型与用途；先约定样题口径。",
+        "草稿 → 已提交",
+        "无授权或专业审题人不进入出题；扫描件不能静默视作已识别。"
+      ],
+      [
+        "审题与出处",
+        "审题人逐题检查问题、答案、解释与精确出处并签认。",
+        "已提交／修订 → 样题待确认",
+        "出处缺失、材料未覆盖或答案歧义退回，AI不能替代专业审题。"
+      ],
+      [
+        "样题校准",
+        "客户确认题型及难度或写明修订；样题通过只释放完整题包制作。",
+        "样题待确认 → 样题确认／修订",
+        "一道样题不标成100题全部验收，范围变更重新估价。"
+      ],
+      [
+        "完整题包交付",
+        "交付编号题库、答案解析、出处索引、审核记录、导入模板与版本表。",
+        "全题审核 → 题包待验收 → 已验收",
+        "100题逐题检查、重复题排查及约定平台导入另行验收。"
+      ]
+    ],
+    "code": "B05",
+    "scope": "知识点覆盖、100题题干选项答案解析和出处、导入格式；不做考试平台、资格认证或员工能力自动判断",
+    "capacity": "100题包，10题校准计入100题；首月最多2包，一种导入格式与一次范围内修订"
+  },
+  "C01": {
+    "name": "Career Draft",
+    "tag": "Your experience, clearly expressed.",
+    "noun": "job brief",
+    "roles": [
+      "Applicant",
+      "Advisor"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Target role",
+        "value": "E-commerce operations coordinator",
+        "type": "text"
+      },
+      {
+        "key": "experience",
+        "label": "Your actual experience",
+        "value": "Prepared weekly search-term reports and reviewed proposed changes with my manager.",
+        "type": "textarea"
+      },
+      {
+        "key": "draft",
+        "label": "Reviewed resume text",
+        "value": "Prepared weekly search-term reports; coordinated review of proposed campaign changes.",
+        "type": "textarea"
+      }
+    ],
+    "features": [
+      [
+        "岗位与事实",
+        "求职者提交一个国家／岗位和真实经历，可隐去联系方式，顾问追问缺项。",
+        "草稿 → 已提交",
+        "缺证据的数字标待确认；不自动扩写资历和业绩。"
+      ],
+      [
+        "顾问改写",
+        "顾问按当地岗位表达整理，逐项对应原事实，由求职者最终核实。",
+        "已提交／修订 → 待校对",
+        "未经证实的事实不进入终稿；顾问不能承诺通过ATS或获得面试。"
+      ],
+      [
+        "校对与修订",
+        "求职者阅读当前版本、核对事实，确认或提交具体反馈。",
+        "待校对 → 已确认／修订",
+        "未勾选事实核对不允许终稿确认；保留每轮版本和修订范围。"
+      ],
+      [
+        "终稿及退出",
+        "交付约定可编辑文档、PDF和修改说明；提供资料导出、删除申请及处理记录。",
+        "已确认 → 已交付",
+        "原型只导出文本；正式DOCX／PDF分别检查布局、文本提取和联系方式。"
+      ]
+    ],
+    "code": "C01",
+    "scope": "20分钟经历访谈、事实映射、母版、单岗位版、PDF、修改说明与核对卡；不代投、不保证面试或录用，不含第二岗位",
+    "capacity": "首批至少2单、每周最多3单；母版＋一个岗位版＋一次范围内修订"
+  },
+  "B12": {
+    "name": "Rental Board",
+    "tag": "Returned is not the same as ready.",
+    "noun": "rental",
+    "roles": [
+      "Warehouse"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Rental order",
+        "value": "Community event",
+        "type": "text"
+      },
+      {
+        "key": "equipment",
+        "label": "Equipment ID",
+        "value": "SPK-001",
+        "type": "text"
+      },
+      {
+        "key": "start",
+        "label": "Pickup (UTC)",
+        "value": "2026-09-26T09:00",
+        "type": "datetime-local"
+      },
+      {
+        "key": "end",
+        "label": "Return due (UTC)",
+        "value": "2026-09-26T18:00",
+        "type": "datetime-local"
+      }
+    ],
+    "features": [
+      [
+        "订单占用",
+        "仓管按器材编号与时间建立占用，校验同器材已有有效订单。 未出库预约可填写原因取消并释放占用，保留记录。",
+        "草稿 → 已预约",
+        "同器材时间交叉拒绝；起止时间反向拒绝；正式环境服务端并发锁定。"
+      ],
+      [
+        "出库归还",
+        "出库核就绪和订单，逐件登记归还；归还进入待检。",
+        "已预约 → 已出库 → 待检",
+        "部分归还按件记录，延期重新检查冲突；不可自动全部恢复可租。"
+      ],
+      [
+        "检查及维修",
+        "仓管检查后恢复就绪；损坏转维修，修好后必须复检。",
+        "待检 → 就绪／维修 → 待检",
+        "未就绪不得再次出库；弱网提交失败显示未提交，不重复记事件。"
+      ],
+      [
+        "交接与盘点",
+        "按器材查状态、占用与流转历史；导出账实差异和交接清单。",
+        "任意状态 → 原状态",
+        "首期50件基线需客户签认，原型单件订单不代表已实现批量扫码。"
+      ]
+    ],
+    "code": "B12",
+    "scope": "单仓器材、订单时间占用、出库归还、待检损坏、恢复就绪和导出；不做多仓、复杂套装、会计或商城",
+    "capacity": "最多2仓库客户，各先50件序列号设备；标准包10员工、500件、月200次流转、2GB"
+  },
+  "B18": {
+    "name": "Month Folder",
+    "tag": "Know what is still missing this month.",
+    "noun": "client month",
+    "roles": [
+      "Bookkeeper",
+      "Client"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Client",
+        "value": "Riverside Studio",
+        "type": "text"
+      },
+      {
+        "key": "period",
+        "label": "Period",
+        "value": "2026-09",
+        "type": "month"
+      }
+    ],
+    "features": [
+      [
+        "期间清单",
+        "记账员创建客户／期间，专业人确认必需项和不适用处理规则。",
+        "草稿 → 已开放",
+        "清单模板不可跨国直接套用；机构、客户和期间隔离。"
+      ],
+      [
+        "客户提交",
+        "客户按指定项目提交文件并查看待审／退回原因。",
+        "缺项／退回 → 待审",
+        "上传成功不等于审核通过；期间错误、上传中断和撤销链接分别处理。"
+      ],
+      [
+        "人工审核",
+        "记账员通过、填写原因退回或有据标不适用。",
+        "待审 → 通过／退回／不适用",
+        "所有必需项通过或有依据不适用才齐套；不能靠上传数量判断。"
+      ],
+      [
+        "齐套和导出",
+        "客户可查看仍需处理的项目；记账员导出期间包及审核状态。",
+        "审核完成 → 齐套",
+        "提醒去重、暂停及误发处理需正式联调；原型不发送催办。"
+      ]
+    ],
+    "code": "B18",
+    "scope": "月清单、上传、人工审核、不适用原因、齐套、提醒和导出；不读票据判合法、不记账报税、不连银行",
+    "capacity": "最多2家各3名自愿客户；标准包30客户、3员工、5GB"
+  },
+  "B17": {
+    "name": "Change Packet",
+    "tag": "A clear record of what changed on site.",
+    "noun": "change",
+    "roles": [
+      "Site team",
+      "Office"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Change description",
+        "value": "Additional outlets in room A",
+        "type": "text"
+      },
+      {
+        "key": "location",
+        "label": "Location",
+        "value": "Ground floor / Room A",
+        "type": "text"
+      },
+      {
+        "key": "qty",
+        "label": "Quantity",
+        "value": "2",
+        "type": "number"
+      },
+      {
+        "key": "price",
+        "label": "Unit price (USD)",
+        "value": "180",
+        "type": "number"
+      },
+      {
+        "key": "attachment",
+        "label": "Original attachment reference",
+        "value": "site-photo-01.jpg",
+        "type": "text"
+      }
+    ],
+    "features": [
+      [
+        "现场记录",
+        "工长填写项目、位置、事项、数量、单价和原件附件；未完成上传保留待提交。",
+        "草稿 → 已提交",
+        "必需项缺失不提交；弱网重试不漏件或重复编号。"
+      ],
+      [
+        "办公室组包",
+        "按接收方模板检查必需字段、金额精度、原件清单和包版本。",
+        "已提交／修订 → 已组包",
+        "金额确定性复算；修订新版本保留旧包，附件不静默替换。"
+      ],
+      [
+        "交接记录",
+        "记录发送对象和接收结果；对方要求修订回到办公室处理。",
+        "已组包 → 已接收／修订",
+        "接收不是批准、计价认可或付款；不得自动推进外部审批。"
+      ],
+      [
+        "归档交付",
+        "生成编号PDF、原件清单、包快照和交接日志。",
+        "已组包 → 导出",
+        "正式长表分页和原照片可读性需验收；原型JSON不替代工程交付包。"
+      ]
+    ],
+    "code": "B17",
+    "scope": "事项条目、原件附件、确定性金额、编号版本包和交接状态；不保证批准、索赔、法律效力，不做财务平台",
+    "capacity": "先1公司1项目1接收模板；标准包5员工、10项目、100份月申请、2GB"
+  },
+  "C13": {
+    "name": "Copy Check",
+    "tag": "See which photo copies were actually checked.",
+    "noun": "scan",
+    "roles": [
+      "My files"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Report name",
+        "value": "Family photo copy check",
+        "type": "text"
+      }
+    ],
+    "features": [
+      [
+        "选择及只读扫描",
+        "用户明确选择两个目录／磁盘，确认只读核对；文件不上传。",
+        "未扫描 → 扫描中",
+        "读取失败或断盘记录未知；不得以文件名相同判内容相同。"
+      ],
+      [
+        "分级核对",
+        "先尺寸过滤，再内容哈希，必要时逐字节复核；显示方法与读取时间。",
+        "扫描中 → 完成／部分完成",
+        "哈希匹配与字节确认分开；取消后保留已完成项并标明不完整。"
+      ],
+      [
+        "解释和重查",
+        "用户看两侧路径、卷标、结果、失败原因，重连后显式重新核对。",
+        "部分完成 → 新报告",
+        "旧报告不证明副本当前存在；重扫不能复用已变动文件的旧结论。"
+      ],
+      [
+        "报告退出",
+        "导出匹配、不同、未知项和检查范围；不提供自动删除。 报告包含左右两侧独有文件。",
+        "已扫描 → 导出",
+        "生产大文件流式处理、断点与符号链接策略另测，原型限用户选定小文件。"
+      ]
+    ],
+    "code": "C13",
+    "scope": "盘命名、只读扫描、哈希与可访问文件字节比对、三级证据、离线历史和报告；没有删除、移动、改名及相册库写入",
+    "capacity": "最多4盘、10万文件的待测试边界；首批5人、小目录先行"
+  },
+  "C16": {
+    "name": "Thread Cabinet",
+    "tag": "Check your thread before you shop.",
+    "noun": "thread colour",
+    "roles": [
+      "My cabinet"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Colour code",
+        "value": "0310",
+        "type": "text"
+      },
+      {
+        "key": "stock",
+        "label": "Stock (skeins)",
+        "value": "1",
+        "type": "number"
+      },
+      {
+        "key": "need",
+        "label": "Project need (skeins)",
+        "value": "1.5",
+        "type": "number"
+      }
+    ],
+    "features": [
+      [
+        "库存录入",
+        "保留品牌色号字符串与前导零，支持已知半束数量或待核。",
+        "草稿 → 已保存",
+        "CSV必须预览、映射和报错；待核不能按零计算购物量。"
+      ],
+      [
+        "项目缺线",
+        "一个活动项目按需求减可用量计算缺线，多个色号形成清单。",
+        "已保存 → 缺线清单",
+        "单位混用阻断；重复色号提示进入已有记录。"
+      ],
+      [
+        "采购及耗用",
+        "确认实际采购才入库，实际使用才扣减；记录可逆事件。",
+        "缺线 → 已入库／已耗用",
+        "重复采购不翻倍；耗用不能负库存；撤销须针对未被后续修改的事件。"
+      ],
+      [
+        "备份与恢复",
+        "整个库存和事件导出，恢复前预览替换范围并确认。",
+        "任意已保存状态 → 恢复后状态",
+        "损坏、类型错误、重复色号或不兼容版本不得覆盖当前库。"
+      ]
+    ],
+    "code": "C16",
+    "scope": "手填／CSV库存、半束单位、单项目需求、缺线、入库撤销、导出恢复；不识色、不跨品牌转换、不默认云同步",
+    "capacity": "先5位真实绣者，每人20种高频色号；单品牌、一个活动项目"
+  },
+  "C18": {
+    "name": "Plant Journal",
+    "tag": "Remember the last check. Plan the next one.",
+    "noun": "plant",
+    "roles": [
+      "My plants"
+    ],
+    "fields": [
+      {
+        "key": "title",
+        "label": "Plant name",
+        "value": "Window-side monstera",
+        "type": "text"
+      },
+      {
+        "key": "location",
+        "label": "Location",
+        "value": "East window",
+        "type": "text"
+      },
+      {
+        "key": "date",
+        "label": "Next check",
+        "value": "2026-09-27",
+        "type": "date"
+      },
+      {
+        "key": "note",
+        "label": "Observation",
+        "value": "Topsoil feels dry; inspect before watering.",
+        "type": "textarea"
+      }
+    ],
+    "features": [
+      [
+        "植物及位置",
+        "保存植物、位置和用户记录，列表可切换不同植物。",
+        "草稿 → 已保存",
+        "名称为空不保存；图片压缩、数量及备份容量在正式实现验收。"
+      ],
+      [
+        "真实事件",
+        "分别登记检查、浇水、施肥和换盆；每条显示时间、备注并可纠正。",
+        "已保存 → 新事件",
+        "检查不自动算浇水；撤销保留痕迹，不用提醒完成伪造养护事实。"
+      ],
+      [
+        "检查安排",
+        "用户设置下次检查日期，应用显示到期列表和通知权限状态。",
+        "已保存 → 已安排",
+        "通知失败仍可查任务；跨时区和夏令时规则明确；不保证植物健康。"
+      ],
+      [
+        "完整恢复",
+        "备份包含植物、事件、照片和计划；恢复先校验临时副本再切换。",
+        "任意已保存状态 → 恢复后状态",
+        "缺图、损坏、不兼容拒绝覆盖；原型仅恢复文字和事件，不代表照片已支持。"
+      ]
+    ],
+    "code": "C18",
+    "scope": "植物卡、位置、事件、压缩照片、用户自设检查、备份恢复；不诊断、不自动浇水、不承诺竞品一键迁移",
+    "capacity": "首批5人，从10盆开始验证；标准上限100盆、四种事件和一日汇总提醒"
+  }
+}

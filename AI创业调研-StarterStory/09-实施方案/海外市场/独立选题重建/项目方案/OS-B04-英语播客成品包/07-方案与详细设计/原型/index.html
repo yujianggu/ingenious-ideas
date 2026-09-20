@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Episode Desk — clip review prototype</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><a class="brand" href="../../../../README.md">◈ Episode Desk</a><span class="top-note">A clear path from episode to approved excerpts</span><span class="badge">Design prototype</span></header>
+<div class="layout"><aside class="sidebar"><div class="small-label">YOUR EPISODES</div><button id="newEpisode" class="new">＋ New episode</button><div id="episodes"></div><div class="scope"><strong>The episode package</strong><p>Up to 60 minutes<br>3 excerpts · 30–90 sec<br>One 9:16 format<br>One consolidated revision</p></div></aside>
+<div class="workspace"><div class="eyebrow" id="roleLabel"></div><div class="heading"><h1 id="title"></h1><span id="phase" class="phase"></span></div><p class="subtitle" id="subtitle"></p><nav id="tabs" aria-label="Episode sections"></nav><div id="notice" role="status" aria-live="polite" hidden></div><main id="main"></main></div></div>
+<footer><p class="note">Fictional sample episode. This prototype reviews text and timing; it does not transcribe, render clips, send messages or collect payment.</p><details id="tools"><summary>Walkthrough tools & browser backup</summary><p class="note">Switch roles to explore both sides. This is not production authentication. Saved text stays in this browser; source media must be selected again after reopening.</p><div class="actions"><button id="clientRole" class="secondary">View as client</button><button id="editorRole" class="secondary">View as editor</button><button id="backup" class="secondary">Download browser backup</button></div><label>Choose browser backup<input id="restore" type="file" accept=".json,application/json"></label><div id="restorePreview"></div><p class="note"><a href="../05-原型评审记录.md">Prototype scope & review notes</a> · <a href="../../../../检查记录.md">Technical checks</a></p></details></footer>
+<script src="logic.js"></script><script src="app.js"></script>
+</body></html>
