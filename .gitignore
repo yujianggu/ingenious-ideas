@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # 操作系统生成的元数据
 .DS_Store
 ._*
@@ -34,3 +35,6 @@ node_modules/
 
 # 项目文档、HTML 原型、图片、JSON 证据和历史归档均保留。
 # base-kb 是 Git 子模块，其内部忽略规则由子模块自行管理。
+=======
+.DS_Store
+>>>>>>> Stashed changes
