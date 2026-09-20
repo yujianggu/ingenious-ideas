@@ -1,0 +1,112 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* Models.swift */; };
+		A10000000000000000000002 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* TaskStore.swift */; };
+		A10000000000000000000003 /* PhotoEvidenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* PhotoEvidenceApp.swift */; };
+		A10000000000000000000004 /* TaskStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* TaskStoreTests.swift */; };
+		A10000000000000000000005 /* UserJourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* UserJourneyTests.swift */; };
+		A10000000000000000000006 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* libsqlite3.tbd */; };
+		A10000000000000000000007 /* VolumeIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* VolumeIdentity.swift */; };
+		A10000000000000000000008 /* ScopeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* ScopeResolver.swift */; };
+		A10000000000000000000009 /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000E /* ScopeTests.swift */; };
+		A1000000000000000000000A /* FileVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* FileVerifier.swift */; };
+		A1000000000000000000000B /* FileVerifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* FileVerifierTests.swift */; };
+		A1000000000000000000000C /* ObservationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011; };
+		A1000000000000000000000D /* ScanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012; };
+		A1000000000000000000000E /* ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013; };
+		A1000000000000000000000F /* ResumeScenarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000000000000000000001 = {isa = PBXContainerItemProxy; containerPortal = A90000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A70000000000000000000001; remoteInfo = PhotoEvidence; };
+		A30000000000000000000002 = {isa = PBXContainerItemProxy; containerPortal = A90000000000000000000001 /* Project object */; proxyType = 1; remoteGlobalIDString = A70000000000000000000001; remoteInfo = PhotoEvidence; };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* PhotoEvidenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEvidenceApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* TaskStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStoreTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* UserJourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJourneyTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* PhotoEvidence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEvidence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000007 /* PhotoEvidenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEvidenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000008 /* PhotoEvidenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEvidenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000009 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.text-based-dylib-definition; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A2000000000000000000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000000000000000000000B /* PhotoEvidence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoEvidence.entitlements; sourceTree = "<group>"; };
+		A2000000000000000000000C /* VolumeIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeIdentity.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* ScopeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeResolver.swift; sourceTree = "<group>"; };
+		A2000000000000000000000E /* ScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000F /* FileVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVerifier.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* FileVerifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVerifierTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* ObservationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservationStore.swift"; sourceTree = "<group>"; };
+		A20000000000000000000012 /* ScanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScanCoordinator.swift"; sourceTree = "<group>"; };
+		A20000000000000000000013 /* ResumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResumeTests.swift"; sourceTree = "<group>"; };
+		A20000000000000000000014 /* ResumeScenarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "../TestSupport/ResumeScenarios.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000000000000000000001 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000006 /* libsqlite3.tbd in Frameworks */); runOnlyForDeploymentPostprocessing = 0; };
+		A40000000000000000000002 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A40000000000000000000003 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000000000000000000001 = {isa = PBXGroup; children = (A50000000000000000000002 /* PhotoEvidence */, A50000000000000000000005 /* PhotoEvidenceTests */, A50000000000000000000006 /* PhotoEvidenceUITests */, A2000000000000000000000B /* PhotoEvidence.entitlements */, A50000000000000000000007 /* Frameworks */, A50000000000000000000008 /* Products */); sourceTree = "<group>"; };
+		A50000000000000000000002 /* PhotoEvidence */ = {isa = PBXGroup; path = PhotoEvidence; sourceTree = "<group>"; children = (A20000000000000000000003 /* PhotoEvidenceApp.swift */, A2000000000000000000000A /* Info.plist */, A50000000000000000000003 /* Domain */, A50000000000000000000004 /* Storage */, A50000000000000000000009 /* Scanning */); };
+		A50000000000000000000003 /* Domain */ = {isa = PBXGroup; path = Domain; sourceTree = "<group>"; children = (A20000000000000000000001 /* Models.swift */); };
+		A50000000000000000000004 /* Storage */ = {isa = PBXGroup; path = Storage; sourceTree = "<group>"; children = (A20000000000000000000002 /* TaskStore.swift */, A20000000000000000000011 /* ObservationStore.swift */); };
+		A50000000000000000000005 /* PhotoEvidenceTests */ = {isa = PBXGroup; path = PhotoEvidenceTests; sourceTree = "<group>"; children = (A20000000000000000000004 /* TaskStoreTests.swift */, A2000000000000000000000E /* ScopeTests.swift */, A20000000000000000000010 /* FileVerifierTests.swift */, A20000000000000000000013 /* ResumeTests.swift */, A20000000000000000000014 /* ResumeScenarios.swift */); };
+		A50000000000000000000006 /* PhotoEvidenceUITests */ = {isa = PBXGroup; path = PhotoEvidenceUITests; sourceTree = "<group>"; children = (A20000000000000000000005 /* UserJourneyTests.swift */); };
+		A50000000000000000000007 /* Frameworks */ = {isa = PBXGroup; children = (A20000000000000000000009 /* libsqlite3.tbd */); name = Frameworks; sourceTree = "<group>"; };
+		A50000000000000000000008 /* Products */ = {isa = PBXGroup; children = (A20000000000000000000006 /* PhotoEvidence.app */, A20000000000000000000007 /* PhotoEvidenceTests.xctest */, A20000000000000000000008 /* PhotoEvidenceUITests.xctest */); name = Products; sourceTree = "<group>"; };
+		A50000000000000000000009 /* Scanning */ = {isa = PBXGroup; path = Scanning; sourceTree = "<group>"; children = (A2000000000000000000000C /* VolumeIdentity.swift */, A2000000000000000000000D /* ScopeResolver.swift */, A2000000000000000000000F /* FileVerifier.swift */, A20000000000000000000012 /* ScanCoordinator.swift */); };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A70000000000000000000001 /* PhotoEvidence */ = {isa = PBXNativeTarget; buildConfigurationList = AB0000000000000000000001; buildPhases = (A60000000000000000000001, A40000000000000000000001); buildRules = (); dependencies = (); name = PhotoEvidence; productName = PhotoEvidence; productReference = A20000000000000000000006; productType = "com.apple.product-type.application"; };
+		A70000000000000000000002 /* PhotoEvidenceTests */ = {isa = PBXNativeTarget; buildConfigurationList = AB0000000000000000000002; buildPhases = (A60000000000000000000002, A40000000000000000000002); buildRules = (); dependencies = (A80000000000000000000001); name = PhotoEvidenceTests; productName = PhotoEvidenceTests; productReference = A20000000000000000000007; productType = "com.apple.product-type.bundle.unit-test"; };
+		A70000000000000000000003 /* PhotoEvidenceUITests */ = {isa = PBXNativeTarget; buildConfigurationList = AB0000000000000000000003; buildPhases = (A60000000000000000000003, A40000000000000000000003); buildRules = (); dependencies = (A80000000000000000000002); name = PhotoEvidenceUITests; productName = PhotoEvidenceUITests; productReference = A20000000000000000000008; productType = "com.apple.product-type.bundle.ui-testing"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = {A70000000000000000000001 = {CreatedOnToolsVersion = 26.0; }; A70000000000000000000002 = {CreatedOnToolsVersion = 26.0; TestTargetID = A70000000000000000000001; }; A70000000000000000000003 = {CreatedOnToolsVersion = 26.0; TestTargetID = A70000000000000000000001; }; }; }; buildConfigurationList = AB0000000000000000000000; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = A50000000000000000000001; productRefGroup = A50000000000000000000008; projectDirPath = ""; projectRoot = ""; targets = (A70000000000000000000001, A70000000000000000000002, A70000000000000000000003); };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001, A10000000000000000000002, A10000000000000000000007, A10000000000000000000008, A1000000000000000000000A, A1000000000000000000000C, A1000000000000000000000D, A10000000000000000000003); runOnlyForDeploymentPostprocessing = 0; };
+		A60000000000000000000002 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000004, A10000000000000000000009, A1000000000000000000000B, A1000000000000000000000E, A1000000000000000000000F); runOnlyForDeploymentPostprocessing = 0; };
+		A60000000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000005); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80000000000000000000001 = {isa = PBXTargetDependency; target = A70000000000000000000001; targetProxy = A30000000000000000000001; };
+		A80000000000000000000002 = {isa = PBXTargetDependency; target = A70000000000000000000001; targetProxy = A30000000000000000000002; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC0000000000000000000001 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Debug; };
+		AC0000000000000000000002 = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; }; name = Release; };
+		AC0000000000000000000003 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_ENTITLEMENTS = PhotoEvidence.entitlements; CODE_SIGN_STYLE = Automatic; ENABLE_TESTABILITY = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = PhotoEvidence/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; }; name = Debug; };
+		AC0000000000000000000004 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_ENTITLEMENTS = PhotoEvidence.entitlements; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = PhotoEvidence/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; }; name = Release; };
+		AC0000000000000000000005 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEvidence.app/Contents/MacOS/PhotoEvidence"; }; name = Debug; };
+		AC0000000000000000000006 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEvidence.app/Contents/MacOS/PhotoEvidence"; }; name = Release; };
+		AC0000000000000000000007 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TEST_TARGET_NAME = PhotoEvidence; }; name = Debug; };
+		AC0000000000000000000008 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks"; PRODUCT_BUNDLE_IDENTIFIER = cn.ingeniousideas.photoevidence.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TEST_TARGET_NAME = PhotoEvidence; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB0000000000000000000000 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000001, AC0000000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AB0000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000003, AC0000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AB0000000000000000000002 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000005, AC0000000000000000000006); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AB0000000000000000000003 = {isa = XCConfigurationList; buildConfigurations = (AC0000000000000000000007, AC0000000000000000000008); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}

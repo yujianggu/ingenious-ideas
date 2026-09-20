@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><style>
+@page { font-family: sans-serif; size: A4; margin: 18mm 17mm 20mm; @bottom-center { content: "校样版本确认记录 · 第 " counter(page) " 页 / " counter(pages) " 页"; font-size: 9pt; color:#667085; } }
+body { font-family: sans-serif; font-size: 10pt; color: #182230; line-height: 1.65; overflow-wrap: anywhere; }
+h1 {font-size:23pt; margin:0 0 4mm;} h2 {font-size:15pt; margin:8mm 0 3mm; color:#164e63;} h3 {font-size:11pt; margin-bottom:2mm;}
+h1,h2,h3 {break-after:avoid;} .label {background:#fff4d6;border-left:4px solid #bf7b08;padding:3mm;font-weight:bold;font-size:14pt;}
+.meta {color:#475467; font-size:9pt;} .digest {font-family:monospace;font-size:8pt;overflow-wrap:anywhere;}
+.event {border-top:1px solid #d0d5dd;padding:2mm 0;} .image {break-inside:avoid; margin:5mm 0;} img {max-width:100%;max-height:150mm;} p {margin:2mm 0;} .text {white-space:pre-wrap;}
+</style><body>
+<h1>校样版本确认记录</h1><div class="label">{{ manifest.label }}</div>
+<h2>{{ manifest.order.title }}</h2>
+<p class="meta">订单 {{ manifest.owner_id }}<br>快照时间 {{ manifest.frozen_at }}<br>修订号 {{ manifest.order.revision }} · 状态 {{ manifest.order.status }}<br>当前版本 {{ manifest.order.current_version_id|default:"尚未发布" }}</p>
+<p>本记录仅反映快照时点的校样、客户决定及印前复核。历史确认不代表当前版本已确认；印前复核不代表已经印刷。</p>
+{% if manifest.incomplete %}<p><strong>草稿／不完整：当前流程尚未完成。不得作为已完成确认与印前复核的证明。</strong></p>{% endif %}
+{% for version in manifest.order.versions %}
+<h2>版本 {{ version.sequence }} · {{ version.display_name }}</h2>
+<p class="meta">版本 ID {{ version.id }}<br>上传人 {{ version.uploaded_by }} · 发布人 {{ version.published_by }} · 发布时间 {{ version.created_at }}</p>
+<p class="digest">SHA-256 {{ version.sha256 }}</p>
+<h3>接收与核验</h3><p>接收人 {{ version.request.recipient }}<br>确认期限 {{ version.request.expires_at }}<br>访问撤销时间 {{ version.request.access_revoked_at|default:"未撤销" }}<br>撤销时间 {{ version.request.revoked_at|default:"未撤销" }}<br>替代时间 {{ version.request.superseded_at|default:"未替代" }}</p>
+{% for event in version.request.events %}<div class="event"><p><strong>决定／事件：{{ event.decision }}</strong> · {{ event.created_at }}</p><p>核验方式 {{ event.verification_method }} · 员工 {{ event.actor_id|default:"—" }} · 客户会话 {{ event.external_session_id|default:"—" }}</p><p class="text">{{ event.reason }}</p></div>{% empty %}<p>尚无客户决定。</p>{% endfor %}
+<h3>印前复核</h3>{% if version.print_review %}<p>复核人 {{ version.print_review.actor_id }} · {{ version.print_review.created_at }}<br>所依据确认事件 {{ version.print_review.confirmation_id }}</p><p class="text">{{ version.print_review.verification_note }}</p>{% else %}<p>未登记印前复核。</p>{% endif %}
+{% empty %}<p>尚未发布任何校样版本。</p>{% endfor %}
+{% if images %}<h2>图像原件参考</h2><p>以下为最多 20 张图像原件的参考缩图；完整原件见 ZIP originals 目录。</p>{% for image in images %}<div class="image"><h3>{{ image.title }}</h3><img src="{{ image.uri }}"></div>{% endfor %}{% endif %}
+</body></html>

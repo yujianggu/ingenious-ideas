@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "service_b10"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pandas", "openpyxl"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

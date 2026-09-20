@@ -1,0 +1,6 @@
+FROM python:3.12.14-slim
+WORKDIR /app
+COPY backend/requirements.lock .
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
+COPY backend/ .
+CMD ["python", "manage.py", "check"]
