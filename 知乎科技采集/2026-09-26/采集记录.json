@@ -1,0 +1,94 @@
+{
+  "batch_date": "2026-09-26",
+  "timezone": "Asia/Shanghai",
+  "site": "https://www.zhihu.com",
+  "browser": "Chrome",
+  "raw_observation_count": 232,
+  "unique_url_count": 229,
+  "duplicate_observation_count": 3,
+  "included_count": 218,
+  "excluded_count": 11,
+  "primary_category_counts": {
+    "AI": 52,
+    "大模型": 52,
+    "芯片": 51,
+    "综合科技": 63
+  },
+  "keyword_counts": {
+    "人工智能": 52,
+    "大模型": 54,
+    "芯片": 52,
+    "科技": 13,
+    "机器人": 14,
+    "量子计算": 14,
+    "航天": 17,
+    "可回收火箭": 16
+  },
+  "collection_method": "单个Chrome页面，依次站内搜索8个关键词；前三组各分批滚动加载。只读取已渲染的搜索结果卡片，未调用内部接口，未逐篇请求正文。",
+  "stop_reason": "本次批量采集在覆盖8个检索词后结束，以控制单轮访问量；并非搜索结果已经穷尽。",
+  "captcha_or_rate_limit_observed": false,
+  "access_note": "本轮未观察到验证码或限流提示；正常浏览仍可能被网站记录，无法保证不被识别。",
+  "coverage_limit": "仅回答/文章的可见搜索摘要与元数据；不含全文、评论正文、付费内容、用户/圈子/视频/AI搜索生成的概览。搜索结果可能受账号和排序影响，不代表全站或最新内容全集。",
+  "date_policy": "不补全月日年份，不把相对时间换算成绝对日期；不把搜索页日期未经核实称为发布日期。",
+  "metric_policy": "万单位转数值仅用于筛选，标为近似；空赞同及添加评论保留原样，数值设null而非0。",
+  "dedupe_policy": "按规范化回答/文章URL去重；同问题不同回答保留。保留各次检索标题和摘录，不自行选择所谓真实标题。",
+  "fact_check_policy": "分类与提示基于标题和短摘录，不等于原文或事实已验证。",
+  "sources": [
+    {
+      "keyword": "人工智能",
+      "category": "AI",
+      "source_file": "raw/01-AI.json",
+      "collected_at": "2026-09-26T10:51:09.112Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"
+    },
+    {
+      "keyword": "大模型",
+      "category": "大模型",
+      "source_file": "raw/02-大模型.json",
+      "collected_at": "2026-09-26T10:54:21.280Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E5%A4%A7%E6%A8%A1%E5%9E%8B"
+    },
+    {
+      "keyword": "芯片",
+      "category": "芯片",
+      "source_file": "raw/03-芯片.json",
+      "collected_at": "2026-09-26T10:56:43.129Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E8%8A%AF%E7%89%87"
+    },
+    {
+      "keyword": "科技",
+      "category": "综合科技",
+      "source_file": "raw/04-科技.json",
+      "collected_at": "2026-09-26T10:59:10.187Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E7%A7%91%E6%8A%80"
+    },
+    {
+      "keyword": "机器人",
+      "category": "综合科技",
+      "source_file": "raw/05-机器人.json",
+      "collected_at": "2026-09-26T10:59:52.618Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E6%9C%BA%E5%99%A8%E4%BA%BA"
+    },
+    {
+      "keyword": "量子计算",
+      "category": "综合科技",
+      "source_file": "raw/06-量子计算.json",
+      "collected_at": "2026-09-26T11:00:57.606Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97"
+    },
+    {
+      "keyword": "航天",
+      "category": "综合科技",
+      "source_file": "raw/07-航天.json",
+      "collected_at": "2026-09-26T11:01:51.522Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E8%88%AA%E5%A4%A9"
+    },
+    {
+      "keyword": "可回收火箭",
+      "category": "综合科技",
+      "source_file": "raw/08-可回收火箭.json",
+      "collected_at": "2026-09-26T11:02:59.504Z",
+      "search_url": "https://www.zhihu.com/search?type=content&q=%E5%8F%AF%E5%9B%9E%E6%94%B6%E7%81%AB%E7%AE%AD"
+    }
+  ]
+}

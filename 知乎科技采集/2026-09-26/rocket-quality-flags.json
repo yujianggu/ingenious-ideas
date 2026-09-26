@@ -1,0 +1,323 @@
+{
+  "review_scope": "仅依据页面标题和短摘录；未独立事实核查。",
+  "entries": [
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 1,
+      "url": "https://www.zhihu.com/question/2073315140213150893/answer/2073324201495245127",
+      "title": "朱雀三号成功回收，我国首次实现火箭陆地回收，这一突破对我国航天意味着什么？",
+      "date_raw": "08-19",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 2,
+      "url": "https://www.zhihu.com/question/585758836/answer/2062483998270661828",
+      "title": "可回收火箭技术真的很难么？",
+      "date_raw": "08-21",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 3,
+      "url": "https://www.zhihu.com/question/585758836/answer/2040411762906882573",
+      "title": "可回收火箭技术真的很难么？",
+      "date_raw": "05-20",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/2086467975192883578",
+      "title": "可回收火箭的“复用”大考",
+      "date_raw": "09-24",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 5,
+      "url": "https://zhuanlan.zhihu.com/p/1890823100389623682",
+      "title": "2026至2028可回收复用运载火箭跟踪排行",
+      "date_raw": "09-11",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意",
+        "日期占位未补全"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。",
+        "日期占位未补全": "摘录出现“2026年月日”“2027年月日”，不得当作实际日期。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 6,
+      "url": "https://www.zhihu.com/question/1945799318150840793/answer/1948720966571126871",
+      "title": "中国距离可回收火箭究竟还有多远？",
+      "date_raw": "07-12",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意",
+        "传闻待核实"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。",
+        "传闻待核实": "片段开头写“据小道消息”。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 7,
+      "url": "https://www.zhihu.com/question/2058861867263697989/answer/2059282273955063395",
+      "title": "如何评价2026年7月10日首飞并成功实现回收的「长征十号乙」可回收火箭？",
+      "date_raw": "07-15",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "时效性注意",
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。",
+        "量化数据待核实": "作者提出“16吨的回收运力是可以达成的”，未核验依据。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 8,
+      "url": "https://zhuanlan.zhihu.com/p/2059578209029591792",
+      "title": "中国实现火箭可控回收在国际上引起巨大震动",
+      "date_raw": "07-12",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 9,
+      "url": "https://www.zhihu.com/question/391756708/answer/2556173863",
+      "title": "SpaceX的可回收火箭有什么神奇之处，为何其他航天大国还不能仿造？",
+      "date_raw": "2022-07-03",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 10,
+      "url": "https://www.zhihu.com/question/2050532406994719862/answer/2050843627627221738",
+      "title": "国内可回收火箭技术全面普及后，能把单次发射成本降低多少？",
+      "date_raw": "06-18",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/2058861867263697989/answer/2058893135468552196",
+      "title": "如何评价2026年7月10日首飞并成功实现回收的「长征十号乙」可回收火箭？",
+      "date_raw": "07-11",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/2058861867263697989/answer/2058898223545243035",
+      "title": "如何评价2026年7月10日首飞并成功实现回收的「长征十号乙」可回收火箭？",
+      "date_raw": "07-10",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 13,
+      "url": "https://www.zhihu.com/question/585758836/answer/1967153697436959976",
+      "title": "可回收火箭技术真的很难么？",
+      "date_raw": "2025-12-26",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 14,
+      "url": "https://www.zhihu.com/question/2047743404054991741/answer/2050550429868614468",
+      "title": "有了可回收火箭，哪些行业会跟爆发？",
+      "date_raw": "06-17",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 15,
+      "url": "https://www.zhihu.com/question/1945799318150840793/answer/2040734112252702817",
+      "title": "中国距离可回收火箭究竟还有多远？",
+      "date_raw": "07-11",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "涉及试验进度、当时判断或未来预计，仅保留页面观察，未独立核实事件。"
+      },
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    },
+    {
+      "source_file": "raw/08-可回收火箭.json",
+      "source_row": 16,
+      "url": "https://zhuanlan.zhihu.com/p/2059959925107844779",
+      "title": "可回收火箭不存在弯道超车，SpaceX的“筷子”才是难度更高的工业艺术品",
+      "date_raw": "07-15",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "可回收火箭",
+        "航天"
+      ],
+      "scope_status": "included",
+      "review_notes": "基于搜索标题和短摘录分类，未阅读完整正文或核实事实。"
+    }
+  ]
+}

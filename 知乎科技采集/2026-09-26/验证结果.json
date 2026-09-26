@@ -1,0 +1,12 @@
+{
+  "raw_observations": 232,
+  "unique_urls": 229,
+  "main_records": 218,
+  "excluded_records": 11,
+  "all_metadata_and_excerpt_transfers_match": true,
+  "valid_json": true,
+  "markdown_rows": 218,
+  "markdown_excerpts": 218,
+  "links_match_records": true,
+  "jsonl_matches_json": true
+}

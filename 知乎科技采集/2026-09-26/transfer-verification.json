@@ -1,0 +1,67 @@
+[
+  {
+    "file": "01-AI.json",
+    "count": 52,
+    "metadata_hash": "9e4a195e",
+    "metadata_match": true,
+    "excerpt_hash": "b1d3421f",
+    "excerpt_match": true,
+    "excerpt_verification": "52条截选片段均在对应页面摘录中逐条匹配；selected_hash=b1d3421f，与本地摘录相同。"
+  },
+  {
+    "file": "02-大模型.json",
+    "count": 54,
+    "metadata_hash": "3f8ce312",
+    "metadata_match": true,
+    "excerpt_hash": "a8189011",
+    "excerpt_match": true
+  },
+  {
+    "file": "03-芯片.json",
+    "count": 52,
+    "metadata_hash": "5a129abd",
+    "metadata_match": true,
+    "excerpt_hash": "c1bd02f1",
+    "excerpt_match": true
+  },
+  {
+    "file": "04-科技.json",
+    "count": 13,
+    "metadata_hash": "10f3ef2b",
+    "metadata_match": true,
+    "excerpt_hash": "31915f2f",
+    "excerpt_match": true
+  },
+  {
+    "file": "05-机器人.json",
+    "count": 14,
+    "metadata_hash": "379a40bc",
+    "metadata_match": true,
+    "excerpt_hash": "260be81a",
+    "excerpt_match": true
+  },
+  {
+    "file": "06-量子计算.json",
+    "count": 14,
+    "metadata_hash": "7b383f5c",
+    "metadata_match": true,
+    "excerpt_hash": "2fe44cd1",
+    "excerpt_match": true
+  },
+  {
+    "file": "07-航天.json",
+    "count": 17,
+    "metadata_hash": "97fb339c",
+    "metadata_match": true,
+    "excerpt_hash": "4cff00d8",
+    "excerpt_match": true
+  },
+  {
+    "file": "08-可回收火箭.json",
+    "count": 16,
+    "metadata_hash": "86f41be8",
+    "metadata_match": true,
+    "excerpt_hash": "91f3a1f7",
+    "excerpt_match": true
+  }
+]

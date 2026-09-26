@@ -1,0 +1,1312 @@
+{
+  "source_files": [
+    "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+    "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+    "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+    "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json"
+  ],
+  "reviewed_on": "2026-09-26",
+  "review_scope": "仅审阅原始JSON中的标题、页面日期、互动显示值及选取片段；未联网、未读正文、未核实事实。分类为检索整理建议，不是对真实性或商业关系的判定。",
+  "scope_policy": "按采集范围要求，04-科技只纳入“从整个宇宙来看，人类有无可能已经点错了科技树？”与“什么是科技？科技的本质是什么？”；其余11条科技股行情/投资观点标记excluded并保留数据。其他三个文件全部included。",
+  "date_policy": "所有date_raw原样保留，不補全年份或换算相对日期。records_with_missing_year包括月日日期及相对日期；另列两者数量。",
+  "summary": {
+    "record_count": 58,
+    "unique_url_count": 58,
+    "duplicate_url_count": 0,
+    "scope_status_counts": {
+      "excluded": 11,
+      "included": 47
+    },
+    "source_file_counts": {
+      "04-科技.json": 13,
+      "05-机器人.json": 14,
+      "06-量子计算.json": 14,
+      "07-航天.json": 17
+    },
+    "records_with_missing_year": 52,
+    "records_with_month_day_only": 50,
+    "records_with_relative_date": 2,
+    "records_with_review_flags": 29,
+    "content_kind_counts": {
+      "社会讨论": 17,
+      "产业动态": 10,
+      "产品体验": 3,
+      "学习就业": 18,
+      "技术原理": 8,
+      "资料营销": 2
+    },
+    "included_content_kind_counts": {
+      "社会讨论": 6,
+      "产业动态": 10,
+      "产品体验": 3,
+      "学习就业": 18,
+      "技术原理": 8,
+      "资料营销": 2
+    },
+    "review_flag_counts": {
+      "量化数据待核实": 4,
+      "作者观点": 2,
+      "引述来源待核实": 4,
+      "片段信息不足": 7,
+      "时效性注意": 7,
+      "推广倾向": 3,
+      "互动数据缺失": 3,
+      "数据矛盾": 1,
+      "争议信息待核实": 2,
+      "政策表述待核实": 1,
+      "相对日期保留": 2
+    }
+  },
+  "duplicate_url_groups": [],
+  "repeated_title_groups": [
+    {
+      "title": "为什么量子计算在科技圈热度迅速下降了？",
+      "urls": [
+        "https://www.zhihu.com/question/1908462630462547204/answer/2066462561646784890",
+        "https://www.zhihu.com/question/1908462630462547204/answer/1910271550424347069"
+      ],
+      "note": "同一问题下不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "你为什么从航天科工/科技离职？",
+      "urls": [
+        "https://www.zhihu.com/question/28033281/answer/2946763507",
+        "https://www.zhihu.com/question/28033281/answer/3586290917"
+      ],
+      "note": "同一问题下不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "为什么有些进入航天院所的人干几年就离开了？",
+      "urls": [
+        "https://www.zhihu.com/question/440893843/answer/2073408370577617914",
+        "https://www.zhihu.com/question/440893843/answer/3503622809"
+      ],
+      "note": "同一问题下不同回答，URL不同，保留全部条目。"
+    }
+  ],
+  "possible_cross_format_related_entries": [],
+  "entries": [
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 1,
+      "url": "https://zhuanlan.zhihu.com/p/2057591114916541672",
+      "title": "对所有买了科技的人，我最后再说一遍。",
+      "date_raw": "07-06",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "投资观点"
+      ],
+      "review_notes": "片段主张持有科技板块，并将科技称为唯一大规模高增长赛道；属投资观点，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 2,
+      "url": "https://www.zhihu.com/question/2070208497782888395/answer/2081406334558267124",
+      "title": "2026下半年科技股能否重回牛市巅峰？",
+      "date_raw": "09-10",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "牛市预期"
+      ],
+      "review_notes": "围绕A股科技走势图与市场高点作判断，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 3,
+      "url": "https://www.zhihu.com/question/2065057565281726991/answer/2070464004091274208",
+      "title": "2026年下半年了，科技股还能不能碰？",
+      "date_raw": "08-11",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "散户投资"
+      ],
+      "review_notes": "对科技股行情及投资者损失的评论，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/2085423312348497860",
+      "title": "有人说我不该看空科技",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "上市公司"
+      ],
+      "review_notes": "题目谈看空科技，片段列举科技企业，按指定范围归入投资观点并排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 5,
+      "url": "https://zhuanlan.zhihu.com/p/2072764270442452405",
+      "title": "科技的第二波来了？",
+      "date_raw": "08-17",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "市场周期"
+      ],
+      "review_notes": "关于牛市主线和两波上涨的市场判断，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 6,
+      "url": "https://www.zhihu.com/question/2058928258662642380/answer/2066876792863035799",
+      "title": "2026年本轮科技牛已经结束了吗？",
+      "date_raw": "08-01",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称板块跌40%—50%、国家大基金两个月跑了两万亿，未给指数范围、交易口径或来源。"
+      },
+      "suggested_tags": [
+        "科技股",
+        "板块走势"
+      ],
+      "review_notes": "投资行情评论，按范围排除，不把夸张或不明口径数字改写成事实。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 7,
+      "url": "https://www.zhihu.com/question/2061810153121437632/answer/2062583842079237133",
+      "title": "这轮科技牛彻底结束了吗？",
+      "date_raw": "08-02",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "收益预期"
+      ],
+      "review_notes": "对利润消失和未来下跌的预测，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 8,
+      "url": "https://zhuanlan.zhihu.com/p/2055033151248978460",
+      "title": "告诉你们a股有什么真科技",
+      "date_raw": "06-30",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "A股",
+        "科技企业"
+      ],
+      "review_notes": "以A股科技企业为话题的投资相关介绍，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 9,
+      "url": "https://zhuanlan.zhihu.com/p/2072456467408491273",
+      "title": "科技还能反弹多久？",
+      "date_raw": "08-16",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "财报行情"
+      ],
+      "review_notes": "讨论科技股反弹及中报季影响，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 10,
+      "url": "https://www.zhihu.com/question/36247563/answer/2783540837",
+      "title": "从整个宇宙来看，人类有无可能已经点错了科技树？",
+      "date_raw": "01-17",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "作者观点"
+      ],
+      "flag_evidence": {
+        "作者观点": "片段断言人类点错科技树并给出公元前134年拐点，属于作者论述，未见完整论证。"
+      },
+      "suggested_tags": [
+        "科技发展",
+        "科技树",
+        "历史想象"
+      ],
+      "review_notes": "保留为科技哲学或历史想象讨论，不将片段中的历史节点改写成已证实事实。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/2056474587349758560/answer/2066181026867590309",
+      "title": "科技跌这么惨，业绩出来后还能雄起吗？",
+      "date_raw": "07-30",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "投资者",
+        "财报行情"
+      ],
+      "review_notes": "讨论追高科技股与股民境遇，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/26093603/answer/173683799",
+      "title": "什么是科技？科技的本质是什么？",
+      "date_raw": "2017-05-24",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "作者观点"
+      ],
+      "flag_evidence": {
+        "作者观点": "片段为作者对课堂内容及科学技术关系的转述与理解。"
+      },
+      "suggested_tags": [
+        "科学与技术",
+        "科技概念"
+      ],
+      "review_notes": "保留概念讨论性质；未读取课堂资料或完整定义论证。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/04-科技.json",
+      "source_row": 13,
+      "url": "https://zhuanlan.zhihu.com/p/2078549326213689596",
+      "title": "停止看空科技",
+      "date_raw": "09-02",
+      "date_year_status": "missing",
+      "scope_status": "excluded",
+      "exclusion_reason": "科技股行情/投资观点",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "科技股",
+        "仓位观点"
+      ],
+      "review_notes": "讨论看空、卖出和降低仓位，按范围排除。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 1,
+      "url": "https://zhuanlan.zhihu.com/p/2084960302794388081",
+      "title": "走访十几家机器人公司后，知名华尔街研究机构判断：机器人正在逼近临界点",
+      "date_raw": "09-20",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "引述来源待核实",
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "引述来源待核实": "标题称华尔街研究机构走访十几家公司后作判断，片段未给机构名称、原报告或完整论据。",
+        "片段信息不足": "运动会表现的句子在“快于人”处截断，完整比较对象和条件不明。"
+      },
+      "suggested_tags": [
+        "机器人产业",
+        "行业研究",
+        "人形机器人"
+      ],
+      "review_notes": "“逼近临界点”为转述的研究判断；片段2026年不用于补齐页面年份。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 2,
+      "url": "https://zhuanlan.zhihu.com/p/2070525945027597905",
+      "title": "告别“伺候机器”的烦恼，真正的“管家式”扫地机器人，到底长什么样？",
+      "date_raw": "08-11",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产品体验",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "扫地机器人",
+        "使用体验",
+        "家务清洁"
+      ],
+      "review_notes": "个人使用经历的引入不等于统一测评结论，片段未给产品对比结果。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 3,
+      "url": "https://zhuanlan.zhihu.com/p/2085011007097906455",
+      "title": "这份《机器人圣经》值得每个关注AI与机器人的人收藏",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "机器人入门",
+        "阅读资料",
+        "感知规划执行"
+      ],
+      "review_notes": "资料章节介绍；建议收藏不足以判定收费推广，未见下载导流或购买引导。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/2083488783685702622",
+      "title": "都是机器人控制，为什么“走路”用RL，“干活”却用Transformer？",
+      "date_raw": "09-16",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "机器人控制",
+        "强化学习",
+        "Transformer"
+      ],
+      "review_notes": "讨论人机身体差异及动作映射；标题的走路与干活区分不作为所有控制系统的固定划分。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 5,
+      "url": "https://zhuanlan.zhihu.com/p/2012925666996274710",
+      "title": "极致清洁下的温柔底色：深度测评云鲸逍遥003扫地机器人的“高智商”进化",
+      "date_raw": "03-05",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产品体验",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "扫地机器人",
+        "云鲸逍遥003",
+        "清洁测评"
+      ],
+      "review_notes": "第68台测试为作者经历自述，未见测试方法结果；产品赞美本身不证明商业合作。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 6,
+      "url": "https://zhuanlan.zhihu.com/p/2039380190334284614",
+      "title": "机器人工程师学习计划（试读版）",
+      "date_raw": "08-08",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题为学习计划试读版，片段未呈现具体学习步骤。"
+      },
+      "suggested_tags": [
+        "机器人工程师",
+        "学习计划",
+        "工程能力"
+      ],
+      "review_notes": "试读提示内容可能不完整，但未见购买报名入口，不据此确定推广。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 7,
+      "url": "https://zhuanlan.zhihu.com/p/2075890869366940370",
+      "title": "2026年扫地机性能巅峰？云鲸新品JX Ultra新品深度实测丨 双机械臂+70热活水宽履带，带来了怎样的质变？",
+      "date_raw": "08-26",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产品体验",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题提性能巅峰、双机械臂及热活水，片段只有测试经历；“70热活水”的单位未明确。"
+      },
+      "suggested_tags": [
+        "扫地机器人",
+        "云鲸JX Ultra",
+        "性能测评"
+      ],
+      "review_notes": "性能巅峰为提问式评价；近80款测试自述不能代替本产品测评证据。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 8,
+      "url": "https://www.zhihu.com/question/339339015/answer/2078031076589560282",
+      "title": "在机器人行业的专业人士眼里，机器人行业目前的情况如何？",
+      "date_raw": "09-03",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "人形机器人",
+        "企业比较",
+        "行业格局"
+      ],
+      "review_notes": "网络炒作和第一梯队为作者评价，未给比较标准，不改写为已核实排名。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 9,
+      "url": "https://www.zhihu.com/question/27620250/answer/3384900327",
+      "title": "国内有哪些不错的机器人领域的创业公司？",
+      "date_raw": "2024-12-17",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2024-12-17，片段“今年”“最近”属于当时语境。"
+      },
+      "suggested_tags": [
+        "机器人创业",
+        "具身智能",
+        "企业调研"
+      ],
+      "review_notes": "企业名单可能变化，不能直接当作当前企业推荐。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 10,
+      "url": "https://zhuanlan.zhihu.com/p/2075822373924758657",
+      "title": "想做小型机器人？可以参考这4个开源项目",
+      "date_raw": "08-26",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "片段明确要求关注“机器人技术笔记”，存在账号导流。"
+      },
+      "suggested_tags": [
+        "小型机器人",
+        "开源项目",
+        "动手实践"
+      ],
+      "review_notes": "账号推广不等于收费课程；片段未展示4个项目清单和开源许可。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/13457479779/answer/2075980148915036681",
+      "title": "为什么机器人领域都在弄具身智能了，感觉中间跳了一大步?",
+      "date_raw": "09-09",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "具身智能",
+        "机器人数据",
+        "世界模型"
+      ],
+      "review_notes": "“未来可能长这样”为设想，不改写为已经实现的通用流程。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/659970630/answer/1923671126363571707",
+      "title": "未来十年机器人行业前景还好吗？",
+      "date_raw": "04-27",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "机器人就业",
+        "专业培养",
+        "行业前景"
+      ],
+      "review_notes": "对专业培养和实验室转向的批评属作者评价，不能概括全部毕业生和未来十年就业。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 13,
+      "url": "https://www.zhihu.com/question/2007924755731326707/answer/2073056352973353990",
+      "title": "纯好奇，现在的人形机器人到底能干什么？",
+      "date_raw": "08-18",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称90%人形机器人demo仅为简单表演，未给样本、时间范围和统计方法。"
+      },
+      "suggested_tags": [
+        "人形机器人",
+        "实际能力",
+        "演示效果"
+      ],
+      "review_notes": "90%不能作为已验证行业比例；批评演示能力不等于机器人没有用途。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/05-机器人.json",
+      "source_row": 14,
+      "url": "https://www.zhihu.com/question/438931655/answer/1912843963146155324",
+      "title": "把机器人做成人形的意义何在？",
+      "date_raw": "09-02",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "人形机器人",
+        "机器人形态",
+        "运动控制"
+      ],
+      "review_notes": "片段未给完整物理推导，不能据此作确定的形态优劣判断。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 1,
+      "url": "https://zhuanlan.zhihu.com/p/13078289132",
+      "title": "【从0学习量子计算（一）】量子计算入门，适合本科毕业生入门原理讲解",
+      "date_raw": "2025-02-12",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "量子计算入门",
+        "量子寄存器",
+        "量子比特"
+      ],
+      "review_notes": "基础概念教学不因2025年日期自动失效，未见课程推广。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 2,
+      "url": "https://www.zhihu.com/question/395455568/answer/1995943735960311769",
+      "title": "为什么现在量子计算看起来很火，从事相关工作的人却依然很少？",
+      "date_raw": "01-17",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "关于中美公司能力的句子在“真正端”处截断，核心判断条件不完整。"
+      },
+      "suggested_tags": [
+        "量子计算就业",
+        "行业人才",
+        "商业化"
+      ],
+      "review_notes": "“懂的人都转行”被作者紧接着称为玩笑，不作人员流失事实。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 3,
+      "url": "https://zhuanlan.zhihu.com/p/1921956204160217105",
+      "title": "物理劝退——量子计算",
+      "date_raw": "2025-10-19",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2025-10-19，“需要20年”为当时作者的预测。"
+      },
+      "suggested_tags": [
+        "量子计算前景",
+        "商业化争议",
+        "技术预测"
+      ],
+      "review_notes": "不该上市及20年才能有进展为作者立场，不等于业内共识。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 4,
+      "url": "https://www.zhihu.com/question/305099454/answer/3583063065",
+      "title": "如何看待量子计算的未来？",
+      "date_raw": "07-14",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "量子计算应用",
+        "量子精密测量",
+        "量子模拟"
+      ],
+      "review_notes": "研究方向及个人经历不能确定商业成熟度或整体行业前景。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 5,
+      "url": "https://zhuanlan.zhihu.com/p/2073867554569961574",
+      "title": "登上《Nature》新闻：量子计算，也开始“Vibe Coding”了！",
+      "date_raw": "08-20",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "引述来源待核实"
+      ],
+      "flag_evidence": {
+        "引述来源待核实": "标题声称Nature新闻，片段提2026-08-19但文章内容截断，未给原文链接或完整引述。"
+      },
+      "suggested_tags": [
+        "量子计算",
+        "Vibe Coding",
+        "Nature报道"
+      ],
+      "review_notes": "报道线索未核实，片段日期不用于改写date_raw。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 6,
+      "url": "https://www.zhihu.com/question/53050049/answer/2072245118996947957",
+      "title": "当前量子计算技术前沿是什么水平？",
+      "date_raw": "08-16",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题问当前技术前沿，片段主要讲原理，未给系统能力指标。"
+      },
+      "suggested_tags": [
+        "量子计算原理",
+        "量子力学",
+        "技术前沿"
+      ],
+      "review_notes": "不能从基础概念推断当前硬件或纠错进展。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 7,
+      "url": "https://www.zhihu.com/question/1908462630462547204/answer/2066462561646784890",
+      "title": "为什么量子计算在科技圈热度迅速下降了？",
+      "date_raw": "07-31",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "引述来源待核实"
+      ],
+      "flag_evidence": {
+        "引述来源待核实": "片段称美国2026年将国家量子计划再授权至2034年，未给原始政策文件、通过状态或出处。"
+      },
+      "suggested_tags": [
+        "量子计算政策",
+        "国家量子计划",
+        "行业热度"
+      ],
+      "review_notes": "仅标政策说法待核实；作者反驳题目前提不构成数据矛盾。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 8,
+      "url": "https://www.zhihu.com/question/1902402957292569682/answer/1918096912344650672",
+      "title": "读研意外选择了量子计算方向，查了查未来基本没可能做相关工作，现在很内耗，应该怎么安排自己的学习生活？",
+      "date_raw": "08-26",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "引述来源待核实",
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "引述来源待核实": "片段转述人才培养论坛发言，未给完整发言、日期和原始出处。",
+        "片段信息不足": "标题问读研安排，片段未给具体安排或完整就业证据。"
+      },
+      "suggested_tags": [
+        "量子计算读研",
+        "职业规划",
+        "人才培养"
+      ],
+      "review_notes": "前景喜人为作者概括，不构成相关工作或录用保证。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 9,
+      "url": "https://zhuanlan.zhihu.com/p/687527842",
+      "title": "量子计算(二)——量子态与量子门",
+      "date_raw": "08-29",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "量子态",
+        "量子门",
+        "酉矩阵"
+      ],
+      "review_notes": "讨论酉性与可逆性，未核对全文定义和适用范围，不扩写结论。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 10,
+      "url": "https://www.zhihu.com/question/358992657/answer/1970569702104343202",
+      "title": "当下量子计算的实现，你认为哪条路线最有前途？",
+      "date_raw": "2025-12-22",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2025-12-22，标题“当下”及路线比较属于原文时点。"
+      },
+      "suggested_tags": [
+        "量子计算路线",
+        "测量保真度",
+        "量子纠错"
+      ],
+      "review_notes": "排除需要反复测量的量子纠错情形是原文条件，整理时不能省略。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/267116653/answer/2054488131919929545",
+      "title": "量子计算机是不是完全是骗局？",
+      "date_raw": "07-21",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "量子算法",
+        "后量子密码",
+        "技术争议"
+      ],
+      "review_notes": "未来可能出现新算法为可能性判断，不能写成现有密码已经被攻破。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/1991924442473989161/answer/2053238358869030063",
+      "title": "关于YouTube上《量子计算机可能永远也不会成功》您认为他说的有道理吗？",
+      "date_raw": "06-24",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "未给YouTube视频完整论据或作者“不可能实现”的推导。"
+      },
+      "suggested_tags": [
+        "量子计算争议",
+        "通用量子计算",
+        "视频评论"
+      ],
+      "review_notes": "现有架构不可能实现通用量子计算为作者观点，不作技术共识。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 13,
+      "url": "https://www.zhihu.com/question/1908462630462547204/answer/1910271550424347069",
+      "title": "为什么量子计算在科技圈热度迅速下降了？",
+      "date_raw": "2025-06-02",
+      "date_year_status": "explicit",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "融资金额及轮次未给对应交易、币种、时间和原始公告，开头金额指代亦截断。",
+        "时效性注意": "日期2025-06-02，融资和地区投入属于原文时期。"
+      },
+      "suggested_tags": [
+        "量子计算融资",
+        "光量子",
+        "中性原子"
+      ],
+      "review_notes": "不补全金额币种轮次主体，不据此提供投资判断。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/06-量子计算.json",
+      "source_row": 14,
+      "url": "https://www.zhihu.com/question/2073687014285882713/answer/2074444453184529334",
+      "title": "量子计算会是下一个风口吗？",
+      "date_raw": "08-22",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "互动数据缺失"
+      ],
+      "flag_evidence": {
+        "互动数据缺失": "votes_raw为空字符串，不能填成0赞。"
+      },
+      "suggested_tags": [
+        "量子计算前景",
+        "技术热度",
+        "商业化争议"
+      ],
+      "review_notes": "五至十年后不再有热度为作者预测，炒作与跟风评价不作为行业事实。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 1,
+      "url": "https://www.zhihu.com/question/28033281/answer/2946763507",
+      "title": "你为什么从航天科工/科技离职？",
+      "date_raw": "08-13",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "航天院所",
+        "离职",
+        "工作体验"
+      ],
+      "review_notes": "作者明确基于个人工作经历评价单位，不能泛化为整个航天行业。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 2,
+      "url": "https://zhuanlan.zhihu.com/p/677295991",
+      "title": "全是干货！2026年3D打印行业行业138篇顶级报告，吐血整理！(制造业、商业航天、航空航天、硬件制造、3C自动化、人形机器人、电子行业）",
+      "date_raw": "03-02",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题及片段使用“顶级报告”“吐血整理”“大放送”等资料推介措辞。",
+        "数据矛盾": "标题称138篇3D打印报告，片段称101份，数量不一致。"
+      },
+      "suggested_tags": [
+        "3D打印",
+        "报告合集",
+        "商业航天"
+      ],
+      "review_notes": "仅记录数字差异，不判断哪个数量正确；包含航天关键词但报告主主题是3D打印。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 3,
+      "url": "https://www.zhihu.com/question/2086212993591857225/answer/2086484738290750264",
+      "title": "如何看待千亿航天被曝强制加班、非客观原因开除，其 CEO 回应称管理方式比较粗暴并就不实信息报警？",
+      "date_raw": "09-24",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "争议信息待核实"
+      ],
+      "flag_evidence": {
+        "争议信息待核实": "标题包含强制加班、开除及CEO回应等争议信息，片段只有支持性评论，未提供独立证据或完整回应。"
+      },
+      "suggested_tags": [
+        "航天企业",
+        "劳动争议",
+        "管理方式"
+      ],
+      "review_notes": "争议指控、当事方回应与作者立场须区分，不能判定任何一方陈述已经证实。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/2082762202814195287",
+      "title": "航空级AURIX白皮书：车规MCU如何拿到低空飞行“安全通行证”？",
+      "date_raw": "09-14",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "量化数据待核实",
+        "政策表述待核实"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题以具名AURIX产品白皮书及“安全通行证”介绍应用，具有产品资料推介导向。",
+        "量化数据待核实": "片段预测2026年低空经济规模突破1.5万亿元，未呈现来源、统计范围或预测条件。",
+        "政策表述待核实": "片段称《民用航空法》首次增设“发展促进”专章，未提供法律文本、版本或生效时间。"
+      },
+      "suggested_tags": [
+        "AURIX",
+        "航空电子",
+        "MCU",
+        "白皮书"
+      ],
+      "review_notes": "不依据作者名称判营销；“安全通行证”为标题措辞，不能当作产品取得适航认证的证据。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 5,
+      "url": "https://www.zhihu.com/question/620353465/answer/2087249952410027821",
+      "title": "入职航天两个月，干不下去了，有什么退路吗?",
+      "date_raw": "22 分钟前",
+      "date_year_status": "relative",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "互动数据缺失",
+        "相对日期保留"
+      ],
+      "flag_evidence": {
+        "互动数据缺失": "votes_raw为空字符串，不能视作0赞。",
+        "相对日期保留": "date_raw为“22 分钟前”，仅保留页面原值，不换算日期或年份。"
+      },
+      "suggested_tags": [
+        "航天就业",
+        "转行",
+        "控制工程"
+      ],
+      "review_notes": "对航天就业的负面评价和转行建议属于个人观点。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 6,
+      "url": "https://zhuanlan.zhihu.com/p/2079216254443840549",
+      "title": "商业航天的大饼，该醒醒了",
+      "date_raw": "09-04",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "商业航天",
+        "产业前景",
+        "商业模式"
+      ],
+      "review_notes": "“错得离谱”等为作者对商业航天商业模式及规模预期的判断。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 7,
+      "url": "https://www.zhihu.com/question/28033281/answer/3586290917",
+      "title": "你为什么从航天科工/科技离职？",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段明确提到“24.8.7凌晨2点23”的经历，页面日期为09-21且缺年份，两个时间含义不能混同。"
+      },
+      "suggested_tags": [
+        "航天院所",
+        "加班",
+        "离职经历"
+      ],
+      "review_notes": "保留个人经历与原始时间文本，不把片段日期补作页面年份。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 8,
+      "url": "https://www.zhihu.com/question/492053570/answer/2086046885182169818",
+      "title": "为什么在这里看到的都是劝退和离开航天体制呢？",
+      "date_raw": "09-23",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "航天待遇",
+        "年终奖",
+        "职业选择"
+      ],
+      "review_notes": "关于待遇及年终奖的作者评价，片段未展示具体金额与单位范围；不同员工意见并非数据矛盾。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 9,
+      "url": "https://www.zhihu.com/question/440893843/answer/2073408370577617914",
+      "title": "为什么有些进入航天院所的人干几年就离开了？",
+      "date_raw": "08-19",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "争议信息待核实"
+      ],
+      "flag_evidence": {
+        "争议信息待核实": "片段概括落马人员“不计其数”，未列出可核查事件和具体范围。"
+      },
+      "suggested_tags": [
+        "航天院所",
+        "离职原因",
+        "组织环境"
+      ],
+      "review_notes": "标题问离职，片段谈组织与政治环境；不能据此推定任何未具名人员有违法行为或概括所有院所。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 10,
+      "url": "https://www.zhihu.com/question/1888581075451749357/answer/2086577833896366415",
+      "title": "航天研究所感觉发展受限，怎么办？",
+      "date_raw": "昨天 10:52",
+      "date_year_status": "relative",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "相对日期保留"
+      ],
+      "flag_evidence": {
+        "相对日期保留": "date_raw为“昨天 10:52”，仅保留页面原值，不推算实际日期。"
+      },
+      "suggested_tags": [
+        "航天研究所",
+        "职业发展",
+        "工作选择"
+      ],
+      "review_notes": "放弃高薪offer的个案叙述不等于行业整体薪资对比。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 11,
+      "url": "https://zhuanlan.zhihu.com/p/2082909154008741071",
+      "title": "中国航天或要迎来一周六连发",
+      "date_raw": "09-14",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题“或要迎来”及片段9月17日为计划性信息，采集时点已在9月26日，不能当作已完成六次发射的证据。"
+      },
+      "suggested_tags": [
+        "火箭发射",
+        "长征十二号",
+        "海南发射场"
+      ],
+      "review_notes": "仅保留原页面预期与计划日期；未核实最终发射结果。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/526220331/answer/2085396466118533217",
+      "title": "航天3院159厂怎么样，有没有业界知情人士透露一下，非常感谢？",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "互动数据缺失"
+      ],
+      "flag_evidence": {
+        "互动数据缺失": "votes_raw为空字符串，不能填成0赞。"
+      },
+      "suggested_tags": [
+        "航天三院",
+        "工作条件",
+        "劳务派遣"
+      ],
+      "review_notes": "加班与用工待遇为作者所述情况，未独立核实或泛化。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 13,
+      "url": "https://zhuanlan.zhihu.com/p/585056223",
+      "title": "北京的航天院所实际情况是怎样的",
+      "date_raw": "06-19",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段使用“今年”及“口罩原因”等语境，但date_raw仅06-19，无法确认其所指时期。"
+      },
+      "suggested_tags": [
+        "航天院所",
+        "工作环境",
+        "行业就业"
+      ],
+      "review_notes": "不可由文中疫情相关措辞擅自推出页面年份。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 14,
+      "url": "https://www.zhihu.com/question/301181581/answer/2078899838486368263",
+      "title": "目前蓝箭航天适合加入吗？",
+      "date_raw": "09-03",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "蓝箭航天",
+        "求职选择",
+        "薪资待遇"
+      ],
+      "review_notes": "作者建议及待遇比较未呈现岗位、地区和金额依据，不能作为求职保证。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 15,
+      "url": "https://zhuanlan.zhihu.com/p/427061186",
+      "title": "京区航天研究所",
+      "date_raw": "01-18",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "北京航天院所",
+        "待遇与加班",
+        "职业选择"
+      ],
+      "review_notes": "片段明确保留“不绝对”的条件，不能改写为待遇与加班始终成正比。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 16,
+      "url": "https://www.zhihu.com/question/440893843/answer/3503622809",
+      "title": "为什么有些进入航天院所的人干几年就离开了？",
+      "date_raw": "08-24",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "航天工作",
+        "个人经历",
+        "加班"
+      ],
+      "review_notes": "作者的工作经历与满意度不能代表全部院所或员工。"
+    },
+    {
+      "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/07-航天.json",
+      "source_row": 17,
+      "url": "https://www.zhihu.com/question/1197922109/answer/2085339689112884131",
+      "title": "如何看待航天一院一部降薪？",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "scope_status": "included",
+      "exclusion_reason": null,
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "绩效薪酬",
+        "收入变化",
+        "航天院所"
+      ],
+      "review_notes": "关于绩效保护期与收入变化的解释为作者观点；没有具体薪资数字或实际收益承诺。"
+    }
+  ]
+}

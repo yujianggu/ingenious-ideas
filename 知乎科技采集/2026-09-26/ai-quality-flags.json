@@ -1,0 +1,1023 @@
+{
+  "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/01-AI.json",
+  "reviewed_on": "2026-09-26",
+  "review_scope": "仅审阅原始JSON的标题、页面日期和选取片段；未联网、未读正文、未核实事实。分类为检索整理建议，不是对真实性或商业关系的判定。",
+  "date_policy": "保留date_raw原样；35条日期仅有月日，不补全年份。",
+  "summary": {
+    "record_count": 52,
+    "unique_url_count": 52,
+    "duplicate_url_count": 0,
+    "records_with_missing_year": 35,
+    "records_with_review_flags": 28,
+    "content_kind_counts": {
+      "学习就业": 19,
+      "技术原理": 4,
+      "社会讨论": 20,
+      "资料营销": 4,
+      "待判断": 1,
+      "产品体验": 3,
+      "产业动态": 1
+    },
+    "review_flag_counts": {
+      "片段信息不足": 7,
+      "推广倾向": 4,
+      "标题与日期不符": 1,
+      "时效性注意": 12,
+      "情景性质待核实": 1,
+      "量化数据待核实": 2,
+      "收益薪资宣称待核实": 3,
+      "数据矛盾": 2,
+      "引述来源待核实": 1
+    }
+  },
+  "duplicate_url_groups": [],
+  "repeated_title_groups": [
+    {
+      "title": "人工智能会不会走向人类无法控制的结局？",
+      "urls": [
+        "https://www.zhihu.com/question/639484621/answer/2064273133067034954",
+        "https://www.zhihu.com/question/639484621/answer/2082494519661040974",
+        "https://www.zhihu.com/question/639484621/answer/2083721942402590106"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "人工智能是不是走错了方向？",
+      "urls": [
+        "https://www.zhihu.com/question/445383290/answer/2433854224",
+        "https://www.zhihu.com/question/445383290/answer/2437057995"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    }
+  ],
+  "possible_cross_format_related_entries": [
+    {
+      "source_rows": [
+        12,
+        27
+      ],
+      "urls": [
+        "https://zhuanlan.zhihu.com/p/19950456",
+        "https://www.zhihu.com/question/27864852/answer/39007053"
+      ],
+      "evidence": "作者均为谢熊猫君，日期均为2015-02-25，题意相近；分别为专栏与回答。",
+      "status": "仅提示可能相关，片段不足以判定全文重复。"
+    }
+  ],
+  "entries": [
+    {
+      "source_row": 1,
+      "url": "https://www.zhihu.com/question/418747258/answer/1992167021987787439",
+      "title": "人工智能专业前景怎么样？",
+      "date_raw": "01-07",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI专业",
+        "升学选择",
+        "就业建议"
+      ],
+      "review_notes": "作者对专业选择的个人建议。"
+    },
+    {
+      "source_row": 2,
+      "url": "https://www.zhihu.com/question/663144533/answer/1969783129741956255",
+      "title": "人工智能的本质是数学、逻辑学还是计算机科学？",
+      "date_raw": "2025-11-15",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段仅说明以与GPT5问答回答问题，未呈现论证。"
+      },
+      "suggested_tags": [
+        "AI基础",
+        "数学与逻辑",
+        "GPT问答"
+      ],
+      "review_notes": "分类依据标题；模型问答不等于已核实证据。"
+    },
+    {
+      "source_row": 3,
+      "url": "https://www.zhihu.com/question/612291648/answer/2034963644723746298",
+      "title": "人工智能这个专业怎么样?",
+      "date_raw": "05-05",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI专业",
+        "专业选择"
+      ],
+      "review_notes": "“好得离谱、热得离谱”为作者评价。"
+    },
+    {
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/31863323446",
+      "title": "掌握人工智能，从基础知识开始",
+      "date_raw": "03-05",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI入门",
+        "学习路线",
+        "程序员转型"
+      ],
+      "review_notes": "可见内容为程序员学习路线，未见明确推广证据。"
+    },
+    {
+      "source_row": 5,
+      "url": "https://www.zhihu.com/question/658385796/answer/2006737249803454088",
+      "title": "这波人工智能浪潮怎么越来越像泡沫，AI到底带来了什么？",
+      "date_raw": "02-22",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段只说明适合AI初学者，未呈现泡沫与价值论据。"
+      },
+      "suggested_tags": [
+        "AI泡沫",
+        "AI价值",
+        "产业争议"
+      ],
+      "review_notes": "保留为观点讨论，不据此判断行业是否有泡沫。"
+    },
+    {
+      "source_row": 6,
+      "url": "https://www.zhihu.com/question/21277368/answer/2018829744922206890",
+      "title": "如何自学人工智能？",
+      "date_raw": "08-31",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI自学",
+        "思维链",
+        "AI Agent"
+      ],
+      "review_notes": "片段列出学习相关概念，不能判断教程完整性。"
+    },
+    {
+      "source_row": 7,
+      "url": "https://www.zhihu.com/question/2042649810709239000/answer/2063420040297308669",
+      "title": "为什么体制内至今仍不鼓励用人工智能？",
+      "date_raw": "07-23",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "公共部门",
+        "AI应用",
+        "组织采纳"
+      ],
+      "review_notes": "片段是在反驳问题前提，不属于数据矛盾。"
+    },
+    {
+      "source_row": 8,
+      "url": "https://zhuanlan.zhihu.com/p/686381318",
+      "title": "【吐血整理】2026年人工智能研究报告整理，一共272份，欢迎收藏！（附下载）",
+      "date_raw": "02-09",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题使用“吐血整理”“欢迎收藏”“附下载”，有资料推广导向。"
+      },
+      "suggested_tags": [
+        "研究报告合集",
+        "大模型",
+        "机器人",
+        "AIGC"
+      ],
+      "review_notes": "272份为标题声称，片段不足以核实数量。"
+    },
+    {
+      "source_row": 9,
+      "url": "https://zhuanlan.zhihu.com/p/647128848",
+      "title": "人工智能即将爆发",
+      "date_raw": "09-19",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "弱人工智能",
+        "通用人工智能",
+        "超人工智能"
+      ],
+      "review_notes": "片段为AI阶段分类；标题“即将爆发”为预测性措辞。"
+    },
+    {
+      "source_row": 10,
+      "url": "https://zhuanlan.zhihu.com/p/713690467",
+      "title": "2026年人工智能基础知识，助你轻松入门",
+      "date_raw": "2025-05-15",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "标题与日期不符"
+      ],
+      "flag_evidence": {
+        "标题与日期不符": "标题含2026年，date_raw为2025-05-15。"
+      },
+      "suggested_tags": [
+        "AI入门",
+        "学习路线",
+        "学习资源"
+      ],
+      "review_notes": "可能存在改题或更新，年份不一致不等于内容虚假。"
+    },
+    {
+      "source_row": 11,
+      "url": "https://zhuanlan.zhihu.com/p/2028299765637465501",
+      "title": "人工智能给我大学四年的本科生活带来的撕裂感",
+      "date_raw": "06-30",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大学生活",
+        "AI辅助学习",
+        "文献与PPT"
+      ],
+      "review_notes": "个人经历，不能概括全部大学生。"
+    },
+    {
+      "source_row": 12,
+      "url": "https://zhuanlan.zhihu.com/p/19950456",
+      "title": "为什么最近有很多名人，比如比尔盖茨，马斯克、霍金等，让人们警惕人工智能？",
+      "date_raw": "2015-02-25",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2015-02-25，标题“最近”属于原文语境。"
+      },
+      "suggested_tags": [
+        "AI风险",
+        "名人观点",
+        "技术伦理"
+      ],
+      "review_notes": "与第27条作者及日期相同、题意相近；未核对全文，不能认定重复。"
+    },
+    {
+      "source_row": 13,
+      "url": "https://zhuanlan.zhihu.com/p/2040433603943913000",
+      "title": "聪明人已经发现2026年人工智能不对劲儿了",
+      "date_raw": "05-20",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题称AI“不对劲儿”，片段只列技能方向，核心论点不明。"
+      },
+      "suggested_tags": [
+        "Python",
+        "AI应用开发",
+        "大模型微调",
+        "提示词工程"
+      ],
+      "review_notes": "分类依据技能清单；吸睛标题不足以确定收费推广。"
+    },
+    {
+      "source_row": 14,
+      "url": "https://www.zhihu.com/question/639484621/answer/2064273133067034954",
+      "title": "人工智能会不会走向人类无法控制的结局？",
+      "date_raw": "07-25",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI安全",
+        "权限控制",
+        "失控风险"
+      ],
+      "review_notes": "“严格限制权限即可”为作者主张，片段未呈现充分论证。"
+    },
+    {
+      "source_row": 15,
+      "url": "https://www.zhihu.com/question/639484621/answer/2082494519661040974",
+      "title": "人工智能会不会走向人类无法控制的结局？",
+      "date_raw": "09-13",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "情景性质待核实"
+      ],
+      "flag_evidence": {
+        "情景性质待核实": "片段称让AI决定核武器发射，缺乏上下文，无法区分假设、虚构还是事件叙述。"
+      },
+      "suggested_tags": [
+        "AI安全",
+        "失控风险",
+        "核武器情景"
+      ],
+      "review_notes": "不得改写为真实发生的事件。"
+    },
+    {
+      "source_row": 16,
+      "url": "https://zhuanlan.zhihu.com/p/1994420537296909470",
+      "title": "2026年人工智能研究全解，轻松掌握前沿技术",
+      "date_raw": "04-22",
+      "date_year_status": "missing",
+      "content_kind": "待判断",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段只有AI重要性的引入，无法判断研究内容或学习资料推广性质。"
+      },
+      "suggested_tags": [
+        "AI研究",
+        "前沿技术",
+        "AI入门"
+      ],
+      "review_notes": "标题和作者名称不足以确定内容性质。"
+    },
+    {
+      "source_row": 17,
+      "url": "https://www.zhihu.com/question/2083859666635961649/answer/2084783206923092285",
+      "title": "人工智能真的有可能毁灭人类吗？",
+      "date_raw": "09-19",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI风险",
+        "人类未来",
+        "群体智能"
+      ],
+      "review_notes": "AI是人类群体智能表现形式属于作者立场。"
+    },
+    {
+      "source_row": 18,
+      "url": "https://www.zhihu.com/question/2076049438271862470/answer/2076223013192720437",
+      "title": "既然宇宙可以从冷冰冰的原子发展出意识，为什么还有那么多人认为人工智能不能发展出意识呢？",
+      "date_raw": "08-27",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI意识",
+        "人脑与模型",
+        "心智哲学"
+      ],
+      "review_notes": "意识问题讨论；未独立核实其技术论断。"
+    },
+    {
+      "source_row": 19,
+      "url": "https://www.zhihu.com/question/1936375725931361485/answer/2003232153480226496",
+      "title": "怎么成为一个 ai agent 工程师？",
+      "date_raw": "02-06",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI Agent",
+        "工程师成长",
+        "转行"
+      ],
+      "review_notes": "职业学习建议，片段未展示收费入口。"
+    },
+    {
+      "source_row": 20,
+      "url": "https://www.zhihu.com/question/372639666/answer/1338676807",
+      "title": "人工智能可以产生自主意识吗？",
+      "date_raw": "03-23",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "自主意识",
+        "神经系统",
+        "心智哲学"
+      ],
+      "review_notes": "作者的神经系统论述不等于AI已有意识的证据。"
+    },
+    {
+      "source_row": 21,
+      "url": "https://zhuanlan.zhihu.com/p/2060473961146749573",
+      "title": "500万人缺口，为什么人工智能专业本科生还是找不到工作？",
+      "date_raw": "07-14",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "标题声称500万人缺口，未展示来源、时间范围或统计口径。"
+      },
+      "suggested_tags": [
+        "AI就业",
+        "人才缺口",
+        "本科与读研"
+      ],
+      "review_notes": "人才缺口与求职困难可以并存，本身不构成数据矛盾。"
+    },
+    {
+      "source_row": 22,
+      "url": "https://zhuanlan.zhihu.com/p/1941906262817204125",
+      "title": "2026年AI技术前沿，大厂面试必备！",
+      "date_raw": "08-20",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "收益薪资宣称待核实": "片段称AI产品岗薪资普遍高出传统岗位一大截，未展示统计来源、范围和样本。"
+      },
+      "suggested_tags": [
+        "AI产品经理",
+        "面试",
+        "岗位薪资"
+      ],
+      "review_notes": "保留就业市场概括的待核实属性。"
+    },
+    {
+      "source_row": 23,
+      "url": "https://www.zhihu.com/question/445383290/answer/2433854224",
+      "title": "人工智能是不是走错了方向？",
+      "date_raw": "2022-04-11",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2022-04-11，对当时研究方向的整体判断不能直接代表2026年情况。"
+      },
+      "suggested_tags": [
+        "AI研究方向",
+        "技术路线争议"
+      ],
+      "review_notes": "作者认为方向错误，不作为采集报告事实结论。"
+    },
+    {
+      "source_row": 24,
+      "url": "https://www.zhihu.com/question/1934703022690277089/answer/2055993814062573072",
+      "title": "现在的人工智能科技被夸大了吗？",
+      "date_raw": "07-02",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI能力",
+        "技术预期",
+        "社会认知"
+      ],
+      "review_notes": "“严重低估”为作者判断。"
+    },
+    {
+      "source_row": 25,
+      "url": "https://zhuanlan.zhihu.com/p/678510035",
+      "title": "全是干货！2026年数字人行业177篇顶级报告，吐血整理！（VR、AR、动画与影视、游戏开发、人工智能、社交与娱乐、虚拟现实、社交媒体）",
+      "date_raw": "03-02",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题使用“全是干货”“顶级报告”“吐血整理”。",
+        "数据矛盾": "标题为177篇，片段为248份，报告数量不一致。"
+      },
+      "suggested_tags": [
+        "数字人",
+        "行业报告合集",
+        "VR与AR"
+      ],
+      "review_notes": "仅记录数字差异，不推定哪个数字正确。"
+    },
+    {
+      "source_row": 26,
+      "url": "https://zhuanlan.zhihu.com/p/70687533",
+      "title": "人工智能专业劝退贴。",
+      "date_raw": "2019-06-25",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2019-06-25，专业选择和就业背景可能已经变化。"
+      },
+      "suggested_tags": [
+        "AI专业",
+        "专业选择",
+        "劝退观点"
+      ],
+      "review_notes": "个人劝退意见不等于当前专业前景结论。"
+    },
+    {
+      "source_row": 27,
+      "url": "https://www.zhihu.com/question/27864852/answer/39007053",
+      "title": "为什么有很多名人让人们警惕人工智能？",
+      "date_raw": "2015-02-25",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2015-02-25，风险与能力判断需放回当时语境。"
+      },
+      "suggested_tags": [
+        "AI风险",
+        "技术伦理",
+        "人类未来"
+      ],
+      "review_notes": "与第12条作者及日期相同、题意相近，URL不同；未核对全文。"
+    },
+    {
+      "source_row": 28,
+      "url": "https://zhuanlan.zhihu.com/p/2081857852243812882",
+      "title": "从聊天到办事，AI手机助手终于有了该有的样子|豆包手机助手真实使用体验分享",
+      "date_raw": "09-14",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "豆包手机助手",
+        "手机交互",
+        "AI Agent"
+      ],
+      "review_notes": "作者声称使用一个多月；体验及功能未独立验证。"
+    },
+    {
+      "source_row": 29,
+      "url": "https://www.zhihu.com/question/1915804517112471746/answer/1916446508405985615",
+      "title": "如何评价任正非在接受媒体采访时表示「人工智能可能是最后一次技术革命，中国也有优势」?",
+      "date_raw": "2025-06-12",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2025-06-12，标题引用特定采访语境，片段为回答者评论。"
+      },
+      "suggested_tags": [
+        "任正非采访",
+        "强人工智能",
+        "技术革命"
+      ],
+      "review_notes": "不要把回答者关于算力的评论归为受访者原话。"
+    },
+    {
+      "source_row": 30,
+      "url": "https://www.zhihu.com/question/1925442868849402101/answer/1926602931056141246",
+      "title": "人工智能明年会达到什么程度？",
+      "date_raw": "2025-07-10",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2025-07-10，片段预测2026年7月；采集日期2026-09-26已超过预测时点。"
+      },
+      "suggested_tags": [
+        "AI预测",
+        "技术进展",
+        "2026年预测"
+      ],
+      "review_notes": "已到期预测，不能仅凭片段判定是否兑现。"
+    },
+    {
+      "source_row": 31,
+      "url": "https://www.zhihu.com/question/20229908/answer/164969792",
+      "title": "人工智能是什么？",
+      "date_raw": "2020-06-11",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI基础",
+        "概念图解",
+        "入门科普"
+      ],
+      "review_notes": "片段只给出图解标题；基础知识不因日期较早自动失效。"
+    },
+    {
+      "source_row": 32,
+      "url": "https://zhuanlan.zhihu.com/p/670276597",
+      "title": "全是干货！2026年数字经济行业253篇顶级报告，吐血整理！（云计算、大数据、人工智能、物联网、区块链、电子商务、数字金融、数字医疗健康、智慧城市建设、太空经济、智慧城市、数字娱乐）",
+      "date_raw": "03-04",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题使用“全是干货”“顶级报告”“吐血整理”。",
+        "数据矛盾": "标题为253篇，片段为302份，报告数量不一致。"
+      },
+      "suggested_tags": [
+        "数字经济",
+        "行业报告合集",
+        "云计算与大数据"
+      ],
+      "review_notes": "仅记录数字差异，不推定哪个数字正确。"
+    },
+    {
+      "source_row": 33,
+      "url": "https://www.zhihu.com/question/445383290/answer/2437057995",
+      "title": "人工智能是不是走错了方向？",
+      "date_raw": "2022-06-22",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期为2022-06-22，当时的AI理论评价不能直接作当前行业结论。"
+      },
+      "suggested_tags": [
+        "AI理论",
+        "技术路线争议"
+      ],
+      "review_notes": "片段明确含“我认为”，需保留作者观点属性。"
+    },
+    {
+      "source_row": 34,
+      "url": "https://zhuanlan.zhihu.com/p/2005321217016603721",
+      "title": "什么是GEO（AI搜索）超级详细版本，看完全懂。",
+      "date_raw": "07-01",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "GEO",
+        "生成式搜索",
+        "搜索优化"
+      ],
+      "review_notes": "仅凭作者名称与题目不能认定商业推广。"
+    },
+    {
+      "source_row": 35,
+      "url": "https://zhuanlan.zhihu.com/p/1944058384610497302",
+      "title": "国家定调「人工智能+」：中国AI十年三步走，战略解读来了",
+      "date_raw": "2025-08-27",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "人工智能+",
+        "政策解读",
+        "AI应用"
+      ],
+      "review_notes": "2025-08-27的政策解读；政策措辞与阶段安排需对照原文，当前片段未提供原文。"
+    },
+    {
+      "source_row": 36,
+      "url": "https://zhuanlan.zhihu.com/p/2041722648405825198",
+      "title": "2026 年最新的 人工智能 学习路线（为期三个月）",
+      "date_raw": "05-24",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段“自己构建一个 安德烈卡帕西”缺少完整语义。"
+      },
+      "suggested_tags": [
+        "AI学习路线",
+        "三个月学习计划",
+        "Karpathy"
+      ],
+      "review_notes": "三个月为标题学习计划时长，不等于专业水平达成保证。"
+    },
+    {
+      "source_row": 37,
+      "url": "https://zhuanlan.zhihu.com/p/2082361821198037473",
+      "title": "豆包二代AI手机专业评测｜从业者视角：AI键+个人记忆+Agent落地，手机交互要变了",
+      "date_raw": "09-16",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "豆包AI手机",
+        "AI键",
+        "个人记忆",
+        "AI Agent"
+      ],
+      "review_notes": "标题与概念清单不能证明实际功能表现。"
+    },
+    {
+      "source_row": 38,
+      "url": "https://www.zhihu.com/question/2052464126996353859/answer/2082214136914654020",
+      "title": "全世界都在ALL in AI ，AI真的是第四次工业革命吗？人类的科技树是否点错了？",
+      "date_raw": "09-12",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI产业价值",
+        "工业革命",
+        "Agent应用"
+      ],
+      "review_notes": "行业重心变化为作者概括。"
+    },
+    {
+      "source_row": 39,
+      "url": "https://www.zhihu.com/question/306079183/answer/1942139711343817404",
+      "title": "33岁了，想转行人工智能还来得及吗？",
+      "date_raw": "2025-08-22",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2025-08-22，转行建议依赖个人基础与当时就业环境。"
+      },
+      "suggested_tags": [
+        "AI转行",
+        "职业规划",
+        "成人学习"
+      ],
+      "review_notes": "“用不了多久”不能泛化为所有人的学习周期。"
+    },
+    {
+      "source_row": 40,
+      "url": "https://zhuanlan.zhihu.com/p/2081806291811438594",
+      "title": "豆包智能AI手机怎么样？原生AI助手实测：AI键+识屏问答，手机真的开始\"自己动手\"",
+      "date_raw": "09-16",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "豆包AI手机",
+        "识屏问答",
+        "AI Agent"
+      ],
+      "review_notes": "标题为实测，当前片段只有年度关键词判断，未见测评数据。"
+    },
+    {
+      "source_row": 41,
+      "url": "https://zhuanlan.zhihu.com/p/636266267",
+      "title": "人工智能领域顶会顶刊一览",
+      "date_raw": "2023-06-11",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意",
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2023-06-11，会议期刊与评定信息需注意版本。",
+        "片段信息不足": "标题为顶会顶刊，片段却介绍SAIL奖，无法确认清单内容。"
+      },
+      "suggested_tags": [
+        "学术会议",
+        "学术期刊",
+        "AI科研"
+      ],
+      "review_notes": "片段奖项等级说法未经核实。"
+    },
+    {
+      "source_row": 42,
+      "url": "https://www.zhihu.com/question/2083695371893711078/answer/2083698151538561829",
+      "title": "怎么看待 Futurism 称人工智能学会了向他们“乞讨”？",
+      "date_raw": "09-17",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI Agent",
+        "自动推销",
+        "媒体报道"
+      ],
+      "review_notes": "拟人化“乞讨”不等于AI具有人类意图的事实。"
+    },
+    {
+      "source_row": 43,
+      "url": "https://zhuanlan.zhihu.com/p/713669105",
+      "title": "普通人该如何运用好AI工具赚钱呢？",
+      "date_raw": "06-08",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段谈2025年AI机会，date_raw只有06-08，不能据此判断页面年份或当下适用性。"
+      },
+      "suggested_tags": [
+        "AI副业",
+        "AI工具",
+        "变现方法"
+      ],
+      "review_notes": "没有具体收益数字或明确收费推广证据。"
+    },
+    {
+      "source_row": 44,
+      "url": "https://www.zhihu.com/question/639484621/answer/2083721942402590106",
+      "title": "人工智能会不会走向人类无法控制的结局？",
+      "date_raw": "09-17",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "“当时没有人工智能这个概念”缺少时代、作品或事件语境。"
+      },
+      "suggested_tags": [
+        "AI失控",
+        "机器人",
+        "科幻与技术伦理"
+      ],
+      "review_notes": "不自行补全片段所指作品或事件。"
+    },
+    {
+      "source_row": 45,
+      "url": "https://www.zhihu.com/question/609766074/answer/3483104138",
+      "title": "人工智能选南大还是人大？",
+      "date_raw": "2024-04-29",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2024-04-29，院校比较与实习环境可能变化。"
+      },
+      "suggested_tags": [
+        "院校选择",
+        "AI专业",
+        "实习"
+      ],
+      "review_notes": "地域评价为作者个人感受，不代表地区整体研究水平。"
+    },
+    {
+      "source_row": 46,
+      "url": "https://zhuanlan.zhihu.com/p/2000607848808280320",
+      "title": "2026最夯副业！二胎宝妈在家靠AI写作3个月变现2.6w全攻略！附内部投稿渠道！！！",
+      "date_raw": "08-26",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“全攻略”“内部投稿渠道”，片段明确称靠知乎知学堂AI写作课翻身。",
+        "收益薪资宣称待核实": "标题称3个月变现2.6w，未见收入凭证、成本或可复制条件。"
+      },
+      "suggested_tags": [
+        "AI写作",
+        "副业变现",
+        "课程推广"
+      ],
+      "review_notes": "个案收益及课程效果宣称不能写成普遍可实现收入。"
+    },
+    {
+      "source_row": 47,
+      "url": "https://www.zhihu.com/question/305571473/answer/2602346217",
+      "title": "人工智能是否能取代人类？",
+      "date_raw": "2023-01-29",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI替代",
+        "人机关系",
+        "人类未来"
+      ],
+      "review_notes": "“最终只是辅助人类发展”为作者未来判断。"
+    },
+    {
+      "source_row": 48,
+      "url": "https://www.zhihu.com/question/316424064/answer/1738761505",
+      "title": "未来人工智能是否会让大部分人失业，从而引发严重的社会危机？",
+      "date_raw": "2021-05-15",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2021-05-15，就业影响讨论较早，不能代替当前劳动市场证据。"
+      },
+      "suggested_tags": [
+        "自动化",
+        "就业影响",
+        "社会风险"
+      ],
+      "review_notes": "“大量人口失去现有岗位”为作者判断，片段无数据。"
+    },
+    {
+      "source_row": 49,
+      "url": "https://www.zhihu.com/question/41253586/answer/2015681754632053580",
+      "title": "未来有什么工作绝对不会被人工智能（AI）取代？",
+      "date_raw": "03-13",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "职业替代",
+        "程序员",
+        "AI就业影响"
+      ],
+      "review_notes": "标题“绝对不会”不能视为职业保证。"
+    },
+    {
+      "source_row": 50,
+      "url": "https://zhuanlan.zhihu.com/p/2725701737",
+      "title": "普通人如何用AI提升工作效率",
+      "date_raw": "06-08",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "量化数据待核实",
+        "引述来源待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段引用AI会让99%的人失业，未给统计或预测依据。",
+        "引述来源待核实": "片段只称清华大学教授说过，未给姓名、原始出处或上下文。"
+      },
+      "suggested_tags": [
+        "AI效率",
+        "岗位替代",
+        "工作方式"
+      ],
+      "review_notes": "保留为未核实转述，不能写成已发生的失业比例。"
+    },
+    {
+      "source_row": 51,
+      "url": "https://www.zhihu.com/question/398075696/answer/1254523728",
+      "title": "人工智能需要哪些高级的数学知识？",
+      "date_raw": "2020-06-30",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI数学",
+        "算法学习",
+        "数学基础"
+      ],
+      "review_notes": "片段未展示所需数学知识清单。"
+    },
+    {
+      "source_row": 52,
+      "url": "https://www.zhihu.com/question/658584396/answer/2068270259140932684",
+      "title": "人工智能专业当前的就业形势怎么样？四年后会有什么变化？",
+      "date_raw": "08-05",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "收益薪资宣称待核实": "片段称2026年春招AI新发岗位平均月薪超6万元，未见数据源、样本、地区或岗位范围。"
+      },
+      "suggested_tags": [
+        "AI就业",
+        "岗位薪资",
+        "春招"
+      ],
+      "review_notes": "新发岗位平均月薪不能改写成AI从业者普遍实际收入。"
+    }
+  ]
+}

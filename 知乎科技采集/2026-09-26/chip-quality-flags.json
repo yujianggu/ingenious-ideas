@@ -1,0 +1,1066 @@
+{
+  "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/03-芯片.json",
+  "reviewed_on": "2026-09-26",
+  "review_scope": "仅审阅原始JSON的标题、页面日期和选取片段；未联网、未读正文、未核实事实。分类为检索整理建议，不是对真实性或商业关系的判定。",
+  "date_policy": "保留date_raw原样；36条日期仅有月日，不补全年份。",
+  "summary": {
+    "record_count": 52,
+    "unique_url_count": 52,
+    "duplicate_url_count": 0,
+    "records_with_missing_year": 36,
+    "records_with_review_flags": 34,
+    "content_kind_counts": {
+      "产业动态": 21,
+      "学习就业": 11,
+      "资料营销": 11,
+      "技术原理": 7,
+      "社会讨论": 2
+    },
+    "review_flag_counts": {
+      "量化数据待核实": 10,
+      "片段信息不足": 9,
+      "推广倾向": 12,
+      "时效性注意": 10,
+      "引述来源待核实": 1,
+      "数据矛盾": 3
+    }
+  },
+  "duplicate_url_groups": [],
+  "repeated_title_groups": [
+    {
+      "title": "既然芯片制程上不去，为什么不把芯片做大一点？",
+      "urls": [
+        "https://www.zhihu.com/question/8992463775/answer/1955398880356198156",
+        "https://www.zhihu.com/question/8992463775/answer/2083138359715809141"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "对于芯片，我们真的毫无反抗之力了吗？",
+      "urls": [
+        "https://www.zhihu.com/question/275016249/answer/51906601991",
+        "https://www.zhihu.com/question/275016249/answer/51533145417"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "芯片高薪什么时候凉，会以什么形式收场？",
+      "urls": [
+        "https://www.zhihu.com/question/587842438/answer/2022759211797419428",
+        "https://www.zhihu.com/question/587842438/answer/3347926741",
+        "https://www.zhihu.com/question/587842438/answer/3572622741"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "中国的芯片何时能真正崛起？",
+      "urls": [
+        "https://www.zhihu.com/question/662218235/answer/1954649122100483050",
+        "https://www.zhihu.com/question/662218235/answer/1900570951256630623",
+        "https://www.zhihu.com/question/662218235/answer/1932888914407982881"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "中国芯片行业未来怎么看？",
+      "urls": [
+        "https://www.zhihu.com/question/7901905216/answer/70942712700",
+        "https://www.zhihu.com/question/7901905216/answer/1958382593067161207"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    }
+  ],
+  "possible_cross_format_related_entries": [],
+  "entries": [
+    {
+      "source_row": 1,
+      "url": "https://zhuanlan.zhihu.com/p/2071573475869848818",
+      "title": "差距不止一点点！2026全球芯片大洗牌：美国独霸53%，中国大陆仅6%",
+      "date_raw": "08-14",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "标题声称美国占53%、中国大陆仅6%，片段未提供统计来源、年份口径或市场定义。"
+      },
+      "suggested_tags": [
+        "芯片市场",
+        "产业布局",
+        "全球份额"
+      ],
+      "review_notes": "2026为标题年份；date_raw仅有月日，不据此补年。"
+    },
+    {
+      "source_row": 2,
+      "url": "https://zhuanlan.zhihu.com/p/680790200",
+      "title": "IC设计岗位——DFT工程师初了解",
+      "date_raw": "2024-02-02",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "IC设计",
+        "DFT工程师",
+        "项目实战"
+      ],
+      "review_notes": "片段为岗位能力建议，未出现课程购买或报名引导，不因作者身份推定推广。"
+    },
+    {
+      "source_row": 3,
+      "url": "https://www.zhihu.com/question/1968371618490352124/answer/2058590303288815700",
+      "title": "国产高端芯片制造多久能造出来？寒武纪，海光信息，中芯国际，华为，谁更有希望？",
+      "date_raw": "07-09",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段断言华为门店任何手机或平板均为国产制造高端芯片，但未展示产品范围或证据，5+1+N分工也未展开。"
+      },
+      "suggested_tags": [
+        "国产芯片",
+        "高端制造",
+        "产业分工"
+      ],
+      "review_notes": "“高端”及“国产制造”的定义未呈现，不能据片段判断各企业制造进度。"
+    },
+    {
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/678360789",
+      "title": "【硬核干货】2026年最新集成电路研究报告整理，一共89份，欢迎收藏！（附下载）",
+      "date_raw": "02-26",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“硬核干货”“欢迎收藏”“附下载”，片段称报告持续更新并催促收藏。"
+      },
+      "suggested_tags": [
+        "集成电路",
+        "研究报告合集",
+        "下载资料"
+      ],
+      "review_notes": "标题89份与片段89个文件一致；仅表示可见数字一致，未核实文件数量和内容。"
+    },
+    {
+      "source_row": 5,
+      "url": "https://www.zhihu.com/question/2059956251455494144/answer/2061000453559792369",
+      "title": "芯片行业年薪三十多万看着诱人，每月高强度无加班费加班，值得年轻人长期深耕吗？长期熬夜怎么保护身体健康？",
+      "date_raw": "07-16",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题询问高薪、加班和健康，片段转述低端芯片市场状况，未呈现对工作强度或健康问题的回答。"
+      },
+      "suggested_tags": [
+        "芯片就业",
+        "薪资讨论",
+        "加班健康"
+      ],
+      "review_notes": "“年薪三十多万”是问题中的前提，不据此当作作者真实收益或薪资承诺。"
+    },
+    {
+      "source_row": 6,
+      "url": "https://zhuanlan.zhihu.com/p/672153126",
+      "title": "小白初入数字IC设计行业，如何快速学习？",
+      "date_raw": "2023-12-21",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段提到2023年人才供需报告和2022年数据，但未给出完整统计或学习方法。",
+        "时效性注意": "date_raw为2023-12-21，片段引用2023年报告及2022年情况，不能直接代表当前人才需求。"
+      },
+      "suggested_tags": [
+        "数字IC",
+        "入门学习",
+        "人才供需"
+      ],
+      "review_notes": "未因作者名称或提及人才报告标为课程推广。"
+    },
+    {
+      "source_row": 7,
+      "url": "https://zhuanlan.zhihu.com/p/609486341",
+      "title": "科普：芯片中的“层”，“层层”全解析",
+      "date_raw": "2021-06-23",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片层结构",
+        "二维芯片",
+        "三维封装"
+      ],
+      "review_notes": "可见内容为平面芯片与堆叠封装科普；旧日期本身不等于基础知识失效。"
+    },
+    {
+      "source_row": 8,
+      "url": "https://zhuanlan.zhihu.com/p/688200338",
+      "title": "【吐血整理】2026年算力芯片行业报告整理，一共68份，欢迎收藏！（附下载）",
+      "date_raw": "02-06",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“吐血整理”“欢迎收藏”“附下载”，片段催促收藏并宣称持续更新。"
+      },
+      "suggested_tags": [
+        "算力芯片",
+        "研究报告合集",
+        "下载资料"
+      ],
+      "review_notes": "标题与片段都写68；未核实报告内容、数量或481MB大小。"
+    },
+    {
+      "source_row": 9,
+      "url": "https://www.zhihu.com/question/598464483/answer/2040050535378702653",
+      "title": "芯片，会是下一个美元霸权吗？",
+      "date_raw": "05-19",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片竞争",
+        "科技与经济",
+        "国际关系"
+      ],
+      "review_notes": "围绕芯片与经济影响力作讨论，不将标题比喻当作已经成立的事实。"
+    },
+    {
+      "source_row": 10,
+      "url": "https://www.zhihu.com/question/29353581/answer/2070420194162381803",
+      "title": "中国的芯片现状如何？",
+      "date_raw": "08-11",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段称“比去年全年还多”并指向“这组数字”，但未呈现数据、比较年份或指标。"
+      },
+      "suggested_tags": [
+        "中国芯片",
+        "出口量",
+        "出口价格"
+      ],
+      "review_notes": "不补充缺失的年份，不把出口数量与出口金额混为同一指标。"
+    },
+    {
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/8992463775/answer/1955398880356198156",
+      "title": "既然芯片制程上不去，为什么不把芯片做大一点？",
+      "date_raw": "2025-09-27",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片面积",
+        "Chiplet",
+        "裸片"
+      ],
+      "review_notes": "讨论大芯片的设计限制与拆分思路；仅依据可见解释分类。"
+    },
+    {
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/1991126241089176896/answer/2083828908789649443",
+      "title": "中国芯片的进度怎么样了？",
+      "date_raw": "09-17",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "国产芯片",
+        "产业进度",
+        "制造成本"
+      ],
+      "review_notes": "以两弹一星作类比讨论芯片产业条件，为作者评价，片段没有可量化进度结论。"
+    },
+    {
+      "source_row": 13,
+      "url": "https://zhuanlan.zhihu.com/p/2078432936274277990",
+      "title": "DeepSeek们狂造芯片，英伟达终于不香了？",
+      "date_raw": "09-02",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "引述来源待核实"
+      ],
+      "flag_evidence": {
+        "引述来源待核实": "片段转述路透社称DeepSeek已做一年AI芯片，但未提供原报道日期、链接或完整上下文。"
+      },
+      "suggested_tags": [
+        "DeepSeek",
+        "AI芯片",
+        "英伟达"
+      ],
+      "review_notes": "仅保留“片段转述路透社”的出处层级，不认定自研芯片进展已获独立核实。"
+    },
+    {
+      "source_row": 14,
+      "url": "https://zhuanlan.zhihu.com/p/360517768",
+      "title": "芯片到底是什么？",
+      "date_raw": "2021-03-29",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片基础",
+        "半导体",
+        "集成电路"
+      ],
+      "review_notes": "可见内容为芯片概念入门，未见营销证据。"
+    },
+    {
+      "source_row": 15,
+      "url": "https://www.zhihu.com/question/583788684/answer/1918684784336543811",
+      "title": "如何入门模拟IC设计？",
+      "date_raw": "05-29",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "模拟IC",
+        "入门学习",
+        "工程师技能"
+      ],
+      "review_notes": "讨论模拟IC设计技能和学习门槛，未出现明确课程推广入口。"
+    },
+    {
+      "source_row": 16,
+      "url": "https://www.zhihu.com/question/1907750644594500051/answer/1908160715245721493",
+      "title": "小米的玄戒芯片，是自主可控的吗？",
+      "date_raw": "08-24",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "玄戒芯片",
+        "自主可控",
+        "芯片代工"
+      ],
+      "review_notes": "片段表达支持自研与代工结合的个人立场，未完整论证玄戒的自主可控程度。"
+    },
+    {
+      "source_row": 17,
+      "url": "https://www.zhihu.com/question/2080312796248552902/answer/2081387590138254284",
+      "title": "如何看待华为麒麟芯片9050pro？",
+      "date_raw": "09-13",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称2031年量产时理论性能将比9030提升4.69倍，未展示计算条件或依据。",
+        "时效性注意": "片段谈2031年量产及未来性能，属于未来情景推演，不能改写为当前已量产或已实测结果。"
+      },
+      "suggested_tags": [
+        "麒麟芯片",
+        "EUV",
+        "性能预测"
+      ],
+      "review_notes": "标题的芯片型号及未来量产前提均未独立核实；4.69倍应保留预测语境。"
+    },
+    {
+      "source_row": 18,
+      "url": "https://zhuanlan.zhihu.com/p/670678484",
+      "title": "全是干货！2026年半导体行业559篇顶级报告，吐血整理！（半导体设备、半导体材料、芯片、集成电路、传感器、光电子器件、半导体人才、硅片、多晶硅、光刻胶、 分立器件、光电子器件）",
+      "date_raw": "02-03",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题与片段使用“顶级报告”“吐血整理”“大放送”等资料推广措辞。",
+        "数据矛盾": "标题写559篇报告，片段写735份半导体行业报告，数量不一致。"
+      },
+      "suggested_tags": [
+        "半导体",
+        "研究报告合集",
+        "行业资料"
+      ],
+      "review_notes": "可能与合集更新或标题未同步有关；保留两处原数字，不替作者修正。"
+    },
+    {
+      "source_row": 19,
+      "url": "https://www.zhihu.com/question/1956547858795856394/answer/2084644828596401048",
+      "title": "为什么小米自研芯片后，华为开始公布手机的芯片型号了？",
+      "date_raw": "09-19",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段采用“花先生”“遥遥先生”等讽刺性人物叙述，未提供芯片型号公布时间或因果证据。"
+      },
+      "suggested_tags": [
+        "华为",
+        "小米",
+        "品牌舆论"
+      ],
+      "review_notes": "按品牌舆论讨论整理；不把讽刺叙事改写为真实人物传记或企业动机事实。"
+    },
+    {
+      "source_row": 20,
+      "url": "https://www.zhihu.com/question/8992463775/answer/2083138359715809141",
+      "title": "既然芯片制程上不去，为什么不把芯片做大一点？",
+      "date_raw": "09-15",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片面积",
+        "芯片设计",
+        "制程限制"
+      ],
+      "review_notes": "与第11条为同一问题的不同回答，URL不同，保留；片段对“做大”含义作区分但未展开实现细节。"
+    },
+    {
+      "source_row": 21,
+      "url": "https://zhuanlan.zhihu.com/p/30797499748",
+      "title": "【深度解析】2026年最新科创板行业研究报告整理，一共136份，欢迎收藏！（附下载资源包）",
+      "date_raw": "09-21",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“深度解析”“欢迎收藏”“附下载资源包”，片段介绍报告文件包。"
+      },
+      "suggested_tags": [
+        "科创板",
+        "研究报告合集",
+        "下载资料"
+      ],
+      "review_notes": "标题136份与片段136个文件一致；未核实879MB或报告质量。"
+    },
+    {
+      "source_row": 22,
+      "url": "https://www.zhihu.com/question/328191398/answer/1972707446704316887",
+      "title": "据说中国进口芯片都花上万亿，为什么中国还有那么大的顺差？",
+      "date_raw": "07-07",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称“中国”为世界第一大芯片出口国、“中国大陆”为第二出口地区，未给统计年份、数据来源或地域口径。"
+      },
+      "suggested_tags": [
+        "芯片进出口",
+        "贸易顺差",
+        "出口排名"
+      ],
+      "review_notes": "两种排名可能采用不同地域口径，不能仅据片段认定互相矛盾；问题中的进口金额也未核实。"
+    },
+    {
+      "source_row": 23,
+      "url": "https://www.zhihu.com/question/275016249/answer/51906601991",
+      "title": "对于芯片，我们真的毫无反抗之力了吗？",
+      "date_raw": "05-01",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "国产替代",
+        "汽车芯片",
+        "供应链"
+      ],
+      "review_notes": "作者讨论进口依赖与国产替代前景；“整个行业已经放弃”等绝对措辞未展示支撑范围。"
+    },
+    {
+      "source_row": 24,
+      "url": "https://zhuanlan.zhihu.com/p/28617153636",
+      "title": "【知乎独家】2026年半导体行业，339份报告聚焦新前沿发展，半导体设备、GaN功率半导体、芯片、集成电路、传感器、光电子器件、半导体人才、硅片、多晶硅、光刻胶、 分立器件...你最想了解哪一个？",
+      "date_raw": "02-03",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题使用“知乎独家”，片段以“顶级报告带你预见趋势”推介报告合集。",
+        "数据矛盾": "标题写339份报告，片段写408篇顶级报告，数量不一致。"
+      },
+      "suggested_tags": [
+        "半导体",
+        "研究报告合集",
+        "行业资料"
+      ],
+      "review_notes": "不能据此选择其中一个数字为正确数量；篇与份的口径也未说明。"
+    },
+    {
+      "source_row": 25,
+      "url": "https://www.zhihu.com/question/587842438/answer/2022759211797419428",
+      "title": "芯片高薪什么时候凉，会以什么形式收场？",
+      "date_raw": "04-01",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片就业",
+        "薪资讨论",
+        "工程师成长"
+      ],
+      "review_notes": "片段对地域群体能力作概括性评价，应作为作者观点而非行业或人群事实；未给真实薪资数字。"
+    },
+    {
+      "source_row": 26,
+      "url": "https://www.zhihu.com/question/2025528887682016408/answer/2079615849682547802",
+      "title": "苹果 M5Pro/Max 芯片采用 Fusion 架构，对芯片技术有何突破？",
+      "date_raw": "09-05",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "量化数据待核实",
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称苹果笔记本市场份额10%出头及绝大部分出货为M5，未给来源、时间范围或口径。",
+        "片段信息不足": "标题询问Fusion架构技术突破，片段主要谈份额和需求，未呈现架构机制或测试。"
+      },
+      "suggested_tags": [
+        "苹果芯片",
+        "Fusion架构",
+        "M5系列"
+      ],
+      "review_notes": "分类依据标题的架构问题；不能凭片段认定相关型号、架构和性能已经核实。"
+    },
+    {
+      "source_row": 27,
+      "url": "https://zhuanlan.zhihu.com/p/669628991",
+      "title": "全是干货！2026年芯片行业388篇顶级报告，吐血整理！（存储芯片、芯片设计、驱动芯片、数字芯片、算力芯片、AI芯片、M4芯片、集成电路芯片、车载芯片、半导体芯片、芯片人才、晶圆制造、科创芯片）",
+      "date_raw": "02-06",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题及片段使用“全是干货”“顶级报告”“吐血整理”“行业人必看”等报告推介措辞。"
+      },
+      "suggested_tags": [
+        "芯片行业",
+        "研究报告合集",
+        "行业资料"
+      ],
+      "review_notes": "标题388篇与片段388份数字一致，但未核实文件或报告数量。"
+    },
+    {
+      "source_row": 28,
+      "url": "https://zhuanlan.zhihu.com/p/2054957196870521132",
+      "title": "为什么美国不可能造出最先进的芯片",
+      "date_raw": "06-29",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片制造",
+        "台积电",
+        "商业模式"
+      ],
+      "review_notes": "标题“不可能”是强结论，片段以代工商业模式作解释，尚不足以独立证实这一结论。"
+    },
+    {
+      "source_row": 29,
+      "url": "https://zhuanlan.zhihu.com/p/698297372",
+      "title": "芯片是好行业吗？",
+      "date_raw": "2025-02-15",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片就业",
+        "城市选择",
+        "芯片设计公司"
+      ],
+      "review_notes": "讨论求职城市和公司分布的个人建议；不据片段推定招聘机会或薪资。"
+    },
+    {
+      "source_row": 30,
+      "url": "https://www.zhihu.com/question/662218235/answer/1954649122100483050",
+      "title": "中国的芯片何时能真正崛起？",
+      "date_raw": "2025-09-25",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意",
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "时效性注意": "date_raw为2025-09-25，片段“现在”“今年”应置于原文日期语境。",
+        "片段信息不足": "片段声称国产DUV快速占领市场，并以“根据内部”引出未完信息，未呈现市场数据或完整依据。"
+      },
+      "suggested_tags": [
+        "国产光刻机",
+        "DUV",
+        "EUV"
+      ],
+      "review_notes": "不得把未完的“内部”信息补写成已证实的EUV进展。"
+    },
+    {
+      "source_row": 31,
+      "url": "https://zhuanlan.zhihu.com/p/18238554669",
+      "title": "【吐血整理】2026年半导体行业报告整理，一共94份，欢迎收藏！（附下载）",
+      "date_raw": "02-03",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“吐血整理”“欢迎收藏”“附下载”，片段介绍最新报告文件包。"
+      },
+      "suggested_tags": [
+        "半导体",
+        "研究报告合集",
+        "下载资料"
+      ],
+      "review_notes": "标题94份与片段94个文件一致；未核实868MB或时新程度。"
+    },
+    {
+      "source_row": 32,
+      "url": "https://www.zhihu.com/question/7901905216/answer/70942712700",
+      "title": "中国芯片行业未来怎么看？",
+      "date_raw": "2025-01-03",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "date_raw为2025-01-03，前景和产业定位评价应保留原文时间语境。"
+      },
+      "suggested_tags": [
+        "芯片行业",
+        "中芯国际",
+        "产业前景"
+      ],
+      "review_notes": "“前景堪忧”“正确的道路”属于作者判断。"
+    },
+    {
+      "source_row": 33,
+      "url": "https://www.zhihu.com/question/275016249/answer/51533145417",
+      "title": "对于芯片，我们真的毫无反抗之力了吗？",
+      "date_raw": "2024-12-09",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称2018年芯片产业每年挣到5000多亿元，2024年的对比数字未完整呈现，来源及“挣到”的统计口径不明。",
+        "时效性注意": "date_raw为2024-12-09，片段比较2018年与2024年，不应当作2026年最新产业数据。"
+      },
+      "suggested_tags": [
+        "中国芯片",
+        "产业收入",
+        "国产替代"
+      ],
+      "review_notes": "行业规模数据不同于个人收入，不标作个人收益薪资宣称。"
+    },
+    {
+      "source_row": 34,
+      "url": "https://www.zhihu.com/question/618078270/answer/1954925841747284610",
+      "title": "40天从完全0基础到入门精通数字IC后端全攻略（Innovus篇）",
+      "date_raw": "08-03",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "片段明确写“免费教程看结尾”“建议考虑下我们的培训课程”。"
+      },
+      "suggested_tags": [
+        "数字IC后端",
+        "Innovus",
+        "培训课程"
+      ],
+      "review_notes": "标题“40天从完全0基础到入门精通”为学习效果宣传，不能当作学习成效保证；未确认收费方式。"
+    },
+    {
+      "source_row": 35,
+      "url": "https://zhuanlan.zhihu.com/p/694276166",
+      "title": "一文搞清芯片基础知识",
+      "date_raw": "2024-12-20",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片基础",
+        "芯片构造",
+        "集成电路"
+      ],
+      "review_notes": "可见内容为芯片定义与构造科普，未见明确推广证据。"
+    },
+    {
+      "source_row": 36,
+      "url": "https://zhuanlan.zhihu.com/p/2079583370149998766",
+      "title": "25年过去了，国产芯片“龙芯”现在怎么样了？",
+      "date_raw": "09-05",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题问龙芯现状，片段主要叙述汉芯事件及其对研发投入的因果影响，未展示龙芯当前进度或该因果判断的依据。"
+      },
+      "suggested_tags": [
+        "龙芯",
+        "汉芯事件",
+        "产业投入"
+      ],
+      "review_notes": "龙芯与汉芯名称不同；不将片段中的汉芯事件直接归到龙芯名下。"
+    },
+    {
+      "source_row": 37,
+      "url": "https://www.zhihu.com/question/454767075/answer/1938929829987717226",
+      "title": "如何才能拿到一个数字ic设计的offer？",
+      "date_raw": "08-11",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "片段介绍具名《数字IC NPU 22nm流片项目》并强调“可让学员参与流片”，有面向学员的项目推介倾向。"
+      },
+      "suggested_tags": [
+        "数字IC求职",
+        "NPU",
+        "流片项目"
+      ],
+      "review_notes": "保留学习就业主类；依据具名项目与学员导向标注，未凭作者名称判断，也未确认是否收费或能保证录用。"
+    },
+    {
+      "source_row": 38,
+      "url": "https://zhuanlan.zhihu.com/p/1946715293272477876",
+      "title": "美国为什么不直接切断中国所有的芯片供应呢？",
+      "date_raw": "2025-09-03",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "date_raw为2025-09-03，关于28至45纳米芯片自给自足的现状判断需保留该时间背景。"
+      },
+      "suggested_tags": [
+        "芯片供应",
+        "成熟制程",
+        "供应链"
+      ],
+      "review_notes": "片段的自给自足与应用范围断言未独立核实，工艺节点数字本身不作为薪资或收益数据。"
+    },
+    {
+      "source_row": 39,
+      "url": "https://www.zhihu.com/question/2020648289683424883/answer/2020886179768201387",
+      "title": "中国芯片出口金额增速超七成，这对国产芯片产业发展意味着什么？在全球市场处于什么水平？",
+      "date_raw": "04-02",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "标题以出口金额增速超七成为问题前提，未提供统计时间、来源及比较基期。"
+      },
+      "suggested_tags": [
+        "芯片出口",
+        "成熟制程",
+        "产业增长"
+      ],
+      "review_notes": "该增长率是标题前提，非片段已证实结论；片段主要解释成熟制程应用。"
+    },
+    {
+      "source_row": 40,
+      "url": "https://www.zhihu.com/question/343469193/answer/1986315667",
+      "title": "数字IC基础学这些就够了",
+      "date_raw": "05-28",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "数字IC",
+        "自学",
+        "设计方向"
+      ],
+      "review_notes": "“自学靠谱吗”及设计方向介绍不足以证明培训推广，片段未出现课程报名或购买引导。"
+    },
+    {
+      "source_row": 41,
+      "url": "https://www.zhihu.com/question/499801889/answer/2029635560319270913",
+      "title": "一块小小的芯片是如何诞生的？",
+      "date_raw": "04-20",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称晶圆上经常有百分之几十芯片报废，未交代产品、制程、工厂或样本口径。"
+      },
+      "suggested_tags": [
+        "芯片制造",
+        "晶圆",
+        "良率"
+      ],
+      "review_notes": "不能将笼统良率说法应用到所有芯片；“越先进良率越低”为片段主张，未独立核实。"
+    },
+    {
+      "source_row": 42,
+      "url": "https://www.zhihu.com/question/1920841761875530233/answer/1921896874702505338",
+      "title": "芯片是老实人友好型行业吗？",
+      "date_raw": "2025-06-27",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片职场",
+        "行业文化",
+        "从业者经历"
+      ],
+      "review_notes": "以个人接触经历讨论职场性格；“没有八百也有一千”为叙述性估数，不据此概括全部从业者。"
+    },
+    {
+      "source_row": 43,
+      "url": "https://zhuanlan.zhihu.com/p/31529039645",
+      "title": "【知乎独家】2026年最新半导体材料研究报告整理，一共51份，欢迎收藏！（附下载资源包）",
+      "date_raw": "02-03",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题含“知乎独家”“欢迎收藏”“附下载资源包”，片段介绍报告文件包。"
+      },
+      "suggested_tags": [
+        "半导体材料",
+        "研究报告合集",
+        "下载资料"
+      ],
+      "review_notes": "标题51份与片段51个文件一致；未核实401MB或报告质量。"
+    },
+    {
+      "source_row": 44,
+      "url": "https://www.zhihu.com/question/7901905216/answer/1958382593067161207",
+      "title": "中国芯片行业未来怎么看？",
+      "date_raw": "2025-10-06",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称全球份额由3%向30%前进，并称先进产能约3%，未明确市场份额与产能口径、来源或预测期限。",
+        "时效性注意": "date_raw为2025-10-06，片段“目前”的份额与前景判断对应原文语境。"
+      },
+      "suggested_tags": [
+        "中国芯片",
+        "全球产能",
+        "产业前景"
+      ],
+      "review_notes": "现状数值与目标或预测值应分开，不能把30%改写为已实现占比。"
+    },
+    {
+      "source_row": 45,
+      "url": "https://www.zhihu.com/question/498387436/answer/1893554170012870463",
+      "title": "中国芯片产量达1399亿颗，这意味着什么？",
+      "date_raw": "2025-04-21",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "标题称产量1399亿颗，片段还称逆差约1万亿、产能6500亿及2024年2.3万亿；时间、单位及统计口径未完整呈现。",
+        "时效性注意": "date_raw为2025-04-21，片段涉及2024年及更早情况，不能视作当前最新产能数据。"
+      },
+      "suggested_tags": [
+        "芯片产量",
+        "芯片产能",
+        "贸易逆差"
+      ],
+      "review_notes": "产量、产能和贸易逆差是不同指标，不直接判为互相矛盾；不自行补齐缺失单位。"
+    },
+    {
+      "source_row": 46,
+      "url": "https://zhuanlan.zhihu.com/p/749898495",
+      "title": "全是干货！2026半导体设备行业163篇顶级报告，吐血整理！（半导体检测设备、海外半导体设备、封层半导体设备、半导体和光伏设备、半导体前道设备、半导体产品、光刻机、半导体封装设备）",
+      "date_raw": "02-05",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "数据矛盾"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题及片段使用“顶级报告”“吐血整理”“大放送”等资料推广措辞。",
+        "数据矛盾": "标题写163篇报告，片段写108份半导体设备报告，数量不一致。"
+      },
+      "suggested_tags": [
+        "半导体设备",
+        "研究报告合集",
+        "光刻机"
+      ],
+      "review_notes": "保留原数字，无法判断是合集更新、标题未同步或不同统计口径。"
+    },
+    {
+      "source_row": 47,
+      "url": "https://www.zhihu.com/question/662218235/answer/1900570951256630623",
+      "title": "中国的芯片何时能真正崛起？",
+      "date_raw": "2025-04-29",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "date_raw为2025-04-29，讨论国产芯片条件与前景应保留原文时点。"
+      },
+      "suggested_tags": [
+        "国产芯片",
+        "先进制程",
+        "EUV"
+      ],
+      "review_notes": "“假如有个5nm EUV”为明确条件假设，不将其写成已经实现的技术能力。"
+    },
+    {
+      "source_row": 48,
+      "url": "https://www.zhihu.com/question/662218235/answer/1932888914407982881",
+      "title": "中国的芯片何时能真正崛起？",
+      "date_raw": "03-02",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段在“14nm光刻”处截断，未呈现完整设备表述、国产能力范围或推断依据。"
+      },
+      "suggested_tags": [
+        "国产芯片",
+        "ASML",
+        "光刻工艺"
+      ],
+      "review_notes": "“估计”表示作者判断；不补写截断内容或据此确定光刻设备技术参数。"
+    },
+    {
+      "source_row": 49,
+      "url": "https://www.zhihu.com/question/587842438/answer/3347926741",
+      "title": "芯片高薪什么时候凉，会以什么形式收场？",
+      "date_raw": "01-26",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片薪资",
+        "行业门槛",
+        "职业前景"
+      ],
+      "review_notes": "“降薪想也别想”为作者预测性观点，片段未给实际薪资或收益数值。"
+    },
+    {
+      "source_row": 50,
+      "url": "https://zhuanlan.zhihu.com/p/676291868",
+      "title": "全是干货！2026年大模型行业299篇顶级报告，吐血整理！（芯片制造、服务器生产、通信网络建设、云计算平台、数据库管理系统、中间件、大模型开发和应用、智能体）",
+      "date_raw": "03-04",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题及片段使用“全是干货”“顶级报告”“吐血整理”“大放送”等资料推介措辞。"
+      },
+      "suggested_tags": [
+        "大模型",
+        "芯片制造",
+        "研究报告合集"
+      ],
+      "review_notes": "标题299篇与片段299份数字一致；虽然收录于芯片关键词，主推资料范围为大模型产业链。"
+    },
+    {
+      "source_row": 51,
+      "url": "https://www.zhihu.com/question/587842438/answer/3572622741",
+      "title": "芯片高薪什么时候凉，会以什么形式收场？",
+      "date_raw": "07-08",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "芯片就业",
+        "薪资预期",
+        "职业选择"
+      ],
+      "review_notes": "片段是在否定“年薪随便四五十万、以后年薪一百万”的幻想，不标为作者实际收益宣称或薪资承诺。"
+    },
+    {
+      "source_row": 52,
+      "url": "https://www.zhihu.com/question/655227503/answer/3490772316",
+      "title": "中国芯片的最大突破口在哪里?",
+      "date_raw": "2024-05-07",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称自研CPU销量超过其余几家国产CPU总量，未给销售期、统计范围或来源。",
+        "时效性注意": "date_raw为2024-05-07，销量比较与突破口判断属于当时语境。"
+      },
+      "suggested_tags": [
+        "国产CPU",
+        "华为",
+        "芯片突破"
+      ],
+      "review_notes": "“突破口就在华为”为作者结论；销量比较未独立核实。"
+    }
+  ]
+}

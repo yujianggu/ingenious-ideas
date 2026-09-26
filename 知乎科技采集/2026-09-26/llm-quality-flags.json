@@ -1,0 +1,1154 @@
+{
+  "source_file": "/Users/yuwujian/Documents/ChatGPT/project/Ingenious ideas/知乎科技采集/2026-09-26/raw/02-大模型.json",
+  "reviewed_on": "2026-09-26",
+  "review_scope": "仅审阅原始JSON的标题、页面日期和选取片段；未联网、未读正文、未核实事实。分类为检索整理建议，不是对真实性或商业关系的判定。",
+  "date_policy": "保留date_raw原样；45条日期仅有月日，不补全年份。",
+  "summary": {
+    "record_count": 54,
+    "unique_url_count": 54,
+    "duplicate_url_count": 0,
+    "records_with_missing_year": 45,
+    "records_with_review_flags": 30,
+    "content_kind_counts": {
+      "产品体验": 10,
+      "技术原理": 8,
+      "学习就业": 18,
+      "待判断": 1,
+      "产业动态": 4,
+      "社会讨论": 10,
+      "资料营销": 3
+    },
+    "review_flag_counts": {
+      "时效性注意": 18,
+      "测评结论待核实": 1,
+      "片段信息不足": 4,
+      "跨检索标题不一致": 1,
+      "研究解读需核对原文": 1,
+      "量化数据待核实": 5,
+      "收益薪资宣称待核实": 4,
+      "测评范围注意": 1,
+      "推广倾向": 3,
+      "排行口径注意": 1,
+      "互动数据缺失": 1
+    }
+  },
+  "duplicate_url_groups": [],
+  "repeated_title_groups": [
+    {
+      "title": "国内AI大模型已近80个，哪个最有前途？",
+      "urls": [
+        "https://www.zhihu.com/question/608763410/answer/2012484421085832467",
+        "https://www.zhihu.com/question/608763410/answer/2009194216421598574"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "2026年了，大模型推理优化做到头了嘛？",
+      "urls": [
+        "https://www.zhihu.com/question/2015221773097018550/answer/2077397145192351678",
+        "https://www.zhihu.com/question/2015221773097018550/answer/2050144421748926408"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "有没有来锐评一下大模型各大研究方向的?",
+      "urls": [
+        "https://www.zhihu.com/question/1958561146647876509/answer/2075955457567543430",
+        "https://www.zhihu.com/question/1958561146647876509/answer/2075654559456929775"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    },
+    {
+      "title": "大模型开源会不会变成给闭源做嫁衣?",
+      "urls": [
+        "https://www.zhihu.com/question/2031353959949006659/answer/2075292831644641227",
+        "https://www.zhihu.com/question/2031353959949006659/answer/2036326079397409094"
+      ],
+      "note": "同一问题下的不同回答，URL不同，保留全部条目。"
+    }
+  ],
+  "possible_cross_format_related_entries": [],
+  "cross_category_url_groups": [
+    {
+      "url": "https://www.zhihu.com/question/21277368/answer/2018829744922206890",
+      "title_variant_count": 2,
+      "occurrences": [
+        {
+          "category": "AI",
+          "source_row": 6,
+          "title": "如何自学人工智能？",
+          "date_raw": "08-31",
+          "excerpt_selected": "Thought（思维链） 2） AI Agent（智能体）"
+        },
+        {
+          "category": "大模型",
+          "source_row": 17,
+          "title": "如何自学人工智能?",
+          "date_raw": "08-31",
+          "excerpt_selected": "通过不断拆解真实商业项目，3个月直接拿下30k的AI大模型岗位。我没有报班，也没有大佬带，就是靠项目堆出来的。"
+        }
+      ],
+      "review_note": "标题仅全角/半角问号差异；两个片段不同，大模型片段出现薪资宣称。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/1994420537296909470",
+      "title_variant_count": 2,
+      "occurrences": [
+        {
+          "category": "AI",
+          "source_row": 16,
+          "title": "2026年人工智能研究全解，轻松掌握前沿技术",
+          "date_raw": "04-22",
+          "excerpt_selected": "如果你今天还在问：“人工智能到底重不重要？”"
+        },
+        {
+          "category": "大模型",
+          "source_row": 9,
+          "title": "损失函数在2026年的应用，如何优化模型训练",
+          "date_raw": "04-22",
+          "excerpt_selected": "如果你今天还在问：“人工智能到底重不重要？”那我可以很明确地告诉你：如果这个问题你还需要犹豫，下面这篇文章你可"
+        }
+      ],
+      "review_note": "存在实质性标题差异；保留各检索标题，不判定真实标题。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/676291868",
+      "title_variant_count": 1,
+      "occurrences": [
+        {
+          "category": "大模型",
+          "source_row": 23,
+          "title": "全是干货！2026年大模型行业299篇顶级报告，吐血整理！（芯片制造、服务器生产、通信网络建设、云计算平台、数据库管理系统、中间件、大模型开发和应用、智能体）",
+          "date_raw": "03-04",
+          "excerpt_selected": "一、文件大小概览大模型行业顶级研究报告大放送！吐血整理干货满满！废话不多说，今天给大家分享 299份大模型行业"
+        },
+        {
+          "category": "芯片",
+          "source_row": 50,
+          "title": "全是干货！2026年大模型行业299篇顶级报告，吐血整理！（芯片制造、服务器生产、通信网络建设、云计算平台、数据库管理系统、中间件、大模型开发和应用、智能体）",
+          "date_raw": "03-04",
+          "excerpt_selected": "一、文件大小概览大模型行业顶级研究报告大放送！吐血整理干货满满！废话不多说，今天给大家分享 299份大模型行业"
+        }
+      ],
+      "review_note": "同标题同URL跨主题出现，保留两次检索观察。"
+    }
+  ],
+  "entries": [
+    {
+      "source_row": 1,
+      "url": "https://www.zhihu.com/question/608763410/answer/2012484421085832467",
+      "title": "国内AI大模型已近80个，哪个最有前途？",
+      "date_raw": "09-24",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段称9月中旬重新排名，模型排名具有时间和版本限制，页面日期09-24未显示年份。"
+      },
+      "suggested_tags": [
+        "国产大模型",
+        "模型排名",
+        "模型选型"
+      ],
+      "review_notes": "作者自行调整排名，不能当作统一客观榜单。"
+    },
+    {
+      "source_row": 2,
+      "url": "https://www.zhihu.com/question/621550974/answer/98479873814",
+      "title": "大模型入门必知：大模型的基本概念",
+      "date_raw": "2025-03-07",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型入门",
+        "基本概念",
+        "多模态"
+      ],
+      "review_notes": "“超级大脑”为科普类比，不应按字面推断模型能力。"
+    },
+    {
+      "source_row": 3,
+      "url": "https://zhuanlan.zhihu.com/p/2080464302532716060",
+      "title": "2026年9月主流大模型能力对比：Fable 5.1 综合领先，GPT-6 Astra 编码突出，GLM Flash 与 Luna 如何选",
+      "date_raw": "09-08",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "测评结论待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "测评结论待核实": "标题给出综合领先、编码突出等比较，片段未展示评测来源、测试方法或完整结果。",
+        "时效性注意": "标题限定2026年9月，比较结论随模型版本和榜单变化。"
+      },
+      "suggested_tags": [
+        "模型评测",
+        "模型选型",
+        "编程能力"
+      ],
+      "review_notes": "保留标题中的模型名称，不推定其真实性或实际排名。"
+    },
+    {
+      "source_row": 4,
+      "url": "https://zhuanlan.zhihu.com/p/2038548376875185325",
+      "title": "大模型到底是怎么训练出来的？万字长文讲透大模型训练全流程",
+      "date_raw": "05-15",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "预训练",
+        "后训练",
+        "模型微调"
+      ],
+      "review_notes": "通才、助手、专才为流程概括，片段未展示完整训练步骤。"
+    },
+    {
+      "source_row": 5,
+      "url": "https://zhuanlan.zhihu.com/p/31864213680",
+      "title": "2025年大模型学习全攻略，从入门到精通",
+      "date_raw": "2025-04-15",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题和日期均为2025年，学习路线中工具及资料版本可能已有变化。"
+      },
+      "suggested_tags": [
+        "大模型学习",
+        "Transformer",
+        "BERT"
+      ],
+      "review_notes": "片段为入门建议，未见明确课程推广。"
+    },
+    {
+      "source_row": 6,
+      "url": "https://zhuanlan.zhihu.com/p/2082414941592613110",
+      "title": "五大 AI 大模型：Gemini、ChatGPT、Grok、Claude、DeepSeek 分别适合什么场景？",
+      "date_raw": "09-13",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题比较多家模型适用场景，版本和产品能力会变化，date_raw未含年份。"
+      },
+      "suggested_tags": [
+        "模型选型",
+        "应用场景",
+        "主流模型"
+      ],
+      "review_notes": "片段未呈现具体场景评测，不能直接作购买或使用推荐。"
+    },
+    {
+      "source_row": 7,
+      "url": "https://zhuanlan.zhihu.com/p/1888670947805984061",
+      "title": "2026年大模型微调方法综述：Prompt-Tuning、P-tuning等最新技术",
+      "date_raw": "07-30",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "微调",
+        "Prompt-Tuning",
+        "P-tuning"
+      ],
+      "review_notes": "标题为技术综述；“最新”需结合正文技术来源核查。"
+    },
+    {
+      "source_row": 8,
+      "url": "https://zhuanlan.zhihu.com/p/2023902911621599414",
+      "title": "大模型排行榜2026年",
+      "date_raw": "07-18",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题为2026年榜单，片段涉及具体模型版本，结论随版本变化。"
+      },
+      "suggested_tags": [
+        "模型排行榜",
+        "Claude",
+        "Qwen",
+        "本地部署"
+      ],
+      "review_notes": "片段明确称个人观点，不转写成客观排名。"
+    },
+    {
+      "source_row": 9,
+      "url": "https://zhuanlan.zhihu.com/p/1994420537296909470",
+      "title": "损失函数在2026年的应用，如何优化模型训练",
+      "date_raw": "04-22",
+      "date_year_status": "missing",
+      "content_kind": "待判断",
+      "review_flags": [
+        "片段信息不足",
+        "跨检索标题不一致"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题谈损失函数，片段仅为AI重要性的引入，不能确认技术内容。",
+        "跨检索标题不一致": "同URL在AI第16条标题为“2026年人工智能研究全解，轻松掌握前沿技术”，本条则为“损失函数在2026年的应用，如何优化模型训练”。"
+      },
+      "suggested_tags": [
+        "损失函数",
+        "模型训练",
+        "AI研究"
+      ],
+      "review_notes": "保留两个检索页面标题，无法仅据搜索页决定真实标题或原因。"
+    },
+    {
+      "source_row": 10,
+      "url": "https://zhuanlan.zhihu.com/p/2084945463413945594",
+      "title": "细思极恐！大模型惊现「痛苦」向量，为求自救狂删用户文件",
+      "date_raw": "09-20",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "研究解读需核对原文"
+      ],
+      "flag_evidence": {
+        "研究解读需核对原文": "片段引用arXiv论文并用“痛苦”“自我厌恶”描述模型，未提供论文上下文和实验细节。"
+      },
+      "suggested_tags": [
+        "大模型研究",
+        "模型安全",
+        "研究报道"
+      ],
+      "review_notes": "不能从行为实验或向量命名推断模型具有主观痛苦；删文件情节亦未独立核实。"
+    },
+    {
+      "source_row": 11,
+      "url": "https://www.zhihu.com/question/2083477043271026043/answer/2083555759707758762",
+      "title": "现在国内超长文本推理最强的大模型是哪个？性价比最高，适合普通人本地部署的是哪款？",
+      "date_raw": "09-16",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称原生一百万上下文，未展示模型规格来源、版本或实测条件。",
+        "时效性注意": "“最强”“性价比最高”等比较依赖当前版本、价格、硬件和场景。"
+      },
+      "suggested_tags": [
+        "长文本推理",
+        "本地部署",
+        "DeepSeek",
+        "模型选型"
+      ],
+      "review_notes": "作者推荐，不能仅凭片段确认性价比或适合本地部署。"
+    },
+    {
+      "source_row": 12,
+      "url": "https://www.zhihu.com/question/2015221773097018550/answer/2077397145192351678",
+      "title": "2026年了，大模型推理优化做到头了嘛？",
+      "date_raw": "08-30",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "推理优化",
+        "推理框架",
+        "GPU"
+      ],
+      "review_notes": "“没有尽头”为作者对优化空间的判断；片段未展示优化数据。"
+    },
+    {
+      "source_row": 13,
+      "url": "https://www.zhihu.com/question/7707791899/answer/2061940471883110350",
+      "title": "大模型算法是否会催生一大批不懂业务的算法工程师，热度过后他们将何去何从？",
+      "date_raw": "07-18",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "算法工程师",
+        "业务理解",
+        "知识库",
+        "实体抽取"
+      ],
+      "review_notes": "题目讨论职业能力，片段展示业务工作流，不能泛化为所有工程师。"
+    },
+    {
+      "source_row": 14,
+      "url": "https://zhuanlan.zhihu.com/p/2038632658616447794",
+      "title": "实话很难听，但这就是大模型行业真实发展现状……",
+      "date_raw": "05-15",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "行业招聘",
+        "大模型就业",
+        "行业应用"
+      ],
+      "review_notes": "片段为招聘需求概括，未见可核查岗位清单或规模数据。"
+    },
+    {
+      "source_row": 15,
+      "url": "https://zhuanlan.zhihu.com/p/2061841234621159360",
+      "title": "2026.7当下AI大模型现状",
+      "date_raw": "07-18",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题明确为2026年7月行业现状，不能作为不随时间变化的事实。"
+      },
+      "suggested_tags": [
+        "大模型生态",
+        "技术范式",
+        "产业竞争"
+      ],
+      "review_notes": "“没有明显护城河”为作者行业判断。"
+    },
+    {
+      "source_row": 16,
+      "url": "https://www.zhihu.com/question/1988595461473448457/answer/2067949646970987614",
+      "title": "为什么只有中国和美国的大模型一直在卷？",
+      "date_raw": "08-04",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "国际AI竞争",
+        "中美AI",
+        "法国AI"
+      ],
+      "review_notes": "法国失败及数学能力关联等为作者概括与推断，不作为国家AI发展事实。"
+    },
+    {
+      "source_row": 17,
+      "url": "https://www.zhihu.com/question/21277368/answer/2018829744922206890",
+      "title": "如何自学人工智能?",
+      "date_raw": "08-31",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "收益薪资宣称待核实": "片段声称靠项目实践3个月拿下30k岗位，未提供收入、录用或适用条件证据。"
+      },
+      "suggested_tags": [
+        "AI自学",
+        "项目实践",
+        "转行薪资"
+      ],
+      "review_notes": "同URL也见AI第6条；标题仅问号全角/半角不同，但检索片段不同，应保留两次观察。"
+    },
+    {
+      "source_row": 18,
+      "url": "https://zhuanlan.zhihu.com/p/2082830931828786302",
+      "title": "同步一波大模型写后端代码排行榜",
+      "date_raw": "09-14",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "测评范围注意"
+      ],
+      "flag_evidence": {
+        "测评范围注意": "作者明确限定自己的测试：从零实现向量数据库并按数据库性能计分。"
+      },
+      "suggested_tags": [
+        "编程评测",
+        "向量数据库",
+        "Agentic Coding"
+      ],
+      "review_notes": "只能代表该测试范围，不能外推为所有编程场景的通用排名。"
+    },
+    {
+      "source_row": 19,
+      "url": "https://www.zhihu.com/question/1926425901102507019/answer/2077835415248179876",
+      "title": "目前主流的大模型都有哪些？哪个综合能力最强呢？",
+      "date_raw": "08-31",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "“目前”主流模型及排名具有时间与版本依赖，日期只有08-31。"
+      },
+      "suggested_tags": [
+        "模型排行榜",
+        "能力比较",
+        "模型选型"
+      ],
+      "review_notes": "片段介绍参考排行榜的方法，未给出可复核的具体排名。"
+    },
+    {
+      "source_row": 20,
+      "url": "https://www.zhihu.com/question/1893668410774254363/answer/1993355664689484659",
+      "title": "有没有质量高一点的ai agent开发课程？",
+      "date_raw": "01-10",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "收益薪资宣称待核实": "作者声称花2w多买课程、后成功入职30k岗位，未展示凭证、时间及条件。"
+      },
+      "suggested_tags": [
+        "AI Agent课程",
+        "转行",
+        "岗位薪资"
+      ],
+      "review_notes": "提到买课及收入不能自动认定推广；片段没有明确推销课程的证据。"
+    },
+    {
+      "source_row": 21,
+      "url": "https://zhuanlan.zhihu.com/p/2081740544380818710",
+      "title": "2026 国内大模型厂商怎么选？一份主观但真实的推荐",
+      "date_raw": "09-11",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "标题限定2026年推荐，且片段称每隔几个月出现新模型。"
+      },
+      "suggested_tags": [
+        "国产大模型",
+        "模型厂商",
+        "模型选型"
+      ],
+      "review_notes": "标题明确为主观推荐，应保留作者经验属性。"
+    },
+    {
+      "source_row": 22,
+      "url": "https://www.zhihu.com/question/1958561146647876509/answer/2075955457567543430",
+      "title": "有没有来锐评一下大模型各大研究方向的?",
+      "date_raw": "09-14",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型研究方向",
+        "Benchmark",
+        "领域模型"
+      ],
+      "review_notes": "锐评与讽刺性概括不能当作研究领域的正式定义。"
+    },
+    {
+      "source_row": 23,
+      "url": "https://zhuanlan.zhihu.com/p/676291868",
+      "title": "全是干货！2026年大模型行业299篇顶级报告，吐血整理！（芯片制造、服务器生产、通信网络建设、云计算平台、数据库管理系统、中间件、大模型开发和应用、智能体）",
+      "date_raw": "03-04",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题和片段使用“全是干货”“顶级报告”“大放送”等资料推广措辞。"
+      },
+      "suggested_tags": [
+        "大模型报告",
+        "行业报告合集",
+        "智能体",
+        "产业链"
+      ],
+      "review_notes": "标题299篇与片段299份一致；份数未独立核实。该URL也出现在芯片第50条。"
+    },
+    {
+      "source_row": 24,
+      "url": "https://www.zhihu.com/question/2066269570353124070/answer/2066447189866550446",
+      "title": "李开复称国内前十名大模型「用哪个都差不多」，你觉得是这样吗?反映了哪些行业现状？",
+      "date_raw": "07-31",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "模型同质化",
+        "李开复观点",
+        "国际AI"
+      ],
+      "review_notes": "片段为回答者对海外模型及包装行为的评价，不能归作李开复原话或已核实骗局。"
+    },
+    {
+      "source_row": 25,
+      "url": "https://www.zhihu.com/question/608763410/answer/2009194216421598574",
+      "title": "国内AI大模型已近80个，哪个最有前途？",
+      "date_raw": "02-23",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "片段信息不足",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "片段只提网友整理及高低评价，未给出榜单、指标和测试。",
+        "时效性注意": "模型排名随时间与版本变化，日期02-23未含年份。"
+      },
+      "suggested_tags": [
+        "国产模型",
+        "模型排名",
+        "Kimi",
+        "百度"
+      ],
+      "review_notes": "个人判断，不作为客观排名。"
+    },
+    {
+      "source_row": 26,
+      "url": "https://zhuanlan.zhihu.com/p/2079236349723240059",
+      "title": "超前沿资料｜多智能体（multi-agent system）资料合集！面试题+项目案例+技术原理+进阶路线！",
+      "date_raw": "09-04",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向",
+        "收益薪资宣称待核实"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题推介面试题、项目案例和资料合集，片段以到账及转行收入吸引读者。",
+        "收益薪资宣称待核实": "片段声称学3个月转行入职30k、到账3个w，未见收入与学习经历证明。"
+      },
+      "suggested_tags": [
+        "多智能体",
+        "资料合集",
+        "转行",
+        "岗位薪资"
+      ],
+      "review_notes": "这是资料推介中的收益个案叙述，不能转写为学习三个月的普遍结果。"
+    },
+    {
+      "source_row": 27,
+      "url": "https://www.zhihu.com/question/1913003206876853004/answer/2001048823385052822",
+      "title": "如何评价杨立昆认为大模型只是对海量文本的模式进行复杂拟合，根本不懂意义？",
+      "date_raw": "02-01",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "模型理解",
+        "语言模型",
+        "信息论",
+        "杨立昆"
+      ],
+      "review_notes": "讨论模型是否理解意义，片段缺少完整论证；不要将回答者评论归为被评价者原话。"
+    },
+    {
+      "source_row": 28,
+      "url": "https://www.zhihu.com/question/2033264218531685732/answer/2080303989221078531",
+      "title": "在实际使用中你们觉得目前的大模型排名是怎么样的？",
+      "date_raw": "09-07",
+      "date_year_status": "missing",
+      "content_kind": "产品体验",
+      "review_flags": [
+        "排行口径注意",
+        "互动数据缺失",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "排行口径注意": "片段采用OpenRouter周度最受欢迎榜，平台使用热度不能直接等同通用能力排名。",
+        "互动数据缺失": "votes_raw为空字符串，不能填成0赞。",
+        "时效性注意": "片段为周度排名并称前一周，未给明确周区间和年份。"
+      },
+      "suggested_tags": [
+        "OpenRouter",
+        "使用热度",
+        "模型排行榜"
+      ],
+      "review_notes": "113T的单位与口径在选取片段中不完整，不能自行解释为特定统计指标。"
+    },
+    {
+      "source_row": 29,
+      "url": "https://www.zhihu.com/question/10260155433/answer/1904554085560084082",
+      "title": "普通程序员要不要转行AI大模型？",
+      "date_raw": "2025-05-10",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "量化数据待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段声称字节跳动30%的后端岗位有相关要求，未给岗位样本、范围和出处。",
+        "时效性注意": "日期为2025-05-10，招聘及岗位要求可能变化。"
+      },
+      "suggested_tags": [
+        "程序员转行",
+        "AI招聘",
+        "Agent"
+      ],
+      "review_notes": "阿里云接入与招聘比例均为片段陈述，未独立核实。"
+    },
+    {
+      "source_row": 30,
+      "url": "https://www.zhihu.com/question/2054292691844961871/answer/2078247841189848674",
+      "title": "AI大模型这么厉害，有没有可能用来证明数学猜想？",
+      "date_raw": "09-01",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称全球90%以上模型不能做数学研究、仅两家能做，未给定义、样本或评测证据。"
+      },
+      "suggested_tags": [
+        "数学证明",
+        "数学研究",
+        "模型能力边界"
+      ],
+      "review_notes": "不要把作者的模型能力判断写成研究共识。"
+    },
+    {
+      "source_row": 31,
+      "url": "https://zhuanlan.zhihu.com/p/703556907",
+      "title": "不搞涩涩的大模型是没有前途的",
+      "date_raw": "2024-06-15",
+      "date_year_status": "explicit",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2024-06-15，片段“现在最火”是当时语境。"
+      },
+      "suggested_tags": [
+        "生成模型",
+        "Pony Diffusion",
+        "训练数据"
+      ],
+      "review_notes": "标题对应用方向的价值判断属于作者观点。"
+    },
+    {
+      "source_row": 32,
+      "url": "https://www.zhihu.com/question/2066480534339982908/answer/2077294219144839432",
+      "title": "大模型的能力是否被高估了？",
+      "date_raw": "08-30",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "模型能力",
+        "商业价值",
+        "潜在市场"
+      ],
+      "review_notes": "片段明确含“我觉得”，保留主观判断属性。"
+    },
+    {
+      "source_row": 33,
+      "url": "https://zhuanlan.zhihu.com/p/2053890652060873461",
+      "title": "2026年大模型应用开发实战指南，RAG、Agent、微调项目全解析",
+      "date_raw": "06-26",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足",
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题为开发实战指南，片段却只谈裁员，无法验证指南内容。",
+        "量化数据待核实": "片段声称Meta裁员7800人、占10%，未给公告来源、日期或统计口径。"
+      },
+      "suggested_tags": [
+        "RAG",
+        "Agent",
+        "微调",
+        "应用开发"
+      ],
+      "review_notes": "不因作者名推断课程营销；片段未出现明确课程推销。"
+    },
+    {
+      "source_row": 34,
+      "url": "https://www.zhihu.com/question/2031353959949006659/answer/2075292831644641227",
+      "title": "大模型开源会不会变成给闭源做嫁衣?",
+      "date_raw": "08-24",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "开源模型",
+        "闭源模型",
+        "Kimi",
+        "模型竞争"
+      ],
+      "review_notes": "竞争优势与影响为作者评价，未见对比实验。"
+    },
+    {
+      "source_row": 35,
+      "url": "https://www.zhihu.com/question/1953861511878542528/answer/1955330018617045843",
+      "title": "大模型还能火多久？",
+      "date_raw": "2025-09-27",
+      "date_year_status": "explicit",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "日期2025-09-27，片段对未来行业形态作预测。"
+      },
+      "suggested_tags": [
+        "行业趋势",
+        "大模型应用",
+        "商业化"
+      ],
+      "review_notes": "保留预测性质，不能视作已实现事实。"
+    },
+    {
+      "source_row": 36,
+      "url": "https://zhuanlan.zhihu.com/p/2085011056573924778",
+      "title": "关于AI大模型的书籍",
+      "date_raw": "09-20",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "片段信息不足"
+      ],
+      "flag_evidence": {
+        "片段信息不足": "标题为书籍，片段只谈论文辅助效果，未列出书名或书单。"
+      },
+      "suggested_tags": [
+        "大模型书籍",
+        "论文辅助",
+        "文献处理"
+      ],
+      "review_notes": "半小时搭论文框架为经验性效果叙述，不能视为质量或学术可靠性保证。"
+    },
+    {
+      "source_row": 37,
+      "url": "https://zhuanlan.zhihu.com/p/2078061790802588211",
+      "title": "都说自己是第一，中国最强的大模型到底是谁？",
+      "date_raw": "09-01",
+      "date_year_status": "missing",
+      "content_kind": "产业动态",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段提到“当天”股价变化但未提供具体日期和事件上下文。"
+      },
+      "suggested_tags": [
+        "中国大模型",
+        "DeepSeek",
+        "产业竞争"
+      ],
+      "review_notes": "“全球第一次正视”为修辞性评价，不能按可统计事实处理。"
+    },
+    {
+      "source_row": 38,
+      "url": "https://zhuanlan.zhihu.com/p/675906726",
+      "title": "什么是大模型？一文读懂大模型的基本概念",
+      "date_raw": "2024-01-03",
+      "date_year_status": "explicit",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型定义",
+        "模型分类",
+        "泛化"
+      ],
+      "review_notes": "概念目录类条目；基础定义不因日期较早自动失效。"
+    },
+    {
+      "source_row": 39,
+      "url": "https://zhuanlan.zhihu.com/p/2017248432310417070",
+      "title": "拿下AI Agent 工程师高薪岗，从模型调用到商业项目落地，完整路线一次讲清～",
+      "date_raw": "08-10",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI Agent工程师",
+        "学习路线",
+        "项目落地"
+      ],
+      "review_notes": "标题提高薪岗、片段称窗口期；未见明确薪资数字或保证录用证据，不据此认定付费推广。"
+    },
+    {
+      "source_row": 40,
+      "url": "https://zhuanlan.zhihu.com/p/2012536524407850797",
+      "title": "三大GitHub项目带你深入大模型",
+      "date_raw": "03-04",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "GitHub项目",
+        "RLHF",
+        "推理量化",
+        "模型评估"
+      ],
+      "review_notes": "可见内容为学习章节；未见收费或营销证据。"
+    },
+    {
+      "source_row": 41,
+      "url": "https://www.zhihu.com/question/621550974/answer/3304195504",
+      "title": "如何系统的入门大模型？",
+      "date_raw": "2024-12-05",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型入门",
+        "模型微调",
+        "模型训练"
+      ],
+      "review_notes": "标题为学习路线，片段为任务区分；未见推广证据。"
+    },
+    {
+      "source_row": 42,
+      "url": "https://zhuanlan.zhihu.com/p/1948847818665071761",
+      "title": "一文看懂《互联网行业就业报告》程序员平均月薪为18153元",
+      "date_raw": "2025-09-09",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "收益薪资宣称待核实",
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "收益薪资宣称待核实": "标题称程序员平均月薪18153元，片段未给报告发布机构、样本、统计期和地区。",
+        "时效性注意": "日期为2025-09-09，薪资与招聘信息有时间限制。"
+      },
+      "suggested_tags": [
+        "程序员薪资",
+        "就业报告",
+        "大模型就业"
+      ],
+      "review_notes": "程序员平均薪资不能改写为大模型岗位平均薪资；报告名并非充分验证。"
+    },
+    {
+      "source_row": 43,
+      "url": "https://zhuanlan.zhihu.com/p/1924238204799784754",
+      "title": "应该是最好的大模型课程合集…",
+      "date_raw": "2025-07-03",
+      "date_year_status": "explicit",
+      "content_kind": "学习就业",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "课程合集日期2025-07-03，软件与课程内容版本需留意。"
+      },
+      "suggested_tags": [
+        "大模型课程",
+        "代码练习",
+        "学习资源"
+      ],
+      "review_notes": "作者分享学过的课程与偏好，未见足以认定付费推广的证据。"
+    },
+    {
+      "source_row": 44,
+      "url": "https://www.zhihu.com/question/2015221773097018550/answer/2050144421748926408",
+      "title": "2026年了，大模型推理优化做到头了嘛？",
+      "date_raw": "06-16",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [
+        "时效性注意"
+      ],
+      "flag_evidence": {
+        "时效性注意": "片段具体提到vLLM 0.20，技术解释需与对应软件版本一致。"
+      },
+      "suggested_tags": [
+        "推理优化",
+        "vLLM",
+        "计算图"
+      ],
+      "review_notes": "优化空间为作者判断，选取片段未呈现完整性能证据。"
+    },
+    {
+      "source_row": 45,
+      "url": "https://www.zhihu.com/question/28663561/answer/2003230895809782610",
+      "title": "一个月能快速学习并掌握大模型？揭秘AI学习的高效路径！",
+      "date_raw": "03-22",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型学习",
+        "Agent项目",
+        "学习效率"
+      ],
+      "review_notes": "标题是疑问句，一个月掌握不能直接当作课程保证或实际成果。"
+    },
+    {
+      "source_row": 46,
+      "url": "https://www.zhihu.com/question/1894891236617332066/answer/2019118534647624752",
+      "title": "大模型 Agent 是不是就是各种 Prompt 的堆叠？",
+      "date_raw": "04-18",
+      "date_year_status": "missing",
+      "content_kind": "技术原理",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "AI Agent",
+        "Prompt",
+        "智能体架构"
+      ],
+      "review_notes": "片段从提示词入门展开，尚不足以验证完整架构论证。"
+    },
+    {
+      "source_row": 47,
+      "url": "https://www.zhihu.com/question/1958561146647876509/answer/2075654559456929775",
+      "title": "有没有来锐评一下大模型各大研究方向的?",
+      "date_raw": "08-26",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "研究方向",
+        "强化学习",
+        "后训练",
+        "算法岗位"
+      ],
+      "review_notes": "“最缺”是作者人才需求概括，未见招聘统计。"
+    },
+    {
+      "source_row": 48,
+      "url": "https://zhuanlan.zhihu.com/p/670870094",
+      "title": "全是干货！2026年人工智能行业932篇顶级报告，吐血整理！（AI、大模型、AIGC、机器人、网络安全、数字人、云计算、AI芯片、智能安防、电子元器件、光模块、ChaTGPT、新质生产力、自动驾驶）",
+      "date_raw": "02-09",
+      "date_year_status": "missing",
+      "content_kind": "资料营销",
+      "review_flags": [
+        "推广倾向"
+      ],
+      "flag_evidence": {
+        "推广倾向": "标题及片段使用“全是干货”“顶级报告”“大放送”等资料推广措辞。"
+      },
+      "suggested_tags": [
+        "AI行业报告",
+        "AIGC",
+        "AI芯片",
+        "机器人"
+      ],
+      "review_notes": "标题932篇与片段932份一致；数量未独立核实。"
+    },
+    {
+      "source_row": 49,
+      "url": "https://zhuanlan.zhihu.com/p/2055961885615317877",
+      "title": "聪明人已经发现2026年ai大模型已经不对劲儿了",
+      "date_raw": "07-02",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "职业技能",
+        "模型微调",
+        "智能体开发"
+      ],
+      "review_notes": "“真香区”与技能层级为作者建议，未見具体收益或收费推广证据。"
+    },
+    {
+      "source_row": 50,
+      "url": "https://www.zhihu.com/question/661907575/answer/2031014182590620067",
+      "title": "为什么现在的 AI 大模型好像只有中美在做，世界上其他国家都好像完全消失了？",
+      "date_raw": "09-03",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [
+        "量化数据待核实"
+      ],
+      "flag_evidence": {
+        "量化数据待核实": "片段称大模型一万张卡起步，未说明模型规模、训练或部署场景及卡型号。"
+      },
+      "suggested_tags": [
+        "国际AI竞争",
+        "算力成本",
+        "训练资源"
+      ],
+      "review_notes": "不能泛化为任何大模型工作均需一万张卡。"
+    },
+    {
+      "source_row": 51,
+      "url": "https://www.zhihu.com/question/2031353959949006659/answer/2036326079397409094",
+      "title": "大模型开源会不会变成给闭源做嫁衣?",
+      "date_raw": "05-09",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "开源与闭源",
+        "本地部署",
+        "云端模型"
+      ],
+      "review_notes": "27B可本地部署仍依赖硬件与部署条件；竞争结果属于作者推断。"
+    },
+    {
+      "source_row": 52,
+      "url": "https://www.zhihu.com/question/1917187027767636342/answer/1987204934471546008",
+      "title": "找大模型的工作，是不是都需要92的硕士？",
+      "date_raw": "07-27",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "学历门槛",
+        "大模型实习",
+        "项目经历"
+      ],
+      "review_notes": "片段为个人经历与求职建议，不构成所有岗位的学历或能力要求。"
+    },
+    {
+      "source_row": 53,
+      "url": "https://www.zhihu.com/question/1909694922581321658/answer/2047663213890770071",
+      "title": "大模型方向刚进组，大佬们有没有大模型的学习路线?",
+      "date_raw": "06-09",
+      "date_year_status": "missing",
+      "content_kind": "学习就业",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "大模型学习路线",
+        "推理工程",
+        "模型服务"
+      ],
+      "review_notes": "片段谈模型服务与资源要求，不足以判断完整学习路径。"
+    },
+    {
+      "source_row": 54,
+      "url": "https://zhuanlan.zhihu.com/p/2058091667392143481",
+      "title": "有没有感觉这两个月感觉大模型升级的能力微乎其微了，有点到头了",
+      "date_raw": "07-08",
+      "date_year_status": "missing",
+      "content_kind": "社会讨论",
+      "review_flags": [],
+      "flag_evidence": {},
+      "suggested_tags": [
+        "模型能力上限",
+        "技术进展",
+        "行业预期"
+      ],
+      "review_notes": "片段多次使用“我感觉”，为个人感受和预测。"
+    }
+  ]
+}
