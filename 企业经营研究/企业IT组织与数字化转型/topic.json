@@ -1,0 +1,15 @@
+{
+  "id": "business.it-organization-digital-transformation",
+  "title": "企业IT组织与数字化转型：IT、BT、DT、AT",
+  "summary": "待核实用户供稿：从系统支撑、业务结果、数据能力及 AI 编排分析技术组织定位变化，保留历史案例与缩写含义的核验限制。",
+  "kind": "reference",
+  "scope": "general",
+  "status": "reference",
+  "entrypoints": {
+    "brief": "摘要.md",
+    "detail": "IT-BT-DT-AT的演变逻辑与关键节点.md",
+    "sources": "来源与适用边界.md"
+  },
+  "requires": [],
+  "related": []
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "title": "跨企业专题",
+  "groups": [],
+  "topics": [
+    {
+      "id": "business.digital-ipd-brm-4a",
+      "title": "企业数字化：IPD、BRM 与 4A 架构",
+      "summary": "区分 IPD、业务参考模型与 TOGAF 的业务／数据／应用／技术四个架构域，理解 ADM 关系、配合方式及边界。",
+      "kind": "concept",
+      "scope": "general",
+      "status": "general",
+      "metadata": "企业经营研究/跨企业专题/企业数字化-IPD-BRM与4A/topic.json",
+      "brief": "企业经营研究/跨企业专题/企业数字化-IPD-BRM与4A/摘要.md"
+    }
+  ]
+}

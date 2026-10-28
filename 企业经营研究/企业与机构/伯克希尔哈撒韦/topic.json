@@ -1,0 +1,16 @@
+{
+  "id": "business.berkshire",
+  "title": "伯克希尔·哈撒韦经营研究",
+  "summary": "研究分权经营、资本配置、保险浮存金及投资失误。",
+  "kind": "reference",
+  "scope": "company",
+  "status": "general",
+  "entrypoints": {
+    "brief": "摘要.md",
+    "detail": "经营详解.md",
+    "examples": "案例.md",
+    "sources": "来源.md"
+  },
+  "requires": [],
+  "related": []
+}

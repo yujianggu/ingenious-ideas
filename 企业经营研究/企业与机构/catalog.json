@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "title": "企业与机构",
+  "groups": [],
+  "topics": [
+    {
+      "id": "business.amazon",
+      "title": "亚马逊经营研究",
+      "summary": "研究零售、云与平台能力复用，及客户价值与增长约束。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/亚马逊/topic.json",
+      "brief": "企业经营研究/企业与机构/亚马逊/摘要.md"
+    },
+    {
+      "id": "business.berkshire",
+      "title": "伯克希尔·哈撒韦经营研究",
+      "summary": "研究分权经营、资本配置、保险浮存金及投资失误。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/伯克希尔哈撒韦/topic.json",
+      "brief": "企业经营研究/企业与机构/伯克希尔哈撒韦/摘要.md"
+    },
+    {
+      "id": "business.costco",
+      "title": "Costco经营研究",
+      "summary": "研究会员制、低价信誉、选品、周转与经营边界。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/Costco/topic.json",
+      "brief": "企业经营研究/企业与机构/Costco/摘要.md"
+    },
+    {
+      "id": "business.danaher",
+      "title": "丹纳赫经营研究",
+      "summary": "研究 DBS、并购整合、业务组合调整与专业能力的关系。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/丹纳赫/topic.json",
+      "brief": "企业经营研究/企业与机构/丹纳赫/摘要.md"
+    },
+    {
+      "id": "business.huawei",
+      "title": "华为经营研究",
+      "summary": "研究研发投入、产品与客户组织、供应约束及经营韧性。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/华为/topic.json",
+      "brief": "企业经营研究/企业与机构/华为/摘要.md"
+    },
+    {
+      "id": "business.inditex",
+      "title": "Inditex／Zara经营研究",
+      "summary": "研究需求反馈、库存协同、全渠道与供应链治理。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/Inditex-Zara/topic.json",
+      "brief": "企业经营研究/企业与机构/Inditex-Zara/摘要.md"
+    },
+    {
+      "id": "business.microsoft",
+      "title": "微软经营研究",
+      "summary": "研究云与订阅转型、平台分发、AI 资本投入及安全治理。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/微软/topic.json",
+      "brief": "企业经营研究/企业与机构/微软/摘要.md"
+    },
+    {
+      "id": "business.toyota",
+      "title": "丰田经营研究",
+      "summary": "研究生产系统、供应协同、技术路线与质量治理的实际机制。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/丰田/topic.json",
+      "brief": "企业经营研究/企业与机构/丰田/摘要.md"
+    },
+    {
+      "id": "business.yc",
+      "title": "Y Combinator（YC）经营研究",
+      "summary": "研究早期投资、创业验证、加速器网络与投资组合边界。",
+      "kind": "reference",
+      "scope": "company",
+      "status": "general",
+      "metadata": "企业经营研究/企业与机构/YC/topic.json",
+      "brief": "企业经营研究/企业与机构/YC/摘要.md"
+    }
+  ]
+}

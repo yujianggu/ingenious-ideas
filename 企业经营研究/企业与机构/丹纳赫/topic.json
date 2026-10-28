@@ -1,0 +1,16 @@
+{
+  "id": "business.danaher",
+  "title": "丹纳赫经营研究",
+  "summary": "研究 DBS、并购整合、业务组合调整与专业能力的关系。",
+  "kind": "reference",
+  "scope": "company",
+  "status": "general",
+  "entrypoints": {
+    "brief": "摘要.md",
+    "detail": "经营详解.md",
+    "examples": "案例.md",
+    "sources": "来源.md"
+  },
+  "requires": [],
+  "related": []
+}

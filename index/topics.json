@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "topics": {
+    "business.amazon": {
+      "metadata": "企业经营研究/企业与机构/亚马逊/topic.json",
+      "sha256": "ae5658f498cecca3ea484c5eb51c8dc5cf01604c20f4a9a48f7435b45fa0406c"
+    },
+    "business.berkshire": {
+      "metadata": "企业经营研究/企业与机构/伯克希尔哈撒韦/topic.json",
+      "sha256": "e9cbf15750e543c47c6486e335f76e3fbc70b75dca63ddeb8e24978687cf2bdd"
+    },
+    "business.costco": {
+      "metadata": "企业经营研究/企业与机构/Costco/topic.json",
+      "sha256": "fe4948623a004985b96c5603ec39360509d8aeaf64cfb2f80283ea7410f6a8f9"
+    },
+    "business.danaher": {
+      "metadata": "企业经营研究/企业与机构/丹纳赫/topic.json",
+      "sha256": "101b146219c591753c0672b1da804dbc882f7ef6778630b6185a19371be04583"
+    },
+    "business.digital-ipd-brm-4a": {
+      "metadata": "企业经营研究/跨企业专题/企业数字化-IPD-BRM与4A/topic.json",
+      "sha256": "e8208d2a5e541767dff3056e098688004f35ef7dd297a6a731e9b1edff75d1f2"
+    },
+    "business.huawei": {
+      "metadata": "企业经营研究/企业与机构/华为/topic.json",
+      "sha256": "11dced7481c55689f70bf696dccf2757c6ff2e7f59a2a353b81d247487e03b5a"
+    },
+    "business.inditex": {
+      "metadata": "企业经营研究/企业与机构/Inditex-Zara/topic.json",
+      "sha256": "f6cdc3b0b4e51c660df6442a0dd32f49a4dfd92627aed068be9442fd672df670"
+    },
+    "business.it-organization-digital-transformation": {
+      "metadata": "企业经营研究/企业IT组织与数字化转型/topic.json",
+      "sha256": "45e53d4c52a893b2ed8f1d92cec87a0553175983791b4ec82b11b0b1c7e48268"
+    },
+    "business.microsoft": {
+      "metadata": "企业经营研究/企业与机构/微软/topic.json",
+      "sha256": "e11c0a5e666bbd9e7c38d85632f2e94721a296b27487e59bf16631344aa54094"
+    },
+    "business.toyota": {
+      "metadata": "企业经营研究/企业与机构/丰田/topic.json",
+      "sha256": "0ab6f15dc502acc0760d7addec5266c62d91339fdc950e8332c1ff535dd21f95"
+    },
+    "business.yc": {
+      "metadata": "企业经营研究/企业与机构/YC/topic.json",
+      "sha256": "35a83be29941a9b9f5d3aebf72c6fe6167914f5f3d37dd89a37f2230bf30e579"
+    }
+  }
+}

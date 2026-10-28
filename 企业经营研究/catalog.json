@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "title": "企业经营研究",
+  "groups": [
+    {
+      "title": "企业与机构",
+      "catalog": "企业经营研究/企业与机构/catalog.json"
+    },
+    {
+      "title": "跨企业专题",
+      "catalog": "企业经营研究/跨企业专题/catalog.json"
+    }
+  ],
+  "topics": [
+    {
+      "id": "business.it-organization-digital-transformation",
+      "title": "企业IT组织与数字化转型：IT、BT、DT、AT",
+      "summary": "待核实用户供稿：从系统支撑、业务结果、数据能力及 AI 编排分析技术组织定位变化，保留历史案例与缩写含义的核验限制。",
+      "kind": "reference",
+      "scope": "general",
+      "status": "reference",
+      "metadata": "企业经营研究/企业IT组织与数字化转型/topic.json",
+      "brief": "企业经营研究/企业IT组织与数字化转型/摘要.md"
+    }
+  ]
+}

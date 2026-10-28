@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "domains": [
+    {
+      "id": "business",
+      "title": "企业经营研究",
+      "summary": "基于公开资料研究九家企业与机构的经营机制、真实案例和适用边界。",
+      "path": "企业经营研究"
+    }
+  ],
+  "extensions": []
+}
